@@ -445,7 +445,14 @@ ai_strategy_default = {
 							state_region = s:STATE_LAOFENG
 							state_region = s:STATE_YULIN
 							state_region = s:STATE_BAIZEHU
-            # Beornia should be confident against holders of New Cornwall
+						}
+					}
+				}
+			}
+			add = 1
+		}	
+
+        # Beornia should be confident against holders of New Cornwall
 		if = {
 			 limit = {
 				 has_journal_entry = je_conquest_new_cornwall
@@ -472,8 +479,13 @@ ai_strategy_default = {
 							state_region = s:STATE_TERRES_CAU
 							state_region = s:STATE_TERRES_ROUGES
 							state_region = s:STATE_TERRES_MAHA
-			 add = 1
-		}	
+						}
+					}
+				}
+			}
+			add = 1
+		}
+		
 		 
 		# Tawantinsuyu should be confident against holders of Collasuyu
 		if = {
@@ -511,10 +523,15 @@ ai_strategy_default = {
 		if = {
 			limit = {
 				has_journal_entry = je_manifest_destiny_rohnnst
+				scope:target_country = {
 					any_scope_state = {
 						OR = {
 							state_region = s:STATE_ROHNNST
-			 add = 1
+						}
+					}
+				}
+			}
+			add = 1
 		}
 
 		# Competitors for the Cone should be confident against holders of Land's End
