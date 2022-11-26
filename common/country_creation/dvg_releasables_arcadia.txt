@@ -1,4 +1,6 @@
-﻿PLA = { #Plantagenia
+﻿#Present in 1836
+
+PLA = { #Plantagenia
 	use_culture_states = yes
 
 	ai_will_do = { always = no }
@@ -22,6 +24,8 @@ QIN = { #Qingqiu
 	ai_will_do = { always = no }
 }
 
+### RELEASABLES ###
+#Euro-Releasables
 MEX = { #Mexico
 	use_culture_states = yes
 
@@ -96,6 +100,8 @@ ATH = { #Athesia
 	ai_will_do = { always = no }
 }
 
+#Caribbean Releasables
+
 SFJ = { #Sudurhafeyjar
 	states = {
 		STATE_SUDURHAFEYJAR
@@ -122,6 +128,8 @@ WIN = { #West Indies
 
 	ai_will_do = { always = no }
 }
+
+#Native Arcadian Releasables
 
 CHE = { #Tsalagihi Ayeli
 	use_culture_states = yes
@@ -155,6 +163,54 @@ MCO = { #Michoacan/Purepecha
 
 MAY = { #Mayapan
 	use_culture_states = yes
+
+	ai_will_do = { always = no }
+}
+
+#Qingqiu Breakaways
+#All tags begin with 'Q' to signify that they come from Qingqiu
+
+QXI = { #Xiazhou
+	states = {
+		STATE_XIAZHOU
+		STATE_JULINYUTIAN
+		STATE_BAIZEHU
+	}
+
+	ai_will_do = { always = no }
+}
+
+QHA = { #Haikou	
+	states = {
+		STATE_HAIKOU
+		STATE_YULIN
+		STATE_LAOFENG
+	}
+
+	ai_will_do = { always = no }
+}
+
+QDA = { #Dayan
+	states = {
+		STATE_DAYAN
+		STATE_YICHENG
+	}
+
+	ai_will_do = { always = no }
+}
+
+QYO = { #Yongle
+	states = {
+		STATE_SHANGU_SIWANG
+	}
+
+	ai_will_do = { always = no }
+}
+
+QDJ = { #Yongle
+	states = {
+		STATE_DONGJI
+	}
 
 	ai_will_do = { always = no }
 }

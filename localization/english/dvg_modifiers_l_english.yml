@@ -1,3 +1,8 @@
 ﻿l_english:
   order_restored:0 "Order Restored"
   reclaimed_states:0 "Reclaimed lost Territory"
+  in_federal_sys:0 "Qingqiu Federal System"
+  qin_federal_sys_better:0 "Qingqiu Reformed Federal System"
+  qin_slightly_upset:0 "Legacy of the Federation"
+  #qin_in_crisis:0 "Qingqiu in Crisis!"
+  qin_in_brap:0 "Qingqiu in Crisis"

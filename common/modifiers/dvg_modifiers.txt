@@ -8,14 +8,12 @@ reclaimed_states = {
 	country_prestige_add = 5
 }
 
-qin_federal_sys = { #Initial modifier for Qingiqu that represents their federal system
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
-	country_law_enactment_time_mult = 0.25
-	country_authority_mult = -0.5
-	state_radicals_from_sol_change_mult = -0.1
-	state_construction_mult = 0.05
-	state_tax_capacity_mult = -0.1
-	country_bureaucracy_mult = 0.1
+qin_in_brap = { #Thank you MadJames for reminding me to put a duration on modifiers
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative
+	country_authority_mult = -0.20
+	country_bureaucracy_mult = -0.05
+	state_radicals_from_sol_change_mult = 0.05
+	state_construction_mult = -0.15 
 }
 
 qin_federal_sys_better = { #The cooler QFM
@@ -28,7 +26,16 @@ qin_federal_sys_better = { #The cooler QFM
 	country_bureaucracy_mult = 0.15
 }
 
-qin_slightly_upset = { #small radical gain from unitary state
+qin_federal_sys = { #Initial modifier for Qingiqu that represents their federal system
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_law_enactment_time_mult = 0.25
+	country_authority_mult = -0.5
+	state_radicals_from_sol_change_mult = -0.1
+	state_construction_mult = 0.05
+	state_tax_capacity_mult = -0.1
+	country_bureaucracy_mult = 0.1
+}
+
+qin_slightly_upset = { #small radical gain from unitary state
 	state_radicals_from_sol_change_mult = 0.05
 }

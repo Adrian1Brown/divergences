@@ -59,6 +59,13 @@ on_yearly_pulse_country = { #Krakatoa special pulse
 	}
 }
 
+on_yearly_pulse_country = { #brap
+	random_events = {
+		#11 = 0
+		1 = qingqiu_federation.2
+	}
+}
+
 on_yearly_pulse_country = {
 	effect = {
 		# IG leader death

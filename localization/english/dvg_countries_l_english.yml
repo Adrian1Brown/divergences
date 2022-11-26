@@ -105,6 +105,16 @@
  IOW: "Iowa"
  IOW_ADJ: "Iowa"
  dyn_c_viceroyalty_of_salvadore: "Viceroyalty of Salvadore"
+ QXI: "Xiazhou"
+ QXI_ADJ: "Xiazhoui"
+ QHA: "Haikou"
+ QHA_ADJ: "Haikouian"
+ QDA: "Dayan"
+ QDA_ADJ: "Dayanese"
+ QYO: "Yongle"
+ QYO_ADJ: "Yonglian"
+ QDJ: "Dongji"
+ QDJ_ADJ: "Dongjian"
 
  #Ameriga
  AMA: "Amazonie"
