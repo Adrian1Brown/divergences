@@ -1,4 +1,6 @@
 ﻿l_english:
+  diplomatic_plays_blocked:0 "Diplomatic plays blocked"
+  neutrality:0 "Neutrality"
   order_restored:0 "Order Restored"
   reclaimed_states:0 "Reclaimed lost Territory"
   in_federal_sys:0 "Qingqiu Federal System"
@@ -6,3 +8,5 @@
   qin_slightly_upset:0 "Legacy of the Federation"
   #qin_in_crisis:0 "Qingqiu in Crisis!"
   qin_in_brap:0 "Qingqiu in Crisis"
+  russia_unification_popularity:0 "Russian Unifier"
+  dvg_fragile_country:0 "Fragile Country"

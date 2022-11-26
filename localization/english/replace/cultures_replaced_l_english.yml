@@ -9,7 +9,11 @@
  filipino: "Christianer"
  boer: "Geus"
  amazonian: "Amazonian Native"
- 
+ russian: "Velikorussian"
+ ugrian: "Uralic"
+ portuguese: "Spanish"
+ galician: "Porto-Galician"
+
  #Heritages - no idea why this isn't working, commented out for now in case it breaks something
  #native_north_american_culture_group: "Native Arcadian"
  #native_mesoamerican_culture_group: "Mesoarcadian"

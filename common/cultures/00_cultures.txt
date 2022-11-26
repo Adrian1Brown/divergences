@@ -3600,6 +3600,7 @@ portuguese={
 		Quintanilha
 		Ribeiro
 		Rodrigues
+		Sadino
 		Salazar
 		Sampaio
 		Silveira
@@ -5772,10 +5773,120 @@ russian={
 	graphics = european
 }
 
+ruthenian={
+	color= rgb{ 99 163 206 }
+	religion = catholic
+	traits = { central_slavic european_heritage }
+	male_common_first_names={
+		Alexei
+		Andrei
+		Anton
+		Arkadiy
+		Borys
+		Dmitro
+		Fyodor
+		Hryhoriy
+		Ivan
+		Lavr
+		Leonid
+		Lev
+		Mikhail
+		Mykola
+		Nikita
+		Oleksandr
+		Panteleimon 
+		Pavel
+		Petro
+		Roman
+		Semyon
+		Sergiy
+		Valeriy
+		Viktor
+		Vladislav
+		Volodimir
+		Yevhen
+		Yuriy
+	}
+	female_common_first_names = {
+		Darya
+		Dniprova
+		Hrytsko
+		Kolomba
+		Lyubov
+		Lyudmila
+		Maria
+		Nadazhda
+		Nataliya
+		Olena
+		Olha
+		Polina
+		Ruslana
+		Slava
+		Ulyana
+		Valeriya
+		Xenia
+		Yevheniya
+	}	
+	noble_last_names = {
+		Chubynsky
+		Czajkowski
+		Drahomanov
+		Gogol-Yanovsky
+		Hnizdovsky
+		Hrekov
+		Hrushevsky
+		Karaszewicz-Tokarzewski
+		Kobyliansky
+		Konysky
+		Kropyvnytsky
+		Kulish
+		Levytsky
+		Lototsky
+		Ohonovsky
+		Omelianovych-Pavlenko
+		Ortynsky
+		Petrushevych
+		Rodzianko
+		Sas-Kuilovsky
+		Shakhovskoy
+		Sheptytsky
+		Skoropadskyi
+		Vakhnianyn
+		Vitovsky
+		Zubrytsky
+	}
+	common_last_names={
+		Bezruchko
+		Chernyakhovsky
+		Dyachenko
+		Gamula
+		Grigoriev
+		Hrekov
+		Ivanenko
+		Ivanov
+		Kapustiansky
+		Kondratenko
+		Leshchenko
+		Leshchinskiy
+		Paskevich
+		Petliura
+		Radchenko
+		Shevchenko
+		Skoropadskyi
+		Stefaniv
+		Tymoshenko
+		Vitovsky
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+
 byelorussian={
-	color= hsv{ 0.37 0.28 0.54 }
-	religion = orthodox
-	traits = { east_slavic european_heritage }
+	color= rgb{ 211 184 207 }
+	religion = catholic
+	traits = { central_slavic european_heritage }
 	male_common_first_names={
 		Alaksandr
 		Alexei
@@ -5865,8 +5976,8 @@ byelorussian={
 	graphics = european
 }
 
-ukrainian={
-	color= hsv{ 0.16 0.32 0.62 }
+cossack={
+	color= rgb{ 99 77 122 }
 	religion = orthodox
 	traits = { east_slavic european_heritage }
 	male_common_first_names={
@@ -11738,89 +11849,111 @@ tarascan={
 
 quechua={
 	color= hsv{ 0.10 0.22 0.69 }
-	religion = animist #Replace with Inti later
+	religion = inti #Replaced with Inti dvg
 	traits = { indigenous_american_heritage south_american_group }
 	male_common_first_names={
-		Agustin
-		Alejandro
-		Antauro
-		Antonio
-		Basilio
-		Daniel
-		Diego
-		Eugenio_2
-		Facundo
-		Felipe
-		Francisco
-		Gustavo
-		Hilario
-		Inca
-		Isaac
-		Jose_Maria
-		Julio
-		Lorenzo
-		Manuel
-		Marcos
-		Mariano
-		Martin_2
-		Nicolas_2
-		Osvaldo
-		Rene
-		Roberto
-		Simon_2
+		Atawallpa
+		Wayna
+		Wanka
+		Washkar
+		Rimaq
+		Ruminaki
+		Sapay
+		Sumainka
+		Tupakusi
+		Ukumari
+		Wallpaya
+		Wamay
 		Tupac
-		Ulises
-		Victor_2
+		Anti
+		Anqasmayu
+		Chikan
+		Inti
+		Intiawki
+		Hatuntupaq
+		Kusiwallpa
+		Apumayta
+		Awki
+		Chawpi
+		Sayri
+		Titu
+		Hanan
+		Huayna
+		Chalkuchimac
+		Quisquis
+		Wiraqucha
+		Urco
+		Rocca
+		Yawar
+		Llapa
+		Kuntur
+		Waman
+		Uturunku
 	}
 	female_common_first_names = {
-		Angelica
-		Casimira
-		Felicita
-		Juanita
-		Luzmila
-		Mercedes
-		Micael
-		Nilda
-		Savina
-		Silvia
+		Cura
+		Cusi
+		Coya
+		Cuxirimay
+		Tocto
+		Paccha
+		Azarpay
+		Kispe
+		Kura
+		Marca
+		Miro
+		Kusi
+		Rawa
+		Osika
+		Anawarque
+		Kontarwachu
+		Quya
+		Cuyllor
+		Rontu
+		Cimpo
+		Qori
+		Koka
 	}	
 	noble_last_names = {
-		Collahuazo
-		Duchicela
-		Poma
-		Quispe
-		Santa_Cruz
+		Yupanki
+		Amaru
+		Inka
+		Qhapaq
+		Hanan
 	}
 	common_last_names={
-		Arguedas
-		Barrientos
+		Amaru
+		Achachau
+		Allawca
+		Alqa
+		Wankahauri
+		Uywa
+		Maygua
+		NinahuamA_n
+		Muthuqanchis
+		Ankwaman
+		Awqitayasi
+		Sayritupac
+		Siwi
+		Willca
+		Yacupaico
+		Tikawanka
+		Pinchi
+		Pachari
+		Pawkar
+		Chakana
+		Waylla
+		Huaman
+		Chukimango
+		Kuntur
 		Cajahuanca
-		Canchata
 		Chambi
-		Chihuan
+		ChihuA_n
 		Cusurichi
-		Espejo
-		Frisancho
-		Gamarra
-		Guaman
-		Guayasamin
-		Gutierrez
-		Heredia
 		Humala
-		Iturri
-		Lazarte
-		Luduena
-		Melgarejo
-		Noguera
-		Palacios
-		Patino
-		Rodriguez
-		Roncaglia
-		Sosa
+		Quispe
 		Sumac
-		Toledo
-		Vargas
-		Wallparrimachi
+		Wallpa
 	}
 	ethnicities = {
 		1 = native_american
@@ -11944,9 +12077,9 @@ guarani={
 	graphics = generic
 }
 
-aimara={
+aimara={ #DVG changed to inti
 	color= hsv{ 0.02 0.57 0.74 }
-	religion = catholic
+	religion = inti
 	traits = { indigenous_american_heritage south_american_group }
 	male_common_first_names={
 		Agustin
@@ -13590,9 +13723,9 @@ miskito = {
 	graphics = generic
 }
 
-cariban={ # Hispanicized. Also includes some Garifuna and Warao names.
+cariban={ # Hispanicized. Also includes some Garifuna and Warao names. DVG changed to Inti
 	color={ 52 120 25 }
-	religion = animist
+	religion = inti 
 	traits = { indigenous_american_heritage south_american_group }
 	
 	male_common_first_names={
@@ -13885,7 +14018,7 @@ dixie={
 mexican={
 	color=hsv{ 0.99 0.50 0.65 }
 	religion = catholic
-	traits = { hispanophone gran_colombian european_heritage }
+	traits = { lusophone gran_colombian european_heritage } #dvg lusophone
 	male_common_first_names={
 		Adrian_2
 		Agustin
@@ -14096,7 +14229,7 @@ mexican={
 central_american={ #Salvadorian
 	color= hsv{ 0.51 0.21 0.67 }
 	religion = catholic
-	traits = { hispanophone gran_colombian european_heritage }
+	traits = { hispanophone lusophone gran_colombian european_heritage }
 	male_common_first_names={
 		Alejandro
 		Andres
