@@ -352,6 +352,9 @@
 		
 		effect_starting_politics_traditional = yes
 		
+		activate_law = law_type:law_presidential_republic
+		add_technology_researched = democracy
+		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}

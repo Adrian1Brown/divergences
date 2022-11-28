@@ -400,7 +400,7 @@
  #Kita Kaigan
  HUB_NAME_STATE_KITA_KAIGAN_city: "Hannô"
  HUB_NAME_STATE_KITA_KAIGAN_port: "Takahagi"
- HUB_NAME_STATE_KITA_KAIGAN_farm: "Sitka"
+ HUB_NAME_STATE_KITA_KAIGAN_farm: "Shiiteka"
  HUB_NAME_STATE_KITA_KAIGAN_mine: "Tosayamada"
  HUB_NAME_STATE_KITA_KAIGAN_wood: "Sueyoshi"
  
@@ -417,7 +417,7 @@
  HUB_NAME_STATE_QINGQIU_wood: "Xingye"
  
  HUB_NAME_STATE_XIAZHOU_city: "Xiazhou"
- HUB_NAME_STATE_XIAZHOU_port: "Xiazhou port"
+ HUB_NAME_STATE_XIAZHOU_port: "Queqiao"
  HUB_NAME_STATE_XIAZHOU_farm: "Xiaosu"
  HUB_NAME_STATE_XIAZHOU_mine: "Rongzhou"
  HUB_NAME_STATE_XIAZHOU_wood: "Dingguo"
@@ -437,7 +437,7 @@
  HUB_NAME_STATE_DAYAN_wood: "Zhendongfu"
  
  HUB_NAME_STATE_SHANGU_SIWANG_city: "Xingtian"
- HUB_NAME_STATE_SHANGU_SIWANG_port: "Xingtian"
+ HUB_NAME_STATE_SHANGU_SIWANG_port: ""
  HUB_NAME_STATE_SHANGU_SIWANG_farm: "Yingzhou"
  HUB_NAME_STATE_SHANGU_SIWANG_mine: "Jilinyutian Shan"
  HUB_NAME_STATE_SHANGU_SIWANG_wood: "Donghai"

@@ -42,32 +42,40 @@ qingqiu_federation.2 = { #Flood
 	flavor = qingqiu_federation.2.f
 	
 	event_image = {
-		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+		video = "gfx/event_pictures/unspecific_devastation.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 3
 	
 	trigger = {
-		#game_date >= 1836.1.1
+		game_date >= 1836.2.1
+		NOT = { has_global_variable = qin_flood_var }
 		any_scope_state = {
 			state_region = s:STATE_QINGQIU
 		}
 	}
 	
 	immediate = {
+		set_global_variable = qin_flood_var
+	}
+	
+	option = {
+		name = qingqiu_federation.2.a
+		s:STATE_QINGQIU = {
+			add_devastation = 50
+		}
+		s:STATE_SHANGU_SIWANG = {
+			add_devastation = 40
+		}
 		add_modifier = { 
 			name = qin_in_brap
 			months = -1
 		}
-	}
-	
-	option = {
-	
 	}
 }
 

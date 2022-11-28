@@ -1,6 +1,10 @@
 ﻿# For on_actions launched by the code itself.
 
 # Root = Country
+
+###NOTE###
+#Events under the on_monthly_pulse_country/character section will fire WILL fire when the conditons are met on the monthly pulse
+#Events under the random_events section MAY fire if the conditons are met on the monthly pulse
 on_monthly_pulse_country = {
 	events = {
 		communism.8 # Red Army
@@ -14,6 +18,8 @@ on_monthly_pulse_country = {
 		dvg_green_prince_events.41 #Tve agree, MSO agree
 		dvg_green_prince_events.51 #Tve disagree, MSO disagree
 		dvg_spain.25 #become monarchy for viceroyalties
+		#Qingqiu Flood Sequence
+		qingqiu_federation.2
 	}
 	effect = {
 	}
@@ -66,12 +72,6 @@ on_yearly_pulse_country = { #Krakatoa special pulse
 	}
 }
 
-on_yearly_pulse_country = { #brap
-    random_events = {
-        #11 = 0
-        1 = qingqiu_federation.2
-    }
-}
 
 on_yearly_pulse_country = {
 	effect = {
