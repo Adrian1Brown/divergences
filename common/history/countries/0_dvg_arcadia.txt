@@ -356,7 +356,7 @@
 		add_technology_researched = democracy
 		
 		set_ruling_interest_groups = {
-			ig_landowners
+			ig_armed_forces
 		}
 		ig:ig_landowners = {
 			set_interest_group_name = ig_alii

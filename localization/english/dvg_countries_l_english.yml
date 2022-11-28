@@ -186,6 +186,7 @@
  PLA_ADJ: "Plantagenian"
  QIN: "Qingqiu"
  QIN_ADJ: "Qingqiu"
+ dyn_c_viceroyalty_of_qingqiu: "Viceroyalty of Northern California"
  RHN: "Røhnnst"
  RHN_ADJ: "Røhnnst"
  SFJ: "Sudurhafeyjar"
@@ -208,7 +209,7 @@
  QDJ: "Dongji"
  QDJ_ADJ: "Dongjian"
  #HAW: "Fang Hu"
- #HAW_ADJ: "Piratical"
+ #HAW_ADJ: "Piratical" #This is more of a meme tbh, can be changed to whatever else fits really
 
  #Ameriga
  AMA: "Amazonie"

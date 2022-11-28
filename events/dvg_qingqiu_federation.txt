@@ -133,3 +133,54 @@ qingqiu_federation.4 = { #Unitary State
 		name = qingqiu_federation.4.a
 	}
 }
+
+qingqiu_flood.1 = { #Initial response to the flood
+}
+
+qingqiu_floodfed.1 = { #Dealing with the rest of the country UNREFORMED
+}
+
+qingqiu_floodfed.2 = { #Dealing with the rest of the country FEDERAL
+}
+
+qingqiu_floodfed.3 = { #Dealing with the rest of the country UNITARY
+}
+
+qingqiu_flood.2 = { #Break the levees?
+}
+
+qingqiu_flood.3 = { #Send some sort of force to help rebuild
+}
+
+qingqiu_flood.4 = { #What to do about shantytowns
+}
+
+qingqiu_flood.5 = { #Christians offer aid
+}
+
+qingqiu_flood.6 = { #Contact Gran Colombia - spread christianity a lil too
+}
+
+qingqiu_floodgc.1 = { #Event for GC, if they exist
+}
+
+qingqiu_floodgc.2 = { #Positive response from GC
+}
+
+qingqiu_floodgc.3 = { #Negative response from GC
+}
+
+qingqiu_floodgc.4 = { #Event for when GC doesn't exist - charity from an industrialist
+}
+
+qingqiu_flood.7 = { #Long-term rebuilding
+}
+
+qingqiu_flood.8 = { #Success!
+}
+
+qingqiu_floodfail.1 = { #No reply from Sanbao UNITARY
+}
+
+qingqiu_floodfail.1 = { #No reply from Sanbao FEDERAL/UNREFORMED
+}
