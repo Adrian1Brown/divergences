@@ -561,6 +561,13 @@
 			create_pop = {
 				culture = qingqiuan
 				size = 803716
+				split_religion = {
+					qingqiuan = {
+						catholic = 0.03
+						mahayana = 0.96
+						taiping = 0.01
+					}
+				}
 			}
 			create_pop = {
 				culture = salish
@@ -605,6 +612,12 @@
 			create_pop = {
 				culture = qingqiuan
 				size = 87928
+				split_religion = {
+					qingqiuan = {
+						catholic = 0.21
+						mahayana = 0.79
+					}
+				}
 			}
 			create_pop = {
 				culture = navajo
@@ -621,6 +634,13 @@
 			create_pop = {
 				culture = qingqiuan
 				size = 485402
+				split_religion = {
+					qingqiuan = {
+						catholic = 0.33
+						mahayana = 0.41
+						taiping = 0.26
+					}
+				}
 			}
 			create_pop = {
 				culture = hokan
