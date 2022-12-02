@@ -1083,7 +1083,6 @@ QIN = {
 	}
 }
 
-
 BSG = { #Begluk Bačka
 	dynamic_country_name = {
 		name = dyn_c_begluk

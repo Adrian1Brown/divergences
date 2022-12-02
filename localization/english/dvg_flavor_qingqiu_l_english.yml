@@ -1,10 +1,15 @@
 ﻿l_english:
-#Journal Entries
+
+###Journal Entries###
+
  je_qingqiu_reform_into_cooler_federation:0 "The Reformation of the Federation"
  je_qingqiu_reform_into_cooler_federation_reason:0 "Through these reforms we will take control of the provincial armies and curb their corrupt ways by delegating more power to the people, this will allow our federation to prosper!"
  je_qingqiu_reform_into_unitary_state:0 "A New Era as a Unitary State"
  je_qingqiu_reform_into_unitary_state_reason:0 "The federal system has worked well in the past, yet the governors don't have the interests of the people in mind, by removing them from the equation we will be able to serve the people directly!"
- #Events
+ je_qingqiu_flood:0 "The Great Flood of 1862"
+ je_qingqiu_flood_reason:0 "With our capital underwater, the valley flooded and our people suffering, our nation has been paralyzed! We must overcome this crisis, should we wish to maintain stability. NOTE - YOU WILL FAIL IF THE PROGRESS BAR FILLS UP, YOUR GOAL IS TO STOP THIS FROM HAPPENING"
+ 
+ ###Events###
  
  qingqiu_federation.1.t:0 "The Federation of Qingqiu"
  qingqiu_federation.1.d:0 "The Status of the Federation"
@@ -22,10 +27,17 @@
  qingqiu_federation.4.d:0 "Success: The end of the Federation"
  qingqiu_federation.4.f:0 "After years of careful manouvers within our government, we have successfully curbed the influence of the states, making the system functionally obsolete! Finally our nation will be stable, we have the oportunity to liberalise and progress, finally the Qingqiuian people won't need to bend the knee to corrupt governors and endure thier backwards ways. Direct governance from Sanbao begins now, in the name of the people!"
  qingqiu_federation.4.a:0 "We walk forwards into a new era, united as one!"
-
+ qingqiu_flood.15.tt:0 "We can only hope that this is enough"
+ #Flood Chain
+ qingqiu_flood.1.t:0 "Swift Actions"
+ qingqiu_flood.1.d:0 "Brap"
+ qingqiu_flood.1.f:0 "Brappers!"
+ qingqiu_flood.1.a:0 "1"
+ qingqiu_flood.1.b:0 "2"
+ qingqiu_flood.1.c:0 "3"
  
- #Wars
+ ###Wars###
  
- #Other
+ ###Other##
  
  

@@ -30,6 +30,7 @@ qingqiu_federation.1 = {
 		add_journal_entry = {
 			type = je_qingqiu_reform_into_cooler_federation
 		}
+		default_option = yes
     }
 }
 
@@ -50,7 +51,7 @@ qingqiu_federation.2 = { #Flood
 
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
-	duration = 3
+	duration = 1
 	
 	trigger = {
 		game_date >= 1836.2.1
@@ -61,7 +62,12 @@ qingqiu_federation.2 = { #Flood
 	}
 	
 	immediate = {
-		set_global_variable = qin_flood_var
+		set_global_variable = {
+		name = qin_flood_var
+		}
+		set_global_variable = {
+		name = qin_flood_active
+		}
 	}
 	
 	option = {
@@ -76,6 +82,11 @@ qingqiu_federation.2 = { #Flood
 			name = qin_in_brap
 			months = -1
 		}
+		trigger_event = { id = qingqiu_flood.1 days = 20 }
+		add_journal_entry = {
+			type = je_qingqiu_flood
+		}
+		default_option = yes
 	}
 }
 
@@ -99,6 +110,7 @@ qingqiu_federation.3 = { #Federation
 		remove_modifier = qin_federal_sys
 		add_modifier = qin_federal_sys_better
 		name = qingqiu_federation.3.a
+		default_option = yes
 	}
 	
 }
@@ -131,208 +143,6 @@ qingqiu_federation.4 = { #Unitary State
 	option = {
 		remove_modifier = qin_federal_sys
 		name = qingqiu_federation.4.a
+		default_option = yes
 	}
-}
-
-qingqiu_flood.1 = { #Initial response to the flood
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-}
-
-qingqiu_floodfed.1 = { #Dealing with the rest of the country UNREFORMED
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_floodfed.2 = { #Dealing with the rest of the country FEDERAL
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_floodfed.3 = { #Dealing with the rest of the country UNITARY
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_flood.2 = { #Break the levees?
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_flood.3 = { #Send some sort of force to help rebuild
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_flood.4 = { #What to do about shantytowns
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_flood.5 = { #Christians offer aid
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_flood.6 = { #Contact Gran Colombia - spread christianity a lil too
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_floodgc.1 = { #Event for GC, if they exist
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_floodgc.2 = { #Positive response from GC
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_floodgc.3 = { #Negative response from GC
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_floodgc.4 = { #Event for when GC doesn't exist - charity from an industrialist
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_flood.7 = { #Long-term rebuilding
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_flood.8 = { #Success!
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_floodfail.1 = { #No reply from Sanbao UNITARY
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
-}
-
-qingqiu_floodfail.1 = { #No reply from Sanbao FEDERAL/UNREFORMED
-	type = country_event
-	placement = ROOT
-	title = qingqiu_federation.3.t
-	desc = qingqiu_federation.3.d
-	flavor = qingqiu_federation.3.f
-	
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
-
 }

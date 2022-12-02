@@ -105,6 +105,8 @@ dvg_fragile_country = {
 	state_radicals_from_sol_change_mult = 0.33
 }
 
+#Qingqiu Modifiers
+
 qin_in_brap = { #Thank you MadJames for reminding me to put a duration on modifiers
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	country_authority_mult = -0.20
@@ -134,5 +136,6 @@ qin_federal_sys = { #Initial modifier for Qingiqu that represents their federal 
 }
 
 qin_slightly_upset = { #small radical gain from unitary state
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	state_radicals_from_sol_change_mult = 0.05
 }
