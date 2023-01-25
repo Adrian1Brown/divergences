@@ -32,31 +32,6 @@
 		effect_starting_pop_literacy_middling = yes
 	}
 	
-	c:QXI = { #Xiazhou
-		effect_starting_pop_wealth_medium = yes
-		effect_starting_pop_literacy_middling = yes
-	}
-	
-	c:QHA = { #Haikou
-		effect_starting_pop_wealth_medium = yes
-		effect_starting_pop_literacy_middling = yes
-	}
-	
-	c:QDA = { #Dayan
-		effect_starting_pop_wealth_medium = yes
-		effect_starting_pop_literacy_middling = yes
-	}
-	
-	c:QYO = { #Yongle
-		effect_starting_pop_wealth_medium = yes
-		effect_starting_pop_literacy_middling = yes
-	}
-	
-	c:QDJ = { #Dongji
-		effect_starting_pop_wealth_medium = yes
-		effect_starting_pop_literacy_middling = yes
-	}
-	
 	c:RHN = { #Rohnnst
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_low = yes

@@ -563,9 +563,8 @@
 				size = 803716
 				split_religion = {
 					qingqiuan = {
-						catholic = 0.03
+						catholic = 0.04
 						mahayana = 0.96
-						taiping = 0.01
 					}
 				}
 			}
@@ -636,9 +635,8 @@
 				size = 485402
 				split_religion = {
 					qingqiuan = {
-						catholic = 0.33
+						catholic = 0.59
 						mahayana = 0.41
-						taiping = 0.26
 					}
 				}
 			}

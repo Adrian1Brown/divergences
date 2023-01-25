@@ -594,3 +594,14 @@ QDJ = { #Dongji
 	cultures = { qingqiuan }
 	capital = STATE_DONGJI
 }
+
+QQQ = { #Qingqiu state
+	color = { 90 105  230 }
+
+	country_type = colonial
+
+	tier = principality
+	
+	cultures = { qingqiuan }
+	capital = STATE_QINGQIU
+}

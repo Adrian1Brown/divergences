@@ -68,15 +68,19 @@ qingqiu_federation.2 = { #Flood
 		set_global_variable = {
 		name = qin_flood_active
 		}
+		set_variable = {
+            name = qin_flood_value
+            value = 1
+        }
 	}
 	
 	option = {
 		name = qingqiu_federation.2.a
 		s:STATE_QINGQIU = {
-			add_devastation = 50
+			add_devastation = 70
 		}
 		s:STATE_SHANGU_SIWANG = {
-			add_devastation = 40
+			add_devastation = 60
 		}
 		add_modifier = { 
 			name = qin_in_brap

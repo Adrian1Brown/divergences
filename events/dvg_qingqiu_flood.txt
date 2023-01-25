@@ -51,7 +51,43 @@ qingqiu_flood.1 = { #Initial response to the flood
 				trigger_event = { id = qingqiu_flood.4 days = 20 }
 			}
 		}
-	name = qingqiu_flood.1.c
+	name = qingqiu_flood.1.a
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
+		}
 	}
 	option = { #Evacuate the cities
 		if = {
@@ -87,7 +123,43 @@ qingqiu_flood.1 = { #Initial response to the flood
 				trigger_event = { id = qingqiu_flood.4 days = 20 }
 			}
 		}
-	name = qingqiu_flood.1.c
+	name = qingqiu_flood.1.b
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 0
+			}
+		}
 	}
 	option = { #Re-establish supply routes
 		if = {
@@ -122,6 +194,42 @@ qingqiu_flood.1 = { #Initial response to the flood
 			}
 		}
 	name = qingqiu_flood.1.c
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 4
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
 	}
 }
 
@@ -137,10 +245,42 @@ qingqiu_flood.2 = { #Dealing with the rest of the country UNREFORMED
 	
 	duration = 1
 	
-	option = {
-		trigger_event = qingqiu_flood.5 days = 20
+	trigger = {
+		has_modifier = qin_in_brap
 	}
 	
+	option = { #Impose new taxes to raise funds for the recovery
+		name = qingqiu_flood.2.a
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+		change_variable = {
+            name = qin_flood_value
+            add = 4
+		}
+		add_modifier = {
+			name = qin_new_taxes
+			months = 11
+		}
+	}
+	option = { #Grant further autonomy to the provinces
+		name = qingqiu_flood.2.b
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+		change_variable = {
+            name = qin_flood_value
+            add = 3
+		}
+		add_modifier = {
+			name = qin_less_auth
+			months = 11
+		}
+	}
+	option = { #Ignore the other provinces until we recover
+		name = qingqiu_flood.2.c
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+		change_variable = {
+            name = qin_flood_value
+            add = 5
+		}
+	}
 }
 
 qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
@@ -155,8 +295,29 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
 	
 	duration = 1
 
-	option = {
-		trigger_event = qingqiu_flood.5 days = 20		
+	option = { #Establish a disaster response ministry to focus on this now
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = -1
+		}
+	add_modifier = {
+		name = qin_disaster_response_ministry
+		}
+	}
+	option = { #Cancel projects across the country to use the funds to recover
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 0
+		}
+	}
+	option = { #We will endure
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 1
+		}		
 	}
 
 }
@@ -173,8 +334,30 @@ qingqiu_flood.4 = { #Dealing with the rest of the country FEDERAL
 	
 	duration = 1
 
-	option = {
-		trigger_event = qingqiu_flood.5 days = 20		
+	option = { #Temporarily delegate more powers to the provinces
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = -1
+		}
+		add_modifier = {
+			name = qin_less_auth
+			months = 11
+		}
+	}
+	option = { #
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 1
+		}
+	}
+	option = { #The federation will endure
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 2
+		}		
 	}
 
 }
@@ -191,8 +374,26 @@ qingqiu_flood.5 = { #Break the levees?
 	
 	duration = 1
 	
-	option = {
-		trigger_event = qingqiu_flood.6 days = 20		
+	option = { #Break the levees
+		trigger_event = { id = qingqiu_flood.8 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 1
+		}
+	}
+	option = { #Don't do anything
+		trigger_event = { id = qingqiu_flood.8 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 3
+		}		
+	}
+	option = { #Dig temporary canals
+		trigger_event = { id = qingqiu_flood.8 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 2
+		}		
 	}
 	
 }
@@ -209,8 +410,26 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 	
 	duration = 1
 	
-	option = {
-		trigger_event = qingqiu_flood.7 days = 20		
+	option = { #Send in prisoners
+		trigger_event = { id = qingqiu_flood.7 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 1
+		}		
+	}
+	option = { #Send in the army
+		trigger_event = { id = qingqiu_flood.7 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 2
+		}		
+	}
+	option = { #Send in miners
+		trigger_event = { id = qingqiu_flood.7 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 3
+		}		
 	}
 }
 
@@ -226,8 +445,26 @@ qingqiu_flood.7 = { #What to do about shantytowns
 	
 	duration = 1
 	
-	option = {
-		trigger_event = qingqiu_flood.8 days = 20		
+	option = { #Build new towns for them
+		trigger_event = { id = qingqiu_flood.8 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 1
+		}		
+	}
+	option = { #Relocate them outside the cities
+		trigger_event = { id = qingqiu_flood.8 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 2
+		}		
+	}
+	option = { #Leave them to their fate
+		trigger_event = { id = qingqiu_flood.8 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 3
+		}		
 	}
 	
 }
@@ -244,10 +481,16 @@ qingqiu_flood.8 = { #Christians offer aid
 
 	duration = 1
 	
-	option = {
-		trigger_event = qingqiu_flood.9 days = 20		
+	option = { #Accept aid
+		trigger_event = { id = qingqiu_flood.6 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = -2
+		}
 	}
-	
+	option = { #Don't accept aid
+		trigger_event = { id = qingqiu_flood.6 days = 20 }
+	}
 }
 
 qingqiu_flood.9 = { #Contact Gran Colombia - spread christianity a lil too
@@ -262,10 +505,13 @@ qingqiu_flood.9 = { #Contact Gran Colombia - spread christianity a lil too
 	
 	duration = 1
 	
-	option = {
+	option = { #Yes, ask for help
 		c:GCO = {
-			trigger_event = qingqiu_flood.10 days = 20		
+			trigger_event = { id = qingqiu_flood.10 days = 20 }	
 		}
+	}
+	option = { #Nah we're fine without them
+		trigger_event = { id = qingqiu_flood.14 days = 20 }
 	}
 }
 
@@ -281,14 +527,14 @@ qingqiu_flood.10 = { #Event for GC, if they exist
 	
 	duration = 1
 
-	option = {
+	option = { #Positive response
 		c:QIN = {
-			trigger_event = qingqiu_flood.11 days = 20	
+			trigger_event = { id = qingqiu_flood.11 days = 20 }
 		}
 	}
-	option = {
+	option = { #Negative response
 		c:QIN = {
-			trigger_event = qingqiu_flood.12 days = 20	
+			trigger_event = { id = qingqiu_flood.12 days = 20 }
 		}
 	}
 }
@@ -306,7 +552,15 @@ qingqiu_flood.11 = { #Positive response from GC
 	duration = 1
 	
 	option = {
-		trigger_event = qingqiu_flood.14 days = 20		
+		if = {
+			has_global_variable = qin_flood_active = {
+		trigger_event = { id = qingqiu_flood.14 days = 20 }
+		}
+	}
+	change_variable = {
+        name = qin_flood_value
+        add = -3
+		}
 	}
 }
 
@@ -323,8 +577,8 @@ qingqiu_flood.12 = { #Negative response from GC
 	duration = 1
 
 	option = {
-		trigger_event = qingqiu_flood.14 days = 20		
-	}	
+		trigger_event = { id = qingqiu_flood.14 days = 20 }	
+	}
 }
 
 qingqiu_flood.13 = { #Event for when GC doesn't exist - charity from an industrialist
@@ -339,9 +593,13 @@ qingqiu_flood.13 = { #Event for when GC doesn't exist - charity from an industri
 	
 	duration = 1
 
-	option = {
-		trigger_event = qingqiu_flood.14 days = 20		
-	}	
+	option = { #Flat -1 for the JE, that way you're not getting screwed over by RNG
+		trigger_event = { id = qingqiu_flood.14 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = -1
+		}
+	}
 }
 
 qingqiu_flood.14 = { #Bringing in fresh water
@@ -356,8 +614,26 @@ qingqiu_flood.14 = { #Bringing in fresh water
 	
 	duration = 1
 	
-	option = {
-		trigger_event = qingqiu_flood.15 days = 20		
+	option = { #Build acqueducts
+		trigger_event = { id = qingqiu_flood.15 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 1
+		}	
+	}
+	option = { #Extract it from the rivers
+		trigger_event = { id = qingqiu_flood.15 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 2
+		}	
+	}	
+	option = { #Tell people to boil sea water
+		trigger_event = { id = qingqiu_flood.15 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 3
+		}		
 	}	
 	
 }
@@ -374,11 +650,23 @@ qingqiu_flood.15 = { #Long-term rebuilding
 	
 	duration = 1
 	
-	option = {
+	option = { #Pay lots now, short length of debuff
 	custom_tooltip = {
 		text = qingqiu_flood.15.tt
 		}
-		trigger_event = qingqiu_flood.18 days = 20
+		trigger_event = { id = qingqiu_flood.18 days = 20 }
+	}
+	option = { #The middle option
+	custom_tooltip = {
+		text = qingqiu_flood.15.tt
+		}
+		trigger_event = { id = qingqiu_flood.18 days = 20 }
+	}
+	option = { #Pay a little now, long effect of debuff
+	custom_tooltip = {
+		text = qingqiu_flood.15.tt
+		}
+		trigger_event = { id = qingqiu_flood.18 days = 20 }
 	}
 }
 
@@ -424,6 +712,10 @@ qingqiu_flood.18 = { #Sucess!
 	
 	immediate = {
 		remove_global_variable = qin_flood_active
+		remove_modifier = qin_in_brap
+	}
+	
+	option = {
 	}
 	
 }

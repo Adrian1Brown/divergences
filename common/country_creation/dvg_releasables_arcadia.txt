@@ -207,9 +207,17 @@ QYO = { #Yongle
 	ai_will_do = { always = no }
 }
 
-QDJ = { #Yongle
+QDJ = { #Dongji
 	states = {
 		STATE_DONGJI
+	}
+
+	ai_will_do = { always = no }
+}
+
+QQQ = { #Qingqiu state
+	states = {
+		STATE_QINGQIU
 	}
 
 	ai_will_do = { always = no }

@@ -13,7 +13,7 @@
  
  qingqiu_federation.1.t:0 "The Federation of Qingqiu"
  qingqiu_federation.1.d:0 "The Status of the Federation"
- qingqiu_federation.1.f:0 "The Federation of Qingqiu is by no means a well-functioning federation. Our provinces have a great level of autonomy, having differing laws and even their own armies, making governance from Sanbao difficult. The provinces are actively working against our federation, making it tough to pass laws and taking a share of the taxes imposed on our people for themselves! However the federation is not without benefits, with our long history of federalism, beginning in the 1600s, we have found what works for the Qingqiuian people. Yet now the question remains; We must reform, but how? Do we reform our federation, or begin a new era as a unitary state?"
+ qingqiu_federation.1.f:0 "The Federation of Qingqiu is by no means a well-functioning federation. Our provinces have a great level of autonomy, having differing laws and even their own armies, making governance from Sanbao difficult. The provinces are actively working against our federation, making it tough to pass laws and taking a share of the taxes imposed on our people for themselves! However the federation is not without benefits, with our long history of federalism, beginning in the 1600s, we have found what works for the Qingqiuan people. Yet now the question remains; We must reform, but how? Do we reform our federation, or begin a new era as a unitary state?"
  qingqiu_federation.1.a:0 "We must choose our path carefully"
  qingqiu_federation.2.t:0 "The Great Qingqiu Flood of 1862!"
  qingqiu_federation.2.d:0 "The Flood"
@@ -30,12 +30,17 @@
  qingqiu_flood.15.tt:0 "We can only hope that this is enough"
  #Flood Chain
  qingqiu_flood.1.t:0 "Swift Actions"
- qingqiu_flood.1.d:0 "Brap"
- qingqiu_flood.1.f:0 "Brappers!"
- qingqiu_flood.1.a:0 "1"
- qingqiu_flood.1.b:0 "2"
- qingqiu_flood.1.c:0 "3"
- 
+ qingqiu_flood.1.d:0 "With the valley flooded and our towns underwater, we must take action immediately!"
+ qingqiu_flood.1.f:0 "The valley has been the most badly affected area of the entire country, with its large fields and pastures it's obvious that we cannot standby idly by whilst our people suffer! As of now, our farmers are struggling to stay afloat, we have recieved reports that some of them have been clinging to telegraph poles in order to stay above water, every day that passes will only result in more casualties. Reports have also come from towns in the valley regarding people stranded on rooftops with what little they have left, rescuing them would take time but result in a brief economic slowdown!"
+ qingqiu_flood.1.a:0 "Rescue the farmers and reestablish supply routes to the towns!"
+ qingqiu_flood.1.b:0 "Rescue the farmers and townspeople using merchant ships!"
+ qingqiu_flood.1.c:0 "Reestablish supply routes to the towns in order to save the people!"
+ qingqiu_flood.2.t:0 "The Matter of the Provinces"
+ qingqiu_flood.2.d:0 "With the crisis situated in Sanbao, the question lingers; what to do about the other provinces?"
+ qingqiu_flood.2.f:0 "Sanbao, the valley and the cities of the valley are the most affected, now the governers of the provinces turn their eyes to Sanbao, wondering what actions to take. Whilst we have recieved many telegraphs and letters of mourning and hope from our governors, we must give them a statement on how to move forwards. We already have several proposals, the most popular in Sanbao being to impose new taxes on the provinces, funneling money into Sanbao - and likely into corrupt bureaucrat's pockets too - to fund the recovery efforts. Alternatively, temporarily granting further autonomy to the provinces would mean that they can manage themselves and we can manage the flood recovery efforts. However we also have the option of not responding at all, obviously this would not be the ideal course of action, but what other choices do we have?"
+ qingqiu_flood.2.a:0 "Impose new taxes on the provinces"
+ qingqiu_flood.2.b:0 "Temporarily grant more autonomy to the provinces"
+ qingqiu_flood.2.c:0 "Send no response! The status-quo can remain"
  ###Wars###
  
  ###Other##

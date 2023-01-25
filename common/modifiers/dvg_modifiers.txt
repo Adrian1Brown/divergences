@@ -109,10 +109,11 @@ dvg_fragile_country = {
 
 qin_in_brap = { #Thank you MadJames for reminding me to put a duration on modifiers
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
-	country_authority_mult = -0.20
-	country_bureaucracy_mult = -0.05
+	country_authority_mult = -0.25
+	country_bureaucracy_mult = -0.15
 	state_radicals_from_sol_change_mult = 0.05
-	state_construction_mult = -0.15 
+	state_construction_mult = -0.20
+	state_mortality_mult = 0.10	
 }
 
 qin_federal_sys_better = { #The cooler QFM
@@ -138,4 +139,21 @@ qin_federal_sys = { #Initial modifier for Qingiqu that represents their federal 
 qin_slightly_upset = { #small radical gain from unitary state
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	state_radicals_from_sol_change_mult = 0.05
+}
+
+qin_less_auth = { #used in event qingqiu_flood.4 and qingqiu_flood.2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_authority_mult = -0.5
+}
+
+qin_new_taxes = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_radicals_from_sol_change_mult = 0.15
+	country_tax_income_add = 0.8
+}
+
+qin_disaster_response_ministry = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_bureaucracy_mult = -0.05
+	country_tax_income_add = -1
 }

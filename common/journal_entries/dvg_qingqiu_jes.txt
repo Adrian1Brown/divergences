@@ -69,6 +69,9 @@ je_qingqiu_flood = {
 	}
 	
 	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
 	}
 	
 	on_complete = {
@@ -94,6 +97,7 @@ je_qingqiu_flood = {
 			}		
 		trigger_event = { id = qingqiu_flood.17 }
 		}
+		remove_global_variable = qin_flood_active
 	}
 	
 	should_be_pinned_by_default = yes
@@ -101,7 +105,10 @@ je_qingqiu_flood = {
 	progressbar = yes
 	
 	goal_add_value = {
-		add = 10
+		add = 17
 	}
 	
+	current_value = {
+		value = var:qin_flood_value
+	}
 }
