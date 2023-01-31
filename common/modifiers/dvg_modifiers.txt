@@ -155,5 +155,15 @@ qin_new_taxes = {
 qin_disaster_response_ministry = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_bureaucracy_mult = -0.05
-	country_tax_income_add = -1
+	country_tax_income_add = -2
 }
+
+qin_stolen_assets = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	interest_group_ig_landowners_approval_add = -3
+	interest_group_ig_landowners_pol_str_mult = -0.05
+	country_tax_income_add = 1
+}
+
+# interest_group_ig_landowners_approval_add = -3
+# interest_group_ig_landowners_pol_str_mult = -0.05

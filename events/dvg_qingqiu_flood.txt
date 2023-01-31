@@ -304,12 +304,19 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
 	add_modifier = {
 		name = qin_disaster_response_ministry
 		}
+		set_global_variable = {
+			name = qin_disaster_response
+		}
 	}
-	option = { #Cancel projects across the country to use the funds to recover
+	option = { #Sieze and sell excess assets to raise funds
 		trigger_event = { id = qingqiu_flood.5 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 0
+		}
+	add_modifier = {
+		name = qin_stolen_assets
+		months = 21
 		}
 	}
 	option = { #We will endure
@@ -446,21 +453,21 @@ qingqiu_flood.7 = { #What to do about shantytowns
 	duration = 1
 	
 	option = { #Build new towns for them
-		trigger_event = { id = qingqiu_flood.8 days = 20 }
+		trigger_event = { id = qingqiu_flood.9 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 1
 		}		
 	}
 	option = { #Relocate them outside the cities
-		trigger_event = { id = qingqiu_flood.8 days = 20 }
+		trigger_event = { id = qingqiu_flood.9 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 2
 		}		
 	}
 	option = { #Leave them to their fate
-		trigger_event = { id = qingqiu_flood.8 days = 20 }
+		trigger_event = { id = qingqiu_flood.9 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 3
