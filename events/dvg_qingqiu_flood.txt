@@ -296,6 +296,7 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
 	duration = 1
 
 	option = { #Establish a disaster response ministry to focus on this now
+	name = qingqiu_flood.3.a
 		trigger_event = { id = qingqiu_flood.5 days = 20 }
 	change_variable = {
         name = qin_flood_value
@@ -308,7 +309,8 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
 			name = qin_disaster_response
 		}
 	}
-	option = { #Sieze and sell excess assets to raise funds
+	option = { #Impose new taxes to raise more funds
+	name = qingqiu_flood.3.b
 		trigger_event = { id = qingqiu_flood.5 days = 20 }
 	change_variable = {
         name = qin_flood_value
@@ -320,6 +322,7 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
 		}
 	}
 	option = { #We will endure
+	name = qingqiu_flood.3.c
 		trigger_event = { id = qingqiu_flood.5 days = 20 }
 	change_variable = {
         name = qin_flood_value

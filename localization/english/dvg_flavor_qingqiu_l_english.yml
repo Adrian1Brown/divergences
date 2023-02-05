@@ -41,6 +41,12 @@
  qingqiu_flood.2.a:0 "Impose new taxes on the provinces"
  qingqiu_flood.2.b:0 "Temporarily grant more autonomy to the provinces"
  qingqiu_flood.2.c:0 "Send no response! The status-quo can remain"
+ qingqiu_flood.3.t:0 "The Matter of the rest of the country"
+ qingqiu_flood.3.d:0 "With the crisis in Sanbao, the question lingers; how should the rest of the country support Sanbao in this crisis?"
+ qingqiu_flood.3.f:0 "Sanbao, the valley and the cities of the valley are the most affected, now the rest of our nation turns its eyes to Sanbao, wondering what further actions we will take. Whilst we have recieved many telegraphs and letters of mourning and hope from local officials, we must give our people a statement on any further actions we take. We have several proposals, the most popular in our government being to temporarily impose a new tax to fund further recovory efforts, funneling money into Sanbao. Alternatively, a suggestion to establish the Qingqiu State Disaster Response Ministry has been suggested, whilst this would put a strain on our already dwindling resources, it will make sure that we never suffer as we have suffered over these past months by preventing any such disaster occuring in future! We also have the option of not taking any further action, as of now things are under control and we have the luxury of choice in this situation."
+ qingqiu_flood.3.a:0 "Establish the Disaster Response Ministry and put it to action immediately!"
+ qingqiu_flood.3.b:0 "Temporarily impose a new tax to raise more funds"
+ qingqiu_flood.3.c:0 "We will endure with what we have already"
  ###Wars###
  
  ###Other##

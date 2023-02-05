@@ -156,6 +156,7 @@ qin_disaster_response_ministry = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_bureaucracy_mult = -0.05
 	country_tax_income_add = -2
+	#Needs a flat rate for removing devastation
 }
 
 qin_stolen_assets = {
