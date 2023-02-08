@@ -369,12 +369,21 @@ qingqiu_flood.4 = { #Dealing with the rest of the country FEDERAL
 		name = qingqiu_flood.4.b
 	}
 	option = { #The federation will endure
+
 		trigger_event = { id = qingqiu_flood.5 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 1
 		}
 		name = qingqiu_flood.4.c
+	}
+	
+	option = { #The federation will endure
+		trigger_event = { id = qingqiu_flood.5 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 2
+		}		
 	}
 
 }
