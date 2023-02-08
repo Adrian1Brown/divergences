@@ -386,3 +386,10 @@
  
  #Sugbo
  HUB_NAME_STATE_VISAYAS_city: "Sugbo"
+ 
+ #Japan
+ HUB_NAME_STATE_SAKHALIN_city: "Toyohara"
+ HUB_NAME_STATE_SAKHALIN_port: "Ōtomari"
+ HUB_NAME_STATE_SAKHALIN_mine: "Keton"
+ HUB_NAME_STATE_SAKHALIN_farm: "Okutan"
+ HUB_NAME_STATE_SAKHALIN_wood: "Nokuran"

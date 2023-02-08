@@ -1022,6 +1022,99 @@ TWT = {
 	}
 }
 
+QIN = {
+	dynamic_country_name = {
+		name = dyn_c_viceroyalty_of_qingqiu
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:SPA
+			OR = {
+				c:SPA = {
+					has_diplomatic_pact = {
+						who = c:QIN
+						type = puppet
+						is_initiator = yes
+					}
+				}
+				c:SPA = {
+					has_diplomatic_pact = {
+						who = c:QIN
+						type = dominion
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_japan_puppet
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:JAP
+			OR = {
+				c:JAP = {
+					has_diplomatic_pact = {
+						who = c:QIN
+						type = puppet
+						is_initiator = yes
+					}
+				}
+				c:JAP = {
+					has_diplomatic_pact = {
+						who = c:QIN
+						type = dominion
+						is_initiator = yes
+					}
+				}
+				c:JAP = {
+					has_diplomatic_pact = {
+						who = c:QIN
+						type = vassal
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_qing_puppet
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = c:QIN
+			OR = {
+				c:MCH = {
+					has_diplomatic_pact = {
+						who = c:QIN
+						type = puppet
+						is_initiator = yes
+					}
+				}
+				c:MCH = {
+					has_diplomatic_pact = {
+						who = c:QIN
+						type = dominion
+						is_initiator = yes
+					}
+				}
+				c:MCH = {
+					has_diplomatic_pact = {
+						who = c:QIN
+						type = vassal
+						is_initiator = yes
+					}
+				}
+			}
+		}
+	}
+}
+
 BSG = { #Begluk Bačka
 	dynamic_country_name = {
 		name = dyn_c_begluk

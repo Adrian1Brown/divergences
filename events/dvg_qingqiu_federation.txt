@@ -30,6 +30,7 @@ qingqiu_federation.1 = {
 		add_journal_entry = {
 			type = je_qingqiu_reform_into_cooler_federation
 		}
+		default_option = yes
     }
 }
 
@@ -42,32 +43,54 @@ qingqiu_federation.2 = { #Flood
 	flavor = qingqiu_federation.2.f
 	
 	event_image = {
-		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+		video = "gfx/event_pictures/unspecific_devastation.bk2"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
-	duration = 3
+	duration = 1
 	
 	trigger = {
-		#game_date >= 1836.1.1
+		game_date >= 1836.2.1
+		NOT = { has_global_variable = qin_flood_var }
 		any_scope_state = {
 			state_region = s:STATE_QINGQIU
 		}
 	}
 	
 	immediate = {
+		set_global_variable = {
+		name = qin_flood_var
+		}
+		set_global_variable = {
+		name = qin_flood_active
+		}
+		set_variable = {
+            name = qin_flood_value
+            value = 1
+        }
+	}
+	
+	option = {
+		name = qingqiu_federation.2.a
+		s:STATE_QINGQIU = {
+			add_devastation = 70
+		}
+		s:STATE_SHANGU_SIWANG = {
+			add_devastation = 60
+		}
 		add_modifier = { 
 			name = qin_in_brap
 			months = -1
 		}
-	}
-	
-	option = {
-	
+		trigger_event = { id = qingqiu_flood.1 days = 20 }
+		add_journal_entry = {
+			type = je_qingqiu_flood
+		}
+		default_option = yes
 	}
 }
 
@@ -91,6 +114,7 @@ qingqiu_federation.3 = { #Federation
 		remove_modifier = qin_federal_sys
 		add_modifier = qin_federal_sys_better
 		name = qingqiu_federation.3.a
+		default_option = yes
 	}
 	
 }
@@ -123,5 +147,6 @@ qingqiu_federation.4 = { #Unitary State
 	option = {
 		remove_modifier = qin_federal_sys
 		name = qingqiu_federation.4.a
+		default_option = yes
 	}
 }

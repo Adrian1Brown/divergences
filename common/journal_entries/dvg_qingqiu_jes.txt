@@ -53,3 +53,62 @@ je_qingqiu_reform_into_unitary_state = {
 		trigger_event = { id = qingqiu_federation.4 }
 	}
 }
+
+je_qingqiu_flood = { 
+
+#Flood sequence, note that the fail and success conditions are swapped because of how JEs work
+#if it was the other way around you'dn't've to go through the entire chain, there's probably a way around this but I can't be bothered lmoa
+#Might change this later if it's confusing
+
+#This JE is triggered by the first event in the flood sequence
+	
+	fail = {
+		NOT = {
+			has_global_variable = qin_flood_active
+		}
+	}
+	
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	
+	on_complete = {
+		if = {
+			limit = {
+				c:QIN = {
+					OR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}			
+		trigger_event = { id = qingqiu_flood.18 }
+		}
+		if = {
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}		
+		trigger_event = { id = qingqiu_flood.17 }
+		}
+		remove_global_variable = qin_flood_active
+	}
+	
+	should_be_pinned_by_default = yes
+	
+	progressbar = yes
+	
+	goal_add_value = {
+		add = 17
+	}
+	
+	current_value = {
+		value = var:qin_flood_value
+	}
+}
