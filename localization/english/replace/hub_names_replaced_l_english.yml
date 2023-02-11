@@ -177,6 +177,14 @@
  HUB_NAME_STATE_ASTRAKHAN_farm:0 "Volga"
  HUB_NAME_STATE_ASTRAKHAN_wood:0 "Krasnyi Yar"
  
+ #Circassia
+ 
+ HUB_NAME_STATE_KUBAN_port:1 "Chemez"
+ HUB_NAME_STATE_KUBAN_city:1 "Tmutarakan"
+ HUB_NAME_STATE_KUBAN_mine:0 "Psykhuabe"
+ HUB_NAME_STATE_KUBAN_wood:0 "Armavir"
+ HUB_NAME_STATE_KUBAN_farm:1 "Shache"
+ 
  ### Africa ###
  #Libya
  HUB_NAME_STATE_LIBYAN_DESERT_city: "Sabha"

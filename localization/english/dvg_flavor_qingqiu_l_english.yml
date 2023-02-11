@@ -53,6 +53,12 @@
  qingqiu_flood.4.a:0 "Delegate more power to the Provinces"
  qingqiu_flood.4.b:0 "Xiazhou shall be our new capital!"
  qingqiu_flood.4.c:0 "We are strong, the Federation will survive!"
+ qingqiu_flood.5.t:0 "The Levees of Sanbao and the Valley"
+ qingqiu_flood.5.d:0 "Our great system of canals and levees, whilst built to prevent diasters, has only come to prolong the presence of floodwaters! We must address this!"
+ qingqiu_flood.5.f:0 "The complex and intricate system of irrigation channels, ditches, canals and rivers in the valley were built over the span of several centuries, they serve to both irrigate the large swathes of farmland, as well as mitigate any minor floods and surges. However now this dense system of waterways is only stifling our efforts! The canals are full of silt and irrigation ditches only let more water wash into vast crop feilds and pastures! We could break the levees to relieve the valley somewhat, however this would mean that we would need to take some time to rebuild them, likely affecting our agricultral throughput for a few years. Whilst it may be more expensive and more difficult, we could dig temporary drainage channels through the farmland in order to quickly flush out a large portion of the floodwaters. Of course, simply letting nature take its course is an option too, perhaps the flood waters will receed overtime?"
+ qingqiu_flood.5.a:0 "Break the levees - they will provide the most relief!"
+ qingqiu_flood.5.b:0 "We don't need to take action here"
+ qingqiu_flood.5.c:0 "Dig drainage channels, we cannot let this water remain any longer!"
 
  ###Wars###
  
