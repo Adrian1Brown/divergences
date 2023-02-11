@@ -350,6 +350,7 @@ qingqiu_flood.4 = { #Dealing with the rest of the country FEDERAL
 
 	option = { #Temporarily delegate more powers to the provinces
 		trigger_event = { id = qingqiu_flood.5 days = 20 }
+		name = qingqiu_flood.4.a
 	change_variable = {
         name = qin_flood_value
         add = -1
@@ -358,32 +359,30 @@ qingqiu_flood.4 = { #Dealing with the rest of the country FEDERAL
 			name = qin_less_auth
 			months = 11
 		}
-		name = qingqiu_flood.4.a
 	}
+
 	option = { #Xiazhou will serve as the new seat of government
 		trigger_event = { id = qingqiu_flood.5 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 2
-		}
 		name = qingqiu_flood.4.b
-	}
-	option = { #The federation will endure
-
-		trigger_event = { id = qingqiu_flood.5 days = 20 }
 	change_variable = {
         name = qin_flood_value
-        add = 1
+        add = 0
 		}
-		name = qingqiu_flood.4.c
+	set_capital = STATE_XIAZHOU
+	add_modifier = {
+		name = moved_capital_recently
+		months = 21
+		is_decaying	= yes
+		}
 	}
-	
+
 	option = { #The federation will endure
 		trigger_event = { id = qingqiu_flood.5 days = 20 }
+		name = qingqiu_flood.4.c
 	change_variable = {
         name = qin_flood_value
         add = 2
-		}		
+		}	
 	}
 
 }

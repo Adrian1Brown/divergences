@@ -165,6 +165,5 @@ qin_stolen_assets = {
 	interest_group_ig_landowners_pol_str_mult = -0.05
 	country_tax_income_add = 1
 }
-
 # interest_group_ig_landowners_approval_add = -3
 # interest_group_ig_landowners_pol_str_mult = -0.05
