@@ -418,9 +418,8 @@ qingqiu_flood.5 = { #Break the levees?
 	change_variable = {
         name = qin_flood_value
         add = 2
-		}		
+		}
 	}
-	
 }
 
 qingqiu_flood.6 = { #Send some sort of force to help rebuild
@@ -440,21 +439,42 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 	change_variable = {
         name = qin_flood_value
         add = 1
-		}		
+		}
+	}
+	option = { #Send in farmers
+		trigger_event = { id = qingqiu_flood.7 days = 20 }
+	change_variable = {
+        name = qin_flood_value
+        add = 3
+		}
+	s:STATE_QINGQIU.region_state:QIN = {
+		add_radicals = {
+			pop_type = farmers
+			value = 0.8
+			}
+		}
+	s:STATE_SHANGU_SIWANG.region_state:QIN = {
+		add_radicals = {
+			pop_type = farmers
+			value = 0.8
+			}
+		}
+		add_modifier = {
+		name = qin_farmers_dieing
+		months = 11
+		}
 	}
 	option = { #Send in the army
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 2
-		}		
-	}
-	option = { #Send in miners
-		trigger_event = { id = qingqiu_flood.7 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 3
-		}		
+		add_modifier = {
+			name = qin_saviours
+			is_decaying = yes
+			months = 31
+			}
+		}	
 	}
 }
 

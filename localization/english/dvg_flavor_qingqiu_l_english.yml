@@ -59,6 +59,18 @@
  qingqiu_flood.5.a:0 "Break the levees - they will provide the most relief!"
  qingqiu_flood.5.b:0 "We don't need to take action here"
  qingqiu_flood.5.c:0 "Dig drainage channels, we cannot let this water remain any longer!"
+ qingqiu_flood.6.t:0 "Beginning the Reconstruction"
+ qingqiu_flood.6.d:0 "Even now as people wade through water in the streets of Sanbao and towns of the valley, we must begin to rebuild"
+ qingqiu_flood.6.f:0 "Having resources imported from the north and east and our funding secured, we can begin rebuilding from the ground up. Unfortunately we are only missing the labor, many people from all across the Valley and Sanbao are occupied with picking up the pieces and what little they have left, we have so few people that can work for us! We need workers, it seems that the obvious choice would be sending our soldiers in to help rebuild, they are well trained and perhaps the force that's the most dedicated to our country! Some members of our government have proposed putting our prisoner populace to use though, even if we must force them to work for us. The final realistic choice we have is recruiting farmers from the Valley to rebuild, starting with their towns, unfortunately this will likely slow down our agricultural industries."
+ qingqiu_flood.6.a:0 "Put the prisoners to use, it's all they're good for!"
+ qingqiu_flood.6.b:0 "Send in our soldiers, they are the best equipped for dealing with this!"
+ qingqiu_flood.6.c:0 "Recruit the farmsers from the valley!"
+ qingqiu_flood.7.t:0
+ qingqiu_flood.7.d:0
+ qingqiu_flood.7.f:0
+ qingqiu_flood.7.a:0
+ qingqiu_flood.7.b:0
+ qingqiu_flood.7.c:0
 
  ###Wars###
  

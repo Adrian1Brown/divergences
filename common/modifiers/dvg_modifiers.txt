@@ -165,5 +165,23 @@ qin_stolen_assets = {
 	interest_group_ig_landowners_pol_str_mult = -0.05
 	country_tax_income_add = 1
 }
+
+qin_saviours = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.1
+	interest_group_ig_armed_forces_pol_str_mult = 0.4
+}
+
+qin_farmers_dieing = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	building_group_bg_agriculture_farmers_mortality_mult = 0.025
+	interest_group_ig_rural_folk_pop_approval_add = -3
+	interest_group_ig_rural_folk_pop_pol_str_mult = -0.05
+}
+
+qin_damanged_canals = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	
+}
 # interest_group_ig_landowners_approval_add = -3
 # interest_group_ig_landowners_pol_str_mult = -0.05
