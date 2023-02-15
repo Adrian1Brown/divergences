@@ -149,7 +149,7 @@ qin_less_auth = { #used in event qingqiu_flood.4 and qingqiu_flood.2
 qin_new_taxes = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	state_radicals_from_sol_change_mult = 0.15
-	country_tax_income_add = 0.8
+	country_tax_income_add = 1200
 }
 
 qin_disaster_response_ministry = {
@@ -163,7 +163,7 @@ qin_stolen_assets = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	interest_group_ig_landowners_approval_add = -3
 	interest_group_ig_landowners_pol_str_mult = -0.05
-	country_tax_income_add = 1
+	country_tax_income_add = 1500
 }
 
 qin_saviours = {
