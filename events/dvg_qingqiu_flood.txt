@@ -405,19 +405,31 @@ qingqiu_flood.5 = { #Break the levees?
         name = qin_flood_value
         add = 1
 		}
+	add_modifier = {
+		name = qin_damanged_canals
+		months = 11
+		}
 	}
 	option = { #Don't do anything
 		trigger_event = { id = qingqiu_flood.8 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 3
-		}		
+		}
+	add_modifier = {
+		name = qin_really_upset_farmers
+		months = 21
+		}
 	}
 	option = { #Dig temporary canals
 		trigger_event = { id = qingqiu_flood.8 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 2
+		}
+	add_modifier = {
+		name = qin_damanged_canals
+		months = 11
 		}
 	}
 }
@@ -459,7 +471,19 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 			value = 0.8
 			}
 		}
-		add_modifier = {
+	if = {
+		limit = {
+			c:QIN = {
+				has_modifier = qin_really_upset_farmers
+			}
+		}
+	remove_modifier = qin_really_upset_farmers
+	add_modifier = {
+		name = qin_enraged_farmers
+		months = 21
+		}
+	}
+	add_modifier = {
 		name = qin_farmers_dieing
 		months = 11
 		}
@@ -495,21 +519,24 @@ qingqiu_flood.7 = { #What to do about shantytowns
 	change_variable = {
         name = qin_flood_value
         add = 1
-		}		
+		}
+	name = qingqiu_flood.7.a
 	}
 	option = { #Relocate them outside the cities
 		trigger_event = { id = qingqiu_flood.9 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 2
-		}		
+		}
+	name = qingqiu_flood.7.b	
 	}
 	option = { #Leave them to their fate
 		trigger_event = { id = qingqiu_flood.9 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 3
-		}		
+		}
+	name = qingqiu_flood.7.c
 	}
 	
 }

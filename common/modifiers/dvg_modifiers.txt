@@ -181,7 +181,30 @@ qin_farmers_dieing = {
 
 qin_damanged_canals = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-	
+	building_group_bg_agriculture_throughput_mult = -0.5
+}
+
+qin_really_upset_farmers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	building_group_bg_agriculture_farmers_mortality_mult = 0.15
+	interest_group_ig_rural_folk_pop_approval_add = -5
+	interest_group_ig_rural_folk_pop_pol_str_mult = -0.15
+}
+
+qin_enraged_farmers = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	building_group_bg_agriculture_farmers_mortality_mult = 0.15
+	interest_group_ig_rural_folk_pop_approval_add = -8
+	interest_group_ig_rural_folk_pop_pol_str_mult = -0.1
+}
+
+qin_new_suburbs = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+}
+
+qin_new_towns = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 }
 # interest_group_ig_landowners_approval_add = -3
 # interest_group_ig_landowners_pol_str_mult = -0.05
+# building_group_bg_agriculture_throughput_mult = 0.1

@@ -65,12 +65,12 @@
  qingqiu_flood.6.a:0 "Put the prisoners to use, it's all they're good for!"
  qingqiu_flood.6.b:0 "Send in our soldiers, they are the best equipped for dealing with this!"
  qingqiu_flood.6.c:0 "Recruit the farmsers from the valley!"
- qingqiu_flood.7.t:0
- qingqiu_flood.7.d:0
- qingqiu_flood.7.f:0
- qingqiu_flood.7.a:0
- qingqiu_flood.7.b:0
- qingqiu_flood.7.c:0
+ qingqiu_flood.7.t:0 "Fate of the Shantytowns"
+ qingqiu_flood.7.d:0 "Shantytowns; the dwellings of people lowest on the social ladder, they must be addressed, for their sake!"
+ qingqiu_flood.7.f:0 "."
+ qingqiu_flood.7.a:0 "Construct new homes for them in any space possible!"
+ qingqiu_flood.7.b:0 "Relocate them to outside the city in new towns"
+ qingqiu_flood.7.c:0 "Leave them to their fate - we have nothing to spare for them"
 
  ###Wars###
  
