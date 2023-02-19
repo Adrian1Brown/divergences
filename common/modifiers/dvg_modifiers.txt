@@ -130,7 +130,7 @@ qin_federal_sys = { #Initial modifier for Qingiqu that represents their federal 
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	country_law_enactment_time_mult = 0.25
 	country_authority_mult = -0.5
-	state_radicals_from_sol_change_mult = -0.1
+	state_radicals_from_sol_change_mult = -0.05
 	state_construction_mult = 0.05
 	state_tax_capacity_mult = -0.1
 	country_bureaucracy_mult = 0.1
@@ -200,10 +200,14 @@ qin_enraged_farmers = {
 
 qin_new_suburbs = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	state_standard_of_living_add = 3
+	state_radicals_from_sol_change_mult = -0.20
 }
 
 qin_new_towns = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	state_standard_of_living_add = 1
+	state_radicals_from_sol_change_mult = -0.10
 }
 # interest_group_ig_landowners_approval_add = -3
 # interest_group_ig_landowners_pol_str_mult = -0.05

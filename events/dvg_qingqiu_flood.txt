@@ -493,12 +493,12 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 	change_variable = {
         name = qin_flood_value
         add = 2
-		add_modifier = {
-			name = qin_saviours
-			is_decaying = yes
-			months = 31
-			}
-		}	
+		}
+	add_modifier = {
+		name = qin_saviours
+		is_decaying = yes
+		months = 31
+		}
 	}
 }
 
@@ -520,8 +520,21 @@ qingqiu_flood.7 = { #What to do about shantytowns
         name = qin_flood_value
         add = 1
 		}
+	s:STATE_SHANGU_SIWANG = {
+		add_modifier = {
+			name = qin_new_towns
+			months = 16
+			}
+		}
+	s:STATE_QINGQIU = {
+		add_modifier = {
+			name = qin_new_towns
+			months = 16
+			}
+		}
 	name = qingqiu_flood.7.a
 	}
+
 	option = { #Relocate them outside the cities
 		trigger_event = { id = qingqiu_flood.9 days = 20 }
 	change_variable = {
@@ -530,6 +543,7 @@ qingqiu_flood.7 = { #What to do about shantytowns
 		}
 	name = qingqiu_flood.7.b	
 	}
+
 	option = { #Leave them to their fate
 		trigger_event = { id = qingqiu_flood.9 days = 20 }
 	change_variable = {
@@ -538,7 +552,6 @@ qingqiu_flood.7 = { #What to do about shantytowns
 		}
 	name = qingqiu_flood.7.c
 	}
-	
 }
 
 qingqiu_flood.8 = { #Christians offer aid
