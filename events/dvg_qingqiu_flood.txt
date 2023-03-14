@@ -639,12 +639,12 @@ qingqiu_flood.11 = { #Positive response from GC
 	option = {
 		if = {
 			has_global_variable = qin_flood_active = {
-		trigger_event = { id = qingqiu_flood.14 days = 20 }
+				trigger_event = { id = qingqiu_flood.14 days = 20 }
+			}
 		}
-	}
 	change_variable = {
         name = qin_flood_value
-        add = -3
+        add = -2
 		}
 	}
 }
