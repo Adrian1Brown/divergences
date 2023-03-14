@@ -90,11 +90,14 @@
 		set_relations = { country = c:NAV value = 30 }
 		set_relations = { country = c:PAP value = 40 }
 		set_relations = { country = c:VEN value = 30 }
-		set_relations = { country = c:FRR value = 30 }
+		set_relations = { country = c:GEN value = 40 }
+		#set_relations = { country = c:FRR value = 30 }
 		set_relations = { country = c:PRO value = 30 }
 		set_relations = { country = c:TUN value = 30 }
 		set_relations = { country = c:MCD value = 30 }
 		set_relations = { country = c:ALB value = 30 }
+		set_relations = { country = c:VEN value = 30 }
+		set_relations = { country = c:SPA value = 30 }
 		set_relations = { country = c:ALD value = -30 }
 	}
 	c:TUR = {
@@ -148,7 +151,6 @@
 		set_relations = { country = c:MCH value = -50 }
 	}
 	c:JAP = {
-		set_relations = { country = c:KKN value = 30 }
 		set_relations = { country = c:KOR value = -50 }
 		set_relations = { country = c:MCH value = -20 }
 	}
@@ -161,18 +163,33 @@
 		set_relations = { country = c:RYA value = 50 }
 		set_relations = { country = c:MOL value = 30 }
 	}
+	c:KHK = {
+		set_relations = { country = c:KIE value = 30 }
+		set_relations = { country = c:ZAZ value = 30 }
+	}
 	c:MSO = {
 		set_relations = { country = c:POL value = 50 }
 		set_relations = { country = c:NZH value = 50 }
 		set_relations = { country = c:TVE value = 50 }
+		set_relations = { country = c:NOV value = -50 }
+		set_relations = { country = c:SCA value = -50 }
 	}
 	c:TVE = {
 		set_relations = { country = c:NZH value = 50 }
 		set_relations = { country = c:MSO value = 50 }
+		set_relations = { country = c:NOV value = -50 }
+		set_relations = { country = c:SCA value = -50 }
 	}
 	c:NZH = {
 		set_relations = { country = c:TVE value = 50 }
 		set_relations = { country = c:MSO value = 50 }
+		set_relations = { country = c:NOV value = -50 }
+		set_relations = { country = c:SCA value = -50 }
+	}
+	c:SMO = {
+		set_relations = { country = c:POL value = -50 }
+		set_relations = { country = c:NOV value = -50 }
+		set_relations = { country = c:SCA value = -50 }
 	}
 	c:ASK = {
 		set_relations = { country = c:CIR value = 30 }
@@ -223,5 +240,17 @@
 	}
 	c:BEO = {
 		set_relations = { country = c:LOT value = 50 }
+	}
+	c:YLO = {
+		set_relations = { country = c:MJN value = -35 }
+		set_relations = { country = c:ZSA value = -25 }
+	}
+	c:MJN = {
+		set_relations = { country = c:YLO value = -35 }
+		set_relations = { country = c:ZSA value = -30 }
+	}
+	c:ZSA = {
+		set_relations = { country = c:YLO value = -25 }
+		set_relations = { country = c:MJN value = -35 }
 	}
 }

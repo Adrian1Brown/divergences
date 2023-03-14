@@ -67,7 +67,7 @@ AMA = { #Amazonie
 	
 	cultures = { amazonien }
 	
-	capital = STATE_FRANCE_ANTARTIQUE
+	capital = STATE_COTE_DU_SUCRE
 }
 
 EQX = { #Equinoxea
@@ -151,7 +151,7 @@ ARQ = { #Arequipa
 	
 	cultures = { caladeran }
 	
-	capital = STATE_AREQUIPA
+	capital = STATE_CUNTISUYU
 }
 
 ESQ = { #Essequibo
@@ -177,19 +177,8 @@ TGI = { #Taragui
 	capital = STATE_EOFERWIC
 }
 
-TUP = { #Tupia
-	color = { 122 255 89 }
-	
-	country_type = decentralized
-	
-	tier = principality
-	
-	cultures = { amazonian }
-	capital = STATE_AMAZONIE_PROFONDE
-}
-
-GNI = { #Guarani
-	color = { 73 139 166 }
+GNI = { #Gurani
+	color = { 91 107 140 }
 	
 	country_type = decentralized
 	
@@ -197,6 +186,28 @@ GNI = { #Guarani
 	
 	cultures = { guarani }
 	capital = STATE_GRAND_CHACO
+}
+
+TUP = { #Tupia
+	color = { 122 255 89 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { amazonian tupinamba}
+	capital = STATE_PROCHE_AMAZONIE
+}
+
+MUR = { #Mura
+	color = { 234 170 235 }
+	
+	country_type = decentralized
+	
+	tier = principality
+	
+	cultures = { amazonian }
+	capital = STATE_AMAZONIE_PROFONDE
 }
 
 PAT = { #Mapuche

@@ -604,4 +604,13 @@ QQQ = { #Qingqiu state
 	
 	cultures = { qingqiuan }
 	capital = STATE_QINGQIU
+SEM = { #Seminole
+	color = { 215 37 37 }
+
+	country_type = decentralized
+
+	tier = principality
+	
+	cultures = { seminole }
+	capital = STATE_ATHESIA
 }

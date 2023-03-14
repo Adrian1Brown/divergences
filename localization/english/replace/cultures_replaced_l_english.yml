@@ -13,7 +13,6 @@
  ugrian: "Uralic"
  portuguese: "Spanish"
  galician: "Porto-Galician"
-
  #Heritages - no idea why this isn't working, commented out for now in case it breaks something
  #native_north_american_culture_group: "Native Arcadian"
  #native_mesoamerican_culture_group: "Mesoarcadian"
@@ -21,3 +20,5 @@
  #native_american_minor: "Native Arcadian Minor"
  #latin_american_culture_group: "Latin Arcadian and Amerigan"
  #central_american: "Central Arcadian"
+ aborigine: "Hongshan"
+ maori: "Máolì"

@@ -1038,20 +1038,20 @@
 	}
 	
 	#Ferrara
-	c:FRR = {
-		create_trade_route = {
-			goods = clothes
-			level = 1
-			direction = export
-			target = c:PAP.market
-		}
-		create_trade_route = {
-			goods = grain
-			level = 1
-			direction = export
-			target = c:TUS.market
-		}
-	}
+	#c:FRR = {
+	#	create_trade_route = {
+	#		goods = clothes
+	#		level = 1
+	#		direction = export
+	#		target = c:PAP.market
+	#	}
+	#	create_trade_route = {
+	#		goods = grain
+	#		level = 1
+	#		direction = export
+	#		target = c:TUS.market
+	#	}
+	#}
 
 	#Montenegro
 	c:MON = {
@@ -1486,6 +1486,21 @@
 			level = 2
 			direction = import
 			target = c:BOH.market
+		}
+	}
+
+	c:BEI = {
+		create_trade_route = {
+			goods = silk
+			level = 9
+			direction = import
+			target = c:TPG.market
+		}
+		create_trade_route = {
+			goods = grain
+			level = 7
+			direction = import
+			target = c:JAV.market
 		}
 	}
 }
