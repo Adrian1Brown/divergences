@@ -90,19 +90,7 @@
 			goods = tools
 			level = 1
 			direction = import
-			target = c:TWT.market
-		}
-		create_trade_route = {
-			goods = tea
-			level = 2
-			direction = import
-			target = c:JAP.market
-		}
-		create_trade_route = {
-			goods = fruit
-			level = 1
-			direction = export
-			target = c:JAP.market
+			target = c:GCO.market
 		}
 		create_trade_route = {
 			goods = luxury_clothes

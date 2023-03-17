@@ -119,4 +119,10 @@
 			months = 264
 		}
 	}
+	c:JAP = {
+		create_truce = {
+			country = QIN
+			months = 240
+		}
+	}
 }
