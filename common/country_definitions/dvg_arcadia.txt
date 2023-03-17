@@ -61,7 +61,7 @@ QIN = { #Qingqiu
 
 	tier = kingdom
 	
-	cultures = { qingqiuan }
+	cultures = { qingqiuan chunggu }
 	capital = STATE_QINGQIU
 }
 
@@ -547,7 +547,7 @@ QXI = { #Xiazhou
 
 	tier = principality
 	
-	cultures = { qingqiuan }
+	cultures = { qingqiuan chunggu }
 	capital = STATE_XIAZHOU
 }
 
@@ -558,7 +558,7 @@ QHA = { #Haikou
 
 	tier = principality
 	
-	cultures = { qingqiuan }
+	cultures = { qingqiuan chunggu }
 	capital = STATE_HAIKOU
 }
 
@@ -569,7 +569,7 @@ QDA = { #Dayan
 
 	tier = principality
 	
-	cultures = { qingqiuan }
+	cultures = { qingqiuan chunggu }
 	capital = STATE_DAYAN
 }
 
@@ -580,7 +580,7 @@ QYO = { #Yongle
 
 	tier = principality
 	
-	cultures = { qingqiuan }
+	cultures = { qingqiuan chunggu }
 	capital = STATE_SHANGU_SIWANG
 }
 
@@ -591,19 +591,21 @@ QDJ = { #Dongji
 
 	tier = principality
 	
-	cultures = { qingqiuan }
+	cultures = { qingqiuan chunggu }
 	capital = STATE_DONGJI
 }
 
-QQQ = { #Qingqiu state
+QGQ = { #Qingqiu state
 	color = { 90 105  230 }
 
 	country_type = colonial
 
 	tier = principality
 	
-	cultures = { qingqiuan }
+	cultures = { qingqiuan chunggu }
 	capital = STATE_QINGQIU
+	}
+
 SEM = { #Seminole
 	color = { 215 37 37 }
 

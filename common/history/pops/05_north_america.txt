@@ -544,10 +544,6 @@
 				culture = inuit
 				size = 5018
 			}
-			create_pop = {
-				culture = korean
-				size = 1265
-			}
 		}
 	}
 	s:STATE_GURETONOSU = {
@@ -589,7 +585,7 @@
 				size = 4918
 			}
 			create_pop = {
-				culture = korean
+				culture = chunggu
 				size = 1678
 			}
 		}

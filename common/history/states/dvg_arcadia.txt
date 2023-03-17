@@ -325,6 +325,7 @@
 		}
 		
 		add_homeland = qingqiuan
+		add_homeland = chunggu
 	}
 	s:STATE_XIAZHOU = {
 		create_state = {
@@ -333,6 +334,7 @@
 		}
 		
 		add_homeland = qingqiuan
+		add_homeland = chunggu
 	}
 	s:STATE_JULINYUTIAN = {
 		create_state = {
@@ -341,6 +343,7 @@
 		}
 		
 		add_homeland = qingqiuan
+		add_homeland = chunggu
 		add_homeland = salish
 		add_homeland = athabaskan
 	}
@@ -351,6 +354,7 @@
 		}
 		
 		add_homeland = qingqiuan
+		add_homeland = chunggu
 		add_homeland = salish
 		add_homeland = nez_perce
 	}
@@ -361,6 +365,7 @@
 		}
 		
 		add_homeland = qingqiuan
+		add_homeland = chunggu
 		add_homeland = paiute
 	}
 	s:STATE_SHANGU_SIWANG = {
@@ -370,6 +375,7 @@
 		}
 		
 		add_homeland = qingqiuan
+		add_homeland = chunggu
 		add_homeland = hokan
 	}
 	

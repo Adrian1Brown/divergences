@@ -215,7 +215,7 @@ QDJ = { #Dongji
 	ai_will_do = { always = no }
 }
 
-QQQ = { #Qingqiu state
+QGQ = { #Qingqiu state
 	states = {
 		STATE_QINGQIU
 	}

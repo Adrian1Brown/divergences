@@ -615,11 +615,12 @@ STATE_QINGQIU = {
     capped_resources = {
         bg_logging = 25
         bg_fishing = 13
+		bg_gold_mining = 4
     }
     resource = {
         type = "bg_gold_fields"
         depleted_type = "bg_gold_mining"
-        undiscovered_amount = 12
+        undiscovered_amount = 8
     }
     resource = {
         type = "bg_oil_extraction"
@@ -721,6 +722,7 @@ STATE_SHANGU_SIWANG = {
         bg_sulfur_mining = 40
         bg_logging = 7
         bg_fishing = 6
+		bg_gold_mining = 3
     }
     resource = {
         type = "bg_oil_extraction"
