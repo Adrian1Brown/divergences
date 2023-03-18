@@ -121,7 +121,7 @@
 	}
 	c:JAP = {
 		create_truce = {
-			country = QIN
+			country = c:QIN
 			months = 240
 		}
 	}
