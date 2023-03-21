@@ -159,24 +159,9 @@ qin_disaster_response_ministry = {
 	#Needs a flat rate for removing devastation
 }
 
-qin_stolen_assets = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
-	interest_group_ig_landowners_approval_add = -3
-	interest_group_ig_landowners_pol_str_mult = -0.05
-	country_tax_income_add = 1500
-}
-
-qin_saviours = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	interest_group_ig_armed_forces_pop_attraction_mult = 0.1
-	interest_group_ig_armed_forces_pol_str_mult = 0.4
-}
-
 qin_farmers_dieing = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	building_group_bg_agriculture_farmers_mortality_mult = 0.025
-	interest_group_ig_rural_folk_pop_approval_add = -3
-	interest_group_ig_rural_folk_pop_pol_str_mult = -0.05
 }
 
 qin_damanged_canals = {
@@ -187,15 +172,11 @@ qin_damanged_canals = {
 qin_really_upset_farmers = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	building_group_bg_agriculture_farmers_mortality_mult = 0.15
-	interest_group_ig_rural_folk_pop_approval_add = -5
-	interest_group_ig_rural_folk_pop_pol_str_mult = -0.15
 }
 
 qin_enraged_farmers = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	building_group_bg_agriculture_farmers_mortality_mult = 0.15
-	interest_group_ig_rural_folk_pop_approval_add = -8
-	interest_group_ig_rural_folk_pop_pol_str_mult = -0.1
 }
 
 qin_new_suburbs = {
@@ -212,6 +193,14 @@ qin_new_towns = {
 # interest_group_ig_landowners_approval_add = -3
 # interest_group_ig_landowners_pol_str_mult = -0.05
 # building_group_bg_agriculture_throughput_mult = 0.1
+
+qin_moved_to_xiazhou = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_mult = -0.1
+	country_influence_mult = -0.1
+	country_authority_mult = -0.1
+}
+
 dvg_mid_way = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	state_standard_of_living_add = 4

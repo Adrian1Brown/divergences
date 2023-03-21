@@ -316,10 +316,8 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
         name = qin_flood_value
         add = 0
 		}
-	add_modifier = {
-		name = qin_stolen_assets
-		months = 21
-		}
+	interest_group_ig_landowners_approval_add = -3
+	interest_group_ig_landowners_pol_str_mult = -0.05
 	}
 	option = { #We will endure
 	name = qingqiu_flood.3.c
@@ -400,6 +398,7 @@ qingqiu_flood.5 = { #Break the levees?
 	duration = 1
 	
 	option = { #Break the levees
+	name = qingqiu_flood.5.a
 		trigger_event = { id = qingqiu_flood.8 days = 20 }
 	change_variable = {
         name = qin_flood_value
@@ -411,6 +410,7 @@ qingqiu_flood.5 = { #Break the levees?
 		}
 	}
 	option = { #Don't do anything
+	name = qingqiu_flood.5.b
 		trigger_event = { id = qingqiu_flood.8 days = 20 }
 	change_variable = {
         name = qin_flood_value
@@ -420,8 +420,11 @@ qingqiu_flood.5 = { #Break the levees?
 		name = qin_really_upset_farmers
 		months = 21
 		}
+	interest_group_ig_rural_folk_pop_approval_add = -5
+	interest_group_ig_rural_folk_pop_pol_str_mult = -0.15
 	}
 	option = { #Dig temporary canals
+	name = qingqiu_flood.5.c
 		trigger_event = { id = qingqiu_flood.8 days = 20 }
 	change_variable = {
         name = qin_flood_value
@@ -482,11 +485,15 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 		name = qin_enraged_farmers
 		months = 21
 		}
+	interest_group_ig_rural_folk_pop_approval_add = -8
+	interest_group_ig_rural_folk_pop_pol_str_mult = -0.1
 	}
 	add_modifier = {
 		name = qin_farmers_dieing
 		months = 11
 		}
+	interest_group_ig_rural_folk_pop_approval_add = -3
+	interest_group_ig_rural_folk_pop_pol_str_mult = -0.05
 	}
 	option = { #Send in the army
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
@@ -494,11 +501,8 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
         name = qin_flood_value
         add = 2
 		}
-	add_modifier = {
-		name = qin_saviours
-		is_decaying = yes
-		months = 31
-		}
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.1
+	interest_group_ig_armed_forces_pol_str_mult = 0.4
 	}
 }
 
