@@ -1072,7 +1072,10 @@
                 AND = {
                     exists = scope:pop
                     scope:pop = {
-                        culture = cu:korean
+						OR = {
+							culture = cu:korean
+							culture = cu:chunggu
+						}
                     }
                     OR = {
                         poor_clothes_pop_trigger = yes
@@ -1101,14 +1104,20 @@
                     AND = {
                         exists = scope:character
                         scope:character = {
-                            has_culture = cu:korean
+							OR = {
+								culture = cu:korean
+								culture = cu:chunggu
+							}
                             is_ruler = no
                         }
                     }
                     AND = {
                         exists = scope:pop
                         scope:pop = {
-                            culture = cu:korean
+							OR = {
+								culture = cu:korean
+								culture = cu:chunggu
+							}
                             is_pop_type = officers
                         }
 					}
@@ -1134,7 +1143,10 @@
                 AND = {
                     exists = scope:character
                     scope:character = {
-                        has_culture = cu:korean
+						OR = {
+							has_culture = cu:korean
+							has_culture = cu:chunggu
+						}
                         is_ruler = yes
                     }
                 }
