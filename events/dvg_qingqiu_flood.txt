@@ -316,8 +316,6 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
         name = qin_flood_value
         add = 0
 		}
-	interest_group_ig_landowners_approval_add = -3
-	interest_group_ig_landowners_pol_str_mult = -0.05
 	}
 	option = { #We will endure
 	name = qingqiu_flood.3.c
@@ -420,8 +418,6 @@ qingqiu_flood.5 = { #Break the levees?
 		name = qin_really_upset_farmers
 		months = 21
 		}
-	interest_group_ig_rural_folk_pop_approval_add = -5
-	interest_group_ig_rural_folk_pop_pol_str_mult = -0.15
 	}
 	option = { #Dig temporary canals
 	name = qingqiu_flood.5.c
@@ -485,15 +481,11 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 		name = qin_enraged_farmers
 		months = 21
 		}
-	interest_group_ig_rural_folk_pop_approval_add = -8
-	interest_group_ig_rural_folk_pop_pol_str_mult = -0.1
 	}
 	add_modifier = {
-		name = qin_farmers_dieing
+		name = qin_farmers_dying
 		months = 11
 		}
-	interest_group_ig_rural_folk_pop_approval_add = -3
-	interest_group_ig_rural_folk_pop_pol_str_mult = -0.05
 	}
 	option = { #Send in the army
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
@@ -501,8 +493,10 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
         name = qin_flood_value
         add = 2
 		}
-	interest_group_ig_armed_forces_pop_attraction_mult = 0.1
-	interest_group_ig_armed_forces_pol_str_mult = 0.4
+		add_modifier = {
+			name = qin_saviours
+			months = 11
+		}
 	}
 }
 
