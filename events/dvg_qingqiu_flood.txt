@@ -366,7 +366,7 @@ qingqiu_flood.4 = { #Dealing with the rest of the country FEDERAL
 		}
 	set_capital = STATE_XIAZHOU
 	add_modifier = {
-		name = moved_capital_recently
+		name = qin_relocated_to_xiazhou
 		months = 21
 		is_decaying	= yes
 		}

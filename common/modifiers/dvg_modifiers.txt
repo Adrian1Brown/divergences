@@ -205,6 +205,13 @@ qin_saviours = {
 	interest_group_ig_armed_forces_pol_str_mult = 0.4
 }
 
+qin_relocated_to_xiazhou = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_authority_mult = -0.1
+	country_bureaucracy_mult = -0.1
+	country_influence_mult = -0.1
+}
+
 # interest_group_ig_landowners_approval_add = -3
 # interest_group_ig_landowners_pol_str_mult = -0.05
 # building_group_bg_agriculture_throughput_mult = 0.1
