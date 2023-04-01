@@ -622,7 +622,7 @@ qingqiu_flood.9 = { #Contact Gran Colombia - spread christianity a lil too
 	}
 }
 
-qingqiu_flood.10 = { #Event for GC, if they exist
+qingqiu_flood.10 = { #Event for GCO, if they exist
 	type = country_event
 	placement = ROOT
 	title = qingqiu_flood.10.t
@@ -638,6 +638,10 @@ qingqiu_flood.10 = { #Event for GC, if they exist
 		c:QIN = {
 			trigger_event = { id = qingqiu_flood.11 days = 20 }
 		}
+	add_modifier = {
+		name = qin_helping_qq
+		months = 11
+		}
 	}
 	option = { #Negative response
 		c:QIN = {
@@ -646,7 +650,7 @@ qingqiu_flood.10 = { #Event for GC, if they exist
 	}
 }
 
-qingqiu_flood.11 = { #Positive response from GC
+qingqiu_flood.11 = { #Positive response from GCO
 	type = country_event
 	placement = ROOT
 	title = qingqiu_flood.11.t
@@ -669,10 +673,24 @@ qingqiu_flood.11 = { #Positive response from GC
 		name = qin_flood_value
 		add = -2
 		}
+	add_modifier = {
+		name = qin_help_from_gc
+		months = 11
+		}
+	c:QIN = {
+		set_owes_obligation_to = {
+			country = c:GCO
+			setting = yes
+			}
+		}
+	change_relations = {
+		country = c:GCO
+		value = 15
+		}
 	}
 }
 
-qingqiu_flood.12 = { #Negative response from GC
+qingqiu_flood.12 = { #Negative response from GCO
 	type = country_event
 	placement = ROOT
 	title = qingqiu_flood.12.t
@@ -685,7 +703,11 @@ qingqiu_flood.12 = { #Negative response from GC
 	duration = 1
 
 	option = {
-		trigger_event = { id = qingqiu_flood.14 days = 20 }	
+		trigger_event = { id = qingqiu_flood.14 days = 20 }
+	change_relations = {
+		country = c:GCO
+		value = -25
+		}		
 	}
 }
 
@@ -727,21 +749,41 @@ qingqiu_flood.14 = { #Bringing in fresh water
 	change_variable = {
         name = qin_flood_value
         add = 1
-		}	
+		}
+	s:STATE_SHANGU_SIWANG.region_state:QIN = {
+			add_modifier = {
+				name = qin_aqueducts
+				months -1
+			}
+		}
+	s:STATE_QINGQIU.region_state:QIN = {
+			add_modifier = {
+				name = qin_aqueducts
+				months -1
+			}
+		}
 	}
 	option = { #Extract it from the rivers
 		trigger_event = { id = qingqiu_flood.15 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 2
-		}	
-	}	
+		}
+		add_modifier = {
+			name = qin_river_extraction
+			months = 21
+		}
+	}
 	option = { #Tell people to boil sea water
 		trigger_event = { id = qingqiu_flood.15 days = 20 }
 	change_variable = {
         name = qin_flood_value
         add = 3
-		}		
+		}
+	add_modifier = {
+		name = qin_boiling_seawater
+		months = 11
+		}
 	}	
 	
 }
@@ -762,19 +804,19 @@ qingqiu_flood.15 = { #Long-term rebuilding
 	custom_tooltip = {
 		text = qingqiu_flood.15.tt
 		}
-		trigger_event = { id = qingqiu_flood.18 days = 20 }
+	trigger_event = { id = qingqiu_flood.18 days = 20 }
 	}
 	option = { #The middle option
 	custom_tooltip = {
 		text = qingqiu_flood.15.tt
 		}
-		trigger_event = { id = qingqiu_flood.18 days = 20 }
+	trigger_event = { id = qingqiu_flood.18 days = 20 }
 	}
 	option = { #Pay a little now, long effect of debuff
 	custom_tooltip = {
 		text = qingqiu_flood.15.tt
 		}
-		trigger_event = { id = qingqiu_flood.18 days = 20 }
+	trigger_event = { id = qingqiu_flood.18 days = 20 }
 	}
 }
 
@@ -790,6 +832,9 @@ qingqiu_flood.16 = { #No reply from Sanbao UNITARY
 	
 	duration = 1
 	
+	option = {
+	}
+	
 }
 
 qingqiu_flood.17 = { #No reply from Sanbao FEDERAL/UNREFORMED
@@ -803,6 +848,9 @@ qingqiu_flood.17 = { #No reply from Sanbao FEDERAL/UNREFORMED
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
 	
 	duration = 1
+	
+	option = {
+	}
 	
 }
 
