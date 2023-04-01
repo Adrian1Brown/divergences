@@ -518,6 +518,10 @@ qingqiu_flood.7 = { #What to do about shantytowns
         name = qin_flood_value
         add = 1
 		}
+	add_modifier = {
+		name = qin_funding_shanties
+		months = 21
+	}
 	s:STATE_SHANGU_SIWANG.region_state:QIN = {
 		add_modifier = {
 			name = qin_new_towns
@@ -539,6 +543,10 @@ qingqiu_flood.7 = { #What to do about shantytowns
         name = qin_flood_value
         add = 2
 		}
+	add_modifier = {
+		name = qin_relocating_shanties
+		months = 11
+		}
 	name = qingqiu_flood.7.b	
 	}
 
@@ -548,6 +556,10 @@ qingqiu_flood.7 = { #What to do about shantytowns
         name = qin_flood_value
         add = 3
 		}
+	add_modifier = {
+		name = qin_slightly_upset
+		months = 11
+	}
 	name = qingqiu_flood.7.c
 	}
 }

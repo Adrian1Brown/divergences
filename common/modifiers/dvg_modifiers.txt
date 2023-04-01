@@ -212,6 +212,16 @@ qin_relocated_to_xiazhou = {
 	country_influence_mult = -0.1
 }
 
+qin_funding_shanties = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_tax_income_add = -3000
+}
+
+qin_relocating_shanties = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_tax_income_add - 1500
+	state_radicals_from_sol_change_mult = -0.03
+}
 # interest_group_ig_landowners_approval_add = -3
 # interest_group_ig_landowners_pol_str_mult = -0.05
 # building_group_bg_agriculture_throughput_mult = 0.1
