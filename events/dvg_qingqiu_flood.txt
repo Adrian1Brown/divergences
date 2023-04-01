@@ -981,6 +981,18 @@ qingqiu_flood.11 = { #Positive response from GCO
 		country = c:GCO
 		value = 15
 		}
+	s:STATE_SHANGU_SIWANG.region_state:QIN = {
+			convert_population = {
+				target = rel:catholic 
+				value = 0.05
+			}
+		}
+	s:STATE_SHANGU_SIWANG.region_state:QIN = {
+			convert_population = {
+				target = rel:catholic 
+				value = 0.03
+			}
+		}
 	name = qingqiu_flood.11.a
 	}
 }
@@ -1276,7 +1288,7 @@ qingqiu_flood.18 = { #Sucess!
 	}
 	
 	option = {
-	qingqiu_flood.18.a
+	name = qingqiu_flood.18.a
 	}
 	
 }
