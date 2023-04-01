@@ -518,13 +518,13 @@ qingqiu_flood.7 = { #What to do about shantytowns
         name = qin_flood_value
         add = 1
 		}
-	s:STATE_SHANGU_SIWANG = {
+	s:STATE_SHANGU_SIWANG.region_state:QIN = {
 		add_modifier = {
 			name = qin_new_towns
 			months = 16
 			}
 		}
-	s:STATE_QINGQIU = {
+	s:STATE_QINGQIU.region_state:QIN = {
 		add_modifier = {
 			name = qin_new_towns
 			months = 16
@@ -569,6 +569,18 @@ qingqiu_flood.8 = { #Christians offer aid
 	change_variable = {
         name = qin_flood_value
         add = -2
+		}
+		s:STATE_SHANGU_SIWANG.region_state:QIN = {
+			convert_population = {
+				target = rel:catholic 
+				value = 0.05
+			}
+		}
+		s:STATE_SHANGU_SIWANG.region_state:QIN = {
+			convert_population = {
+				target = rel:catholic 
+				value = 0.05
+			}
 		}
 	}
 	option = { #Don't accept aid
