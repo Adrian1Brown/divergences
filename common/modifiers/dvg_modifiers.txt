@@ -214,7 +214,7 @@ qin_relocated_to_xiazhou = {
 
 qin_funding_shanties = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	country_tax_income_add = -3000
+	country_tax_income_add = -5000
 }
 
 qin_relocating_shanties = {
