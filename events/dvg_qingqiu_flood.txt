@@ -398,37 +398,133 @@ qingqiu_flood.5 = { #Break the levees?
 	option = { #Break the levees
 	name = qingqiu_flood.5.a
 		trigger_event = { id = qingqiu_flood.8 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 1
-		}
 	add_modifier = {
 		name = qin_damanged_canals
 		months = 11
+		}
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 0
+			}
 		}
 	}
 	option = { #Don't do anything
 	name = qingqiu_flood.5.b
 		trigger_event = { id = qingqiu_flood.8 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 3
-		}
 	add_modifier = {
 		name = qin_really_upset_farmers
 		months = 21
+		}
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 4
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
 		}
 	}
 	option = { #Dig temporary canals
 	name = qingqiu_flood.5.c
 		trigger_event = { id = qingqiu_flood.8 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 2
-		}
 	add_modifier = {
 		name = qin_damanged_canals
 		months = 11
+		}
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
 		}
 	}
 }
@@ -447,16 +543,80 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 	
 	option = { #Send in prisoners
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 1
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 0
+			}
 		}
 	}
 	option = { #Send in farmers
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 3
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 4
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
 		}
 	s:STATE_QINGQIU.region_state:QIN = {
 		add_radicals = {
@@ -489,9 +649,41 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 	}
 	option = { #Send in the army
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 2
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
 		}
 		add_modifier = {
 			name = qin_saviours
@@ -514,9 +706,41 @@ qingqiu_flood.7 = { #What to do about shantytowns
 	
 	option = { #Build new towns for them
 		trigger_event = { id = qingqiu_flood.9 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 1
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
 		}
 	add_modifier = {
 		name = qin_funding_shanties
@@ -539,27 +763,91 @@ qingqiu_flood.7 = { #What to do about shantytowns
 
 	option = { #Relocate them outside the cities
 		trigger_event = { id = qingqiu_flood.9 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 2
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
 		}
-	add_modifier = {
-		name = qin_relocating_shanties
-		months = 11
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
+		}
+		add_modifier = {
+			name = qin_relocating_shanties
+			months = 11
 		}
 	name = qingqiu_flood.7.b	
 	}
 
 	option = { #Leave them to their fate
 		trigger_event = { id = qingqiu_flood.9 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 3
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 4
+			}
 		}
-	add_modifier = {
-		name = qin_slightly_upset
-		months = 11
-	}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		add_modifier = {
+			name = qin_slightly_upset
+			months = 11
+		}
 	name = qingqiu_flood.7.c
 	}
 }
@@ -744,11 +1032,131 @@ qingqiu_flood.14 = { #Bringing in fresh water
 	
 	duration = 1
 	
+	option = { #Extract it from the rivers
+		trigger_event = { id = qingqiu_flood.15 days = 20 }
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
+		}
+		add_modifier = {
+			name = qin_river_extraction
+			months = 21
+		}
+	}
+	
+	option = { #Tell people to boil sea water
+		trigger_event = { id = qingqiu_flood.15 days = 20 }
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 5
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 4
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 3
+			}
+		}
+	add_modifier = {
+		name = qin_boiling_seawater
+		months = 11
+		}
+	}	
+	
 	option = { #Build acqueducts
 		trigger_event = { id = qingqiu_flood.15 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 1
+		if = { #NOT REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 2
+			}
+		}
+		if = { #REFORMED
+			limit = {
+				c:QIN = {
+					has_modifier = qin_federal_sys_better
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 1
+			}
+		}
+		if = { #UNITARY
+			limit = {
+				c:QIN = {
+					NOR = {
+						has_modifier = qin_federal_sys
+						has_modifier = qin_federal_sys_better
+					}
+				}
+			}
+		change_variable = {
+			name = qin_flood_value
+			add = 0
+			}
 		}
 	s:STATE_SHANGU_SIWANG.region_state:QIN = {
 			add_modifier = {
@@ -762,30 +1170,7 @@ qingqiu_flood.14 = { #Bringing in fresh water
 				months -1
 			}
 		}
-	}
-	option = { #Extract it from the rivers
-		trigger_event = { id = qingqiu_flood.15 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 2
-		}
-		add_modifier = {
-			name = qin_river_extraction
-			months = 21
-		}
-	}
-	option = { #Tell people to boil sea water
-		trigger_event = { id = qingqiu_flood.15 days = 20 }
-	change_variable = {
-        name = qin_flood_value
-        add = 3
-		}
-	add_modifier = {
-		name = qin_boiling_seawater
-		months = 11
-		}
 	}	
-	
 }
 
 qingqiu_flood.15 = { #Long-term rebuilding 
