@@ -88,6 +88,7 @@ qingqiu_flood.1 = { #Initial response to the flood
 			add = 1
 			}
 		}
+	default = yes
 	}
 	option = { #Evacuate the cities
 		if = {
@@ -280,6 +281,7 @@ qingqiu_flood.2 = { #Dealing with the rest of the country UNREFORMED
             name = qin_flood_value
             add = 5
 		}
+	default = yes
 	}
 }
 
@@ -316,6 +318,7 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
         name = qin_flood_value
         add = 0
 		}
+	default = yes
 	}
 	option = { #We will endure
 	name = qingqiu_flood.3.c
@@ -355,6 +358,7 @@ qingqiu_flood.4 = { #Dealing with the rest of the country FEDERAL
 			name = qin_less_auth
 			months = 11
 		}
+	default = yes
 	}
 
 	option = { #Xiazhou will serve as the new seat of government
@@ -482,6 +486,7 @@ qingqiu_flood.5 = { #Break the levees?
 			add = 2
 			}
 		}
+	default = yes
 	}
 	option = { #Dig temporary canals
 	name = qingqiu_flood.5.c
@@ -579,6 +584,7 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 			add = 0
 			}
 		}
+	default = yes
 	}
 	option = { #Send in farmers
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
@@ -849,6 +855,7 @@ qingqiu_flood.7 = { #What to do about shantytowns
 			months = 11
 		}
 	name = qingqiu_flood.7.c
+	default = yes
 	}
 }
 
@@ -883,6 +890,7 @@ qingqiu_flood.8 = { #Christians offer aid
 			}
 		}
 	name = qingqiu_flood.8.a
+	default = yes
 	}
 	option = { #Don't accept aid
 		trigger_event = { id = qingqiu_flood.6 days = 20 }
@@ -907,6 +915,7 @@ qingqiu_flood.9 = { #Contact Gran Colombia - spread christianity a lil too
 			trigger_event = { id = qingqiu_flood.10 days = 20 }	
 		}
 	name = qingqiu_flood.9.a
+	default = yes
 	}
 	option = { #Nah we're fine without them
 		trigger_event = { id = qingqiu_flood.14 days = 20 }
@@ -940,6 +949,7 @@ qingqiu_flood.10 = { #Event for GCO, if they exist
 		c:QIN = {
 			trigger_event = { id = qingqiu_flood.12 days = 20 }
 		}
+	default = yes
 	name = qingqiu_flood.10.b
 	}
 }
@@ -1184,16 +1194,17 @@ qingqiu_flood.14 = { #Bringing in fresh water
 	s:STATE_SHANGU_SIWANG.region_state:QIN = {
 			add_modifier = {
 				name = qin_aqueducts
-				months -1
+				months = -1
 			}
 		}
 	s:STATE_QINGQIU.region_state:QIN = {
 			add_modifier = {
 				name = qin_aqueducts
-				months -1
+				months = -1
 			}
 		}
 	name = qingqiu_flood.14.c
+	default = yes
 	}	
 }
 
@@ -1223,6 +1234,7 @@ qingqiu_flood.15 = { #Long-term rebuilding
 		}
 	trigger_event = { id = qingqiu_flood.18 days = 20 }
 	name = qingqiu_flood.15.b
+	default = yes
 	}
 	
 	option = { #Pay a little now, long effect of debuff
