@@ -882,9 +882,11 @@ qingqiu_flood.8 = { #Christians offer aid
 				value = 0.05
 			}
 		}
+	name = qingqiu_flood.8.a
 	}
 	option = { #Don't accept aid
 		trigger_event = { id = qingqiu_flood.6 days = 20 }
+	name = qingqiu_flood.8.b
 	}
 }
 
@@ -904,9 +906,11 @@ qingqiu_flood.9 = { #Contact Gran Colombia - spread christianity a lil too
 		c:GCO = {
 			trigger_event = { id = qingqiu_flood.10 days = 20 }	
 		}
+	name = qingqiu_flood.9.a
 	}
 	option = { #Nah we're fine without them
 		trigger_event = { id = qingqiu_flood.14 days = 20 }
+	name = qingqiu_flood.9.b
 	}
 }
 
@@ -930,11 +934,13 @@ qingqiu_flood.10 = { #Event for GCO, if they exist
 		name = qin_helping_qq
 		months = 11
 		}
+	name = qingqiu_flood.10.a
 	}
 	option = { #Negative response
 		c:QIN = {
 			trigger_event = { id = qingqiu_flood.12 days = 20 }
 		}
+	name = qingqiu_flood.10.b
 	}
 }
 
@@ -975,6 +981,7 @@ qingqiu_flood.11 = { #Positive response from GCO
 		country = c:GCO
 		value = 15
 		}
+	name = qingqiu_flood.11.a
 	}
 }
 
@@ -995,7 +1002,8 @@ qingqiu_flood.12 = { #Negative response from GCO
 	change_relations = {
 		country = c:GCO
 		value = -25
-		}		
+		}
+	name = qingqiu_flood.12.a
 	}
 }
 
@@ -1017,6 +1025,7 @@ qingqiu_flood.13 = { #Event for when GC doesn't exist - charity from an industri
         name = qin_flood_value
         add = -1
 		}
+	name = qingqiu_flood.13.a
 	}
 }
 
@@ -1074,6 +1083,7 @@ qingqiu_flood.14 = { #Bringing in fresh water
 			name = qin_river_extraction
 			months = 21
 		}
+	name = qingqiu_flood.14.a
 	}
 	
 	option = { #Tell people to boil sea water
@@ -1118,6 +1128,7 @@ qingqiu_flood.14 = { #Bringing in fresh water
 		name = qin_boiling_seawater
 		months = 11
 		}
+	name = qingqiu_flood.14.b
 	}	
 	
 	option = { #Build acqueducts
@@ -1170,6 +1181,7 @@ qingqiu_flood.14 = { #Bringing in fresh water
 				months -1
 			}
 		}
+	name = qingqiu_flood.14.c
 	}	
 }
 
@@ -1190,18 +1202,23 @@ qingqiu_flood.15 = { #Long-term rebuilding
 		text = qingqiu_flood.15.tt
 		}
 	trigger_event = { id = qingqiu_flood.18 days = 20 }
+	name = qingqiu_flood.15.a
 	}
+	
 	option = { #The middle option
 	custom_tooltip = {
 		text = qingqiu_flood.15.tt
 		}
 	trigger_event = { id = qingqiu_flood.18 days = 20 }
+	name = qingqiu_flood.15.b
 	}
+	
 	option = { #Pay a little now, long effect of debuff
 	custom_tooltip = {
 		text = qingqiu_flood.15.tt
 		}
 	trigger_event = { id = qingqiu_flood.18 days = 20 }
+	name = qingqiu_flood.15.c
 	}
 }
 
@@ -1218,6 +1235,7 @@ qingqiu_flood.16 = { #No reply from Sanbao UNITARY
 	duration = 1
 	
 	option = {
+	name = qingqiu_flood.16.a
 	}
 	
 }
@@ -1235,6 +1253,7 @@ qingqiu_flood.17 = { #No reply from Sanbao FEDERAL/UNREFORMED
 	duration = 1
 	
 	option = {
+	name = qingqiu_flood.17.a
 	}
 	
 }
@@ -1257,6 +1276,7 @@ qingqiu_flood.18 = { #Sucess!
 	}
 	
 	option = {
+	qingqiu_flood.18.a
 	}
 	
 }
