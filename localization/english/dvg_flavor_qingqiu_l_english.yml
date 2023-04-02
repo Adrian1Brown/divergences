@@ -8,13 +8,13 @@
  je_qingqiu_reform_into_unitary_state_reason:0 "The federal system has worked well in the past, yet the governors don't have the interests of the people in mind, by removing them from the equation we will be able to serve the people directly!"
  je_qingqiu_flood:0 "The Great Flood of 1862"
  je_qingqiu_flood_goal:0 "We have endured the flood"
- je_qingqiu_flood_reason:0 "With our capital underwater, the valley flooded and our people suffering, our nation has been paralyzed! We must overcome this crisis, should we wish to maintain stability. NOTE - YOU WILL FAIL IF THE PROGRESS BAR FILLS UP, YOUR GOAL IS TO STOP THIS FROM HAPPENING"
+ je_qingqiu_flood_reason:0 "With Sanbao underwater, the valley flooded and our people suffering, our nation has been paralyzed! We must overcome this crisis, should we wish to maintain stability. NOTE - YOU WILL FAIL IF THE PROGRESS BAR FILLS UP, YOUR GOAL IS TO STOP THIS FROM HAPPENING"
  
  ###Events###
  
  qingqiu_federation.1.t:0 "The Federation of Qingqiu"
  qingqiu_federation.1.d:0 "The Status of the Federation"
- qingqiu_federation.1.f:0 "The Federation of Qingqiu is by no means a well-functioning federation. Our provinces have a great level of autonomy, having differing laws and even their own armies, making governance from Sanbao difficult. The provinces are actively working against our federation, making it tough to pass laws and taking a share of the taxes imposed on our people for themselves! However the federation is not without benefits, with our long history of federalism, beginning in the 1600s, we have found what works for the Qingqiuan people. Yet now the question remains; We must reform, but how? Do we reform our federation, or begin a new era as a unitary state?"
+ qingqiu_federation.1.f:0 "The Federation of Qingqiu is by no means a well-functioning federation. Our provinces have a great level of autonomy, having differing laws and even their own armies, making governance from  difficult. The provinces are actively working against our federation, making it tough to pass laws and taking a share of the taxes imposed on our people for themselves! However the federation is not without benefits, with our long history of federalism, beginning in the 1600s, we have found what works for the Qingqiuan people. Yet now the question remains; We must reform, but how? Do we reform our federation, or begin a new era as a unitary state?"
  qingqiu_federation.1.a:0 "We must choose our path carefully"
  qingqiu_federation.2.t:0 "The Great Qingqiu Flood of 1862!"
  qingqiu_federation.2.d:0 "The Flood"
@@ -72,12 +72,12 @@
  qingqiu_flood.7.a:0 "Construct new homes for them in any space possible!"
  qingqiu_flood.7.b:0 "Relocate them to outside the city in new towns"
  qingqiu_flood.7.c:0 "Leave them to their fate - we have nothing to spare for them"
- qingqiu_flood.8.t:0
- qingqiu_flood.8.d:0
- qingqiu_flood.8.f:0
- qingqiu_flood.8.a:0
- qingqiu_flood.8.b:0
- qingqiu_flood.9.t:0
+ qingqiu_flood.8.t:0 "Christians offer aid"
+ qingqiu_flood.8.d:0 "With the ongoing crisis, several religious groups of primarily Christians have come forward offering to help our ailing people"
+ qingqiu_flood.8.f:0 "Several more prominent Christian groups have come forwards, bringing with them food and all the services that come with a large group of able-bodied people. Whilst Christians are tolerated, some of our more zealous citizens fear the Christians and are skeptical of their motives, however these people tend to be the minority. Whatever their motives may be, they have come before us and have already made smaller efforts to assist the worst-off already, the time has come to address their presence; shall we accept their help, or turn them away?
+ qingqiu_flood.8.a:0 "We accept their aid, we will take all the help we can get"
+ qingqiu_flood.8.b:0 "This is nothing but a ploy to push their religion!"
+ qingqiu_flood.9.t:0 "A Telegram to [ROOT.GetCountry.GetCapital.GetCityHubName]"
  qingqiu_flood.9.d:0
  qingqiu_flood.9.f:0
  qingqiu_flood.9.a:0
