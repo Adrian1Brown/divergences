@@ -18,7 +18,7 @@
  qingqiu_federation.1.a:0 "We must choose our path carefully"
  qingqiu_federation.2.t:0 "The Great Qingqiu Flood of 1862!"
  qingqiu_federation.2.d:0 "The Flood"
- qingqiu_federation.2.f:0 "Two months of rain, snow and sleet have battered the hinterland of Qingqiu, coating the Dongji Mountains in a thick blanket of snow. Now thunder dominates the sky along the mountains in an intense winter storm, bringing in an unusual warmth from the south. The culmination of this has resulted in a flood of monumental proportions, great waves of snow-melt washed down the down the valleys of the Dongji Mountains, flooding the fertile valley that lay across Qingqiu and Shangu Siwang, before finally reaching the streets of Jinhe, Yingzhou and Sanbao! With our agricultral heartland flooded under great tracts of water, telegraph poles deep underwater and our people suffering, it is clear that we must make quick and decisive, yet careful action to avoid a greater crisis. Wether or not we have reformed our nation, we must move forwards and stop the suffering of our people!"
+ qingqiu_federation.2.f:0 "Two months of rain, snow and sleet have battered the hinterland of Qingqiu, coating the Dongji Mountains in a thick blanket of snow. Now thunder dominates the sky along the mountains in an intense winter storm, bringing in an unusual warmth from the south. The culmination of this has resulted in a flood of monumental proportions, great waves of snow-melt washed down the down the valleys of the Dongji Mountains, flooding the fertile valley that lay across Qingqiu and Shangu Siwang, before finally reaching the streets of Jinhe, Yingzhou and Sanbao! With our agricultural heartland flooded under great tracts of water, telegraph poles deep underwater and our people suffering, it is clear that we must make quick and decisive, yet careful action to avoid a greater crisis. Wether or not we have reformed our nation, we must move forwards and stop the suffering of our people!"
  qingqiu_federation.2.a:0 "We must begin recovery immediately"
  qingqiu_federation.3.t:0 "The Federation of Qingqiu"
  qingqiu_federation.3.d:0 "Success: A Reformed Federation"
@@ -56,7 +56,7 @@
  qingqiu_flood.4.c:0 "We are strong, the Federation will survive!"
  qingqiu_flood.5.t:0 "The Levees of Sanbao and the Valley"
  qingqiu_flood.5.d:0 "Our great system of canals and levees, whilst built to prevent diasters, has only come to prolong the presence of floodwaters! We must address this!"
- qingqiu_flood.5.f:0 "The complex and intricate system of irrigation channels, ditches, canals and rivers in the valley were built over the span of several centuries, they serve to both irrigate the large swathes of farmland, as well as mitigate any minor floods and surges. However now this dense system of waterways is only stifling our efforts! The canals are full of silt and irrigation ditches only let more water wash into vast crop feilds and pastures! We could break the levees to relieve the valley somewhat, however this would mean that we would need to take some time to rebuild them, likely affecting our agricultral throughput for a few years. Whilst it may be more expensive and more difficult, we could dig temporary drainage channels through the farmland in order to quickly flush out a large portion of the floodwaters. Of course, simply letting nature take its course is an option too, perhaps the flood waters will receed overtime?"
+ qingqiu_flood.5.f:0 "The complex and intricate system of irrigation channels, ditches, canals and rivers in the valley were built over the span of several centuries, they serve to both irrigate the large swathes of farmland, as well as mitigate any minor floods and surges. However now this dense system of waterways is only stifling our efforts! The canals are full of silt and irrigation ditches only let more water wash into vast crop feilds and pastures! We could break the levees to relieve the valley somewhat, however this would mean that we would need to take some time to rebuild them, likely affecting our agricultural throughput for a few years. Whilst it may be more expensive and more difficult, we could dig temporary drainage channels through the farmland in order to quickly flush out a large portion of the floodwaters. Of course, simply letting nature take its course is an option too, perhaps the flood waters will receed overtime?"
  qingqiu_flood.5.a:0 "Break the levees - they will provide the most relief!"
  qingqiu_flood.5.b:0 "We don't need to take action here"
  qingqiu_flood.5.c:0 "Dig drainage channels, we cannot let this water remain any longer!"
@@ -72,32 +72,32 @@
  qingqiu_flood.7.a:0 "Construct new homes for them in any space possible!"
  qingqiu_flood.7.b:0 "Relocate them to outside the city in new towns"
  qingqiu_flood.7.c:0 "Leave them to their fate - we have nothing to spare for them"
- qingqiu_flood.8.t:0 "Christians offer aid"
+ qingqiu_flood.8.t:0 "Christians Offer Aid"
  qingqiu_flood.8.d:0 "With the ongoing crisis, several religious groups of primarily Christians have come forward offering to help our ailing people"
  qingqiu_flood.8.f:0 "Several more prominent Christian groups have come forwards, bringing with them food and all the services that come with a large group of able-bodied people. Whilst Christians are tolerated, some of our more zealous citizens fear the Christians and are skeptical of their motives, however these people tend to be the minority. Whatever their motives may be, they have come before us and have already made smaller efforts to assist the worst-off already, the time has come to address their presence; shall we accept their help, or turn them away?
  qingqiu_flood.8.a:0 "We accept their aid, we will take all the help we can get"
  qingqiu_flood.8.b:0 "This is nothing but a ploy to push their religion!"
- qingqiu_flood.9.t:0 "A Telegram to [ROOT.GetCountry.GetCapital.GetCityHubName]"
- qingqiu_flood.9.d:0
- qingqiu_flood.9.f:0
- qingqiu_flood.9.a:0
- qingqiu_flood.9.b:0
- qingqiu_flood.10.t:0
- qingqiu_flood.10.d:0
- qingqiu_flood.10.f:0
- qingqiu_flood.10.a:0
- qingqiu_flood.10.b:0
- qingqiu_flood.11.t:0
- qingqiu_flood.11.d:0
- qingqiu_flood.11.f:0
- qingqiu_flood.11.a:0
- qingqiu_flood.12.t:0
- qingqiu_flood.12.d:0
- qingqiu_flood.12.f:0
- qingqiu_flood.12.a:0
- qingqiu_flood.13.t:0
- qingqiu_flood.13.d:0
- qingqiu_flood.13.f:0
+ qingqiu_flood.9.t:0 "A Telegram to [ROOT.GetCountry.GetCapital.GetCityHubName]?"
+ qingqiu_flood.9.d:0 "Gran Colombia; the only country that we can turn to, despite our relationship with the Colombians, asking for help seems to be our only option"
+ qingqiu_flood.9.f:0 "To our north, the Japanese, hostile and looking for any opportunity to strike, like a vulture to a corpse. To the West, the Franks across the Mingxing Shan, only able to send too little too late. But to our south, the Colombians, their nation has been through many hardships, we have struggled against the same enemy and live on Arcadian together, yet the conflict over the Lusitanian lands has put a strain on our relationship. Regardless, we shall turn to them, hoping that they are willing to give us even a little to help us. At least for now, that is our only option, other than sending them nothing at all."
+ qingqiu_flood.9.a:0 "Send the telegram, only the Colombians can save us"
+ qingqiu_flood.9.b:0 "This was a silly proposal, they cannot help us"
+ qingqiu_flood.10.t:0 "The Qingqiu Federation Sends us a Telegram"
+ qingqiu_flood.10.d:0 "1862 has not looked upon Qingqiu kindly, sending them a great flood to the agricultural heartland of their nation, leaving their people suffering. They have turned to us, seeking help"
+ qingqiu_flood.10.f:0 ""We as Qingqiuans have struggled together with the Colombians, standing side-by-side like brothers as we fight for our nation, our people and each other. The Qingqiuan people are now suffering once more, an immense flood has drowned Sanbao Valley, turning towns into nothing but wet piles of wood, showing no mercy to the farmers and townspeople, much like the Spanish did to us during our combined struggle against them. We come to the Gran Colombians again, seeking aid in our struggle, whilst our relationship has been strained over the Lusitanian question, we ask that the Colombians see past this issue and show magnanimity as they have before." - an excerpt from the telegram reads."
+ qingqiu_flood.10.a:0 "We struggled as brothers before, we shall help the Qingqiuan people again"
+ qingqiu_flood.10.b:0 "They are little but fools for thinking that we will give them any aid"
+ qingqiu_flood.11.t:0 "The Colombian Response"
+ qingqiu_flood.11.d:0 "Recalling our nations' shared history and brushing aside our conflicts, the Colombians have agreed to send us aid!"
+ qingqiu_flood.11.f:0 ""The Colombians and Qingqiuans fought alongside each other, abandoning our brothers is simply not an option! The Colombian people will provide what we can to the Qingqiuan people, the Colombian people wish our Qingqiuan brothers the best fortunes in this crisis" - the opening lines of the response. With the aid the Colombians are providing us along with a small division of their authorities, our people will surely suffer no longer! However, we should now consider ourselves to be in Colombia's debt."
+ qingqiu_flood.11.a:0 "Words cannot express our gratitude!"
+ qingqiu_flood.12.t:0 "The Colombian Response"
+ qingqiu_flood.12.d:0 "Brushing aside our nations' shared history and recalling our conflcits, the petty Colombians have refused to send us aid!"
+ qingqiu_flood.12.f:0 ""We commend the bravery of the Qingqiuan diplomats for sending us such a message and we shall stop there. The Colombian Government will provide no aid for the Qingqiuan people, we have our own reasoning and we believe that our money would be better spent on our own people and interests." - A portion of the response from the Gran Colombian telegram. It is clear that the Colombians have decided to drive a wedge between us, whether it be because they have thier own problems or are simply too selfish. An unfortunate outcome, to be sure."
+ qingqiu_flood.12.a:0 "This will only serve to drive a wedge between our nations"
+ qingqiu_flood.13.t:0 "An Industrialist Offers Aid!"
+ qingqiu_flood.13.d:0 "A prominent Plantegenian industrailist from Dayan has offered us a large sum of money to help with the recovery efforts"
+ qingqiu_flood.13.f:0 "Maurice Flachant; a Plantegenian man who found his wealth in the gold fields of Dayan and later investing in primarily infrastructure throughout the Mingxing Shan, amassing a large fortune and becoming a prominent personality within Dahuang as well as wider region of Dayan. Following his arrival in Sanbao and seeing both this as a chance to expand his businesses as well as assist in the recovery efforts, he has made us an offer, giving us a sum of money to help with the recovery, as well as rebuilding much of the lost infrastructure, which would be owned by Mr. Flachant of course!"
  qingqiu_flood.13.a:0
  qingqiu_flood.14.t:0
  qingqiu_flood.14.d:0
