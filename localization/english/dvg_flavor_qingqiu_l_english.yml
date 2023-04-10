@@ -98,31 +98,31 @@
  qingqiu_flood.13.t:0 "An Industrialist Offers Aid!"
  qingqiu_flood.13.d:0 "A prominent Plantegenian industrailist from Dayan has offered us a large sum of money to help with the recovery efforts"
  qingqiu_flood.13.f:0 "Maurice Flachant; a Plantegenian man who found his wealth in the gold fields of Dayan and later investing in primarily infrastructure throughout the Mingxing Shan, amassing a large fortune and becoming a prominent personality within Dahuang as well as wider region of Dayan. Following his arrival in Sanbao and seeing both this as a chance to expand his businesses as well as assist in the recovery efforts, he has made us an offer, giving us a sum of money to help with the recovery, as well as rebuilding much of the lost infrastructure, which would be owned by Mr. Flachant of course!"
- qingqiu_flood.13.a:0
- qingqiu_flood.14.t:0
- qingqiu_flood.14.d:0
- qingqiu_flood.14.f:0
- qingqiu_flood.14.a:0
- qingqiu_flood.14.b:0
- qingqiu_flood.14.c:0
- qingqiu_flood.15.t:0
- qingqiu_flood.15.d:0
- qingqiu_flood.15.f:0
- qingqiu_flood.15.a:0
- qingqiu_flood.15.b:0
- qingqiu_flood.15.c:0
- qingqiu_flood.16.t:0
- qingqiu_flood.16.d:0
- qingqiu_flood.16.f:0
- qingqiu_flood.16.a:0
- qingqiu_flood.17.t:0
- qingqiu_flood.17.d:0
- qingqiu_flood.17.f:0
- qingqiu_flood.17.a:0
- qingqiu_flood.18.t:0
- qingqiu_flood.18.d:0
- qingqiu_flood.18.f:0
- qingqiu_flood.18.a:0
+ qingqiu_flood.13.a:0 "A fantastic investment!"
+ qingqiu_flood.14.t:0 "The Fresh Water Problem"
+ qingqiu_flood.14.d:0 "Fresh water has become harder to find as rivers and piping has been decimated by the floodwater"
+ qingqiu_flood.14.f:0 "Before the flood, people in the cities and towns would find water in their taps, others further large amounts of infrastructure would take their water from the streams, rivers and channels of the valley. Yet now as the waters receed, our water infrastructure has been devastated! We could invest in a better and more durable system of aqueducts, however they would be expensive, unlike simply extracting water from whatever clean rivers can find! Some people from coastal communities have began to boil seawater in order to make fresh water, maybe we can tell our people to do the same?"
+ qingqiu_flood.14.a:0 "Find clean rivers and take it from there!"
+ qingqiu_flood.14.b:0 "Invest in a large system of aqueducts"
+ qingqiu_flood.14.c:0 "Tell people to boil seawater!"
+ qingqiu_flood.15.t:0 "Long-Term Rebuilding"
+ qingqiu_flood.15.d:0 "Now with the worst behind us, we are left to pick up the pieces that lay around us"
+ qingqiu_flood.15.f:0 "Finally the waters have become bearable, in many areas the water is little but a bad memory. The people of the valley and Qingqiu have provided all that they can to those suffering, now as we take the time to rebuild our towns, we must step in and help them out!"
+ qingqiu_flood.15.a:0 "Give all that we can, make the reconstruction quick!"
+ qingqiu_flood.15.b:0 "Proceed at a reasonable pace, let our people suffer no longer"
+ qingqiu_flood.15.c:0 "Let us rebuild slowly, we cannot guarantee the stability of our coffers"
+ qingqiu_flood.16.t:0 "No Reply from [ROOT.GetCountry.GetCapital.GetCityHubName]"
+ qingqiu_flood.16.d:0 "Sanbao has fallen silent and so have we, we have failed Qingqiu and its people"
+ qingqiu_flood.16.f:0 "Whether it be our own ineptitude, the forces against us or all those who conspired to see the downfall of Qingqiu, we find ourselves with the blood on our hands as the country goes dark around us. The waters came and swept our towns away, swept our farms away and swept our people away, now so have we, sweeping the Qingqiu State into the footnotes of history as little more than just another failed attempt at a nation. Now as we slink back into the darkening depths of what remains, we have nothing to turn to as our people disown us, knowing that we were the ones to tear families apart and strip too many people of their livelihoods. Qingqiu is dead and we have killed it."
+ qingqiu_flood.16.a:0 "The unitary experiment was a failure"
+ qingqiu_flood.17.t:0 "No Reply from [ROOT.GetCountry.GetCapital.GetCityHubName]"
+ qingqiu_flood.17.d:0 "Sanbao has fallen silent and so have we, we have failed Qingqiu and its people"
+ qingqiu_flood.17.f:0 "It was foolish to believe that a nation such as ours could survive this flood, with too little from the provinces and too ineffective of a government, it should have been clear form 1818 that we could not stand against anything. The waters run red with the blood of our people, perhaps if we had done things differently we could have prevented such a tradgedy, but we have only ourselves to blame. Now the provinces turn on us, realising that [ROOT.GetCountry.GetCapital.GetCityHubName] is nothing more than a sham! Leaving us behind as Qingqiu returns to its roots as a mess of states dotting the land, it is clear that the fate of our people is to be subjigated by others once more."
+ qingqiu_flood.17.a:0 "We won against the Spanish and the Japanese, but not ourselves"
+ qingqiu_flood.18.t:0 "The End of Our Woes"
+ qingqiu_flood.18.d:0 "We have managed to escape one of the worst years Qingqiu has faced yet, this nothing but a triumph for Qingqiu and our people!"
+ qingqiu_flood.18.f:0 "Through the commitment of our people, the charity of others and maybe even just a little bit of luck, Qingqiu has escaped the waters and lives on! Now we bare the scars of a great tragedy, despite this, our people take to the streets and celebrate as life returns to normal. We may finally lean back in our chairs as the disaster of 1862 fades into the background and will soon becoming nothing more than a page in the history book of Qingqiu!"
+ qingqiu_flood.18.a:0 "We have weathered the storm, Qingqiu will live on!"
 
  ###Wars###
  
