@@ -585,6 +585,7 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 			}
 		}
 	default_option = yes
+	name = qingqiu_flood.6.a
 	}
 	option = { #Send in farmers
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
@@ -652,7 +653,9 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 		name = qin_farmers_dying
 		months = 11
 		}
+	name = qingqiu_flood.6.c
 	}
+	
 	option = { #Send in the army
 		trigger_event = { id = qingqiu_flood.7 days = 20 }
 		if = { #NOT REFORMED
@@ -695,6 +698,7 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 			name = qin_saviours
 			months = 11
 		}
+	name = qingqiu_flood.6.b
 	}
 }
 
