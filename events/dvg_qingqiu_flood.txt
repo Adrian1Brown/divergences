@@ -711,7 +711,20 @@ qingqiu_flood.7 = { #What to do about shantytowns
 	duration = 1
 	
 	option = { #Build new towns for them
-		trigger_event = { id = qingqiu_flood.9 days = 20 }
+		if = {
+			limit = {
+				exists = c:GCO
+				}
+			trigger_event = { id = qingqiu_flood.9 days = 20 }
+			}
+		if = {
+			limit = {
+				NOT = {
+					exists = c:GCO
+				}
+			}
+			trigger_event = {id = qingqiu_flood.13 days = 20 }
+		}
 		if = { #NOT REFORMED
 			limit = {
 				c:QIN = {
@@ -768,7 +781,20 @@ qingqiu_flood.7 = { #What to do about shantytowns
 	}
 
 	option = { #Relocate them outside the cities
-		trigger_event = { id = qingqiu_flood.9 days = 20 }
+		if = {
+			limit = {
+				exists = c:GCO
+				}
+			trigger_event = { id = qingqiu_flood.9 days = 20 }
+			}
+		if = {
+			limit = {
+				NOT = {
+					exists = c:GCO
+				}
+			}
+			trigger_event = {id = qingqiu_flood.13 days = 20 }
+		}
 		if = { #NOT REFORMED
 			limit = {
 				c:QIN = {
@@ -813,7 +839,20 @@ qingqiu_flood.7 = { #What to do about shantytowns
 	}
 
 	option = { #Leave them to their fate
-		trigger_event = { id = qingqiu_flood.9 days = 20 }
+		if = {
+			limit = {
+				exists = c:GCO
+				}
+			trigger_event = { id = qingqiu_flood.9 days = 20 }
+			}
+		if = {
+			limit = {
+				NOT = {
+					exists = c:GCO
+				}
+			}
+			trigger_event = {id = qingqiu_flood.13 days = 20 }
+		}
 		if = { #NOT REFORMED
 			limit = {
 				c:QIN = {
