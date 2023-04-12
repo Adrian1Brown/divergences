@@ -86,7 +86,7 @@ je_qingqiu_flood = {
 					}
 				}
 			}			
-		trigger_event = { id = qingqiu_flood.18 }
+		trigger_event = { id = qingqiu_flood.17 }
 		}
 		if = {
 			limit = {
@@ -97,7 +97,7 @@ je_qingqiu_flood = {
 					}
 				}
 			}		
-		trigger_event = { id = qingqiu_flood.17 }
+		trigger_event = { id = qingqiu_flood.16 }
 		}
 		remove_global_variable = qin_flood_active
 	}
@@ -153,10 +153,12 @@ je_qingqiu_yicheng_railway = {
 		any_scope_state = {
 			state_region = s:STATE_YICHENG
 			has_building = building_railway
+			has_building = building_government_administration
 		}
 		any_scope_state = {
 			state_region = s:STATE_DAYAN
 			has_building = building_railway
+			has_building = building_government_administration
 		}
 		any_scope_state = {
 			state_region = s:STATE_QINGQIU
@@ -166,5 +168,6 @@ je_qingqiu_yicheng_railway = {
 	
 	on_complete = {
 		set_global_variable = trans_dayan_railway_done
+		trigger_event = { id = qingqiu_yicheng_railway.1 }
 	}
 }

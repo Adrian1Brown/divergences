@@ -268,6 +268,12 @@ qin_moved_to_xiazhou = {
 	country_authority_mult = -0.1
 }
 
+qin_yicheng_railway = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_migration_pull_mult = 0.15
+	state_standard_of_living_add = 1
+}
+
 dvg_mid_way = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	state_standard_of_living_add = 4

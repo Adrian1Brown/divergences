@@ -1325,7 +1325,7 @@ qingqiu_flood.14 = { #Bringing in fresh water
 		}
 	add_modifier = {
 		name = qin_aqueducts_funding
-		duration = -1
+		months = -1
 		}
 	name = qingqiu_flood.14.b
 	}	

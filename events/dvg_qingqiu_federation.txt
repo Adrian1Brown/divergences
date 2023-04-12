@@ -150,3 +150,33 @@ qingqiu_federation.4 = { #Unitary State
 		default_option = yes
 	}
 }
+
+qingqiu_yicheng_railway.1 = {
+	type = country_event
+	placement = ROOT
+	title = qingqiu_yicheng_railway.1.t
+	desc = qingqiu_yicheng_railway.1.d
+	flavor = qingqiu_yicheng_railway.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+	
+	option = {
+		s:STATE_DAYAN.region_state:QIN = {
+			add_modifier = {
+				name = qin_yicheng_railway
+				months = 101
+			}
+		}
+	s:STATE_YICHENG.region_state:QIN = {
+			add_modifier = {
+				name = qin_yicheng_railway
+				months = -101
+			}
+		}
+	name = qingqiu_yicheng_railway.1.a
+	}
+}
