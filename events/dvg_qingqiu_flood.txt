@@ -15,6 +15,8 @@ qingqiu_flood.1 = { #Initial response to the flood
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
 	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	
 	duration = 1
 	
 	option = { #Save the farmers
@@ -242,7 +244,13 @@ qingqiu_flood.2 = { #Dealing with the rest of the country UNREFORMED
 	flavor = qingqiu_flood.2.f
 	
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/asia/union_leader"
+	
+	event_image = {
+		video = "gfx/event_pictures/asia_union_leader.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 	
@@ -292,8 +300,14 @@ qingqiu_flood.3 = { #Dealing with the rest of the country UNITARY
 	desc = qingqiu_flood.3.d
 	flavor = qingqiu_flood.3.f
 	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
 	
 	duration = 1
 
@@ -345,6 +359,8 @@ qingqiu_flood.4 = { #Dealing with the rest of the country FEDERAL
 		video = "gfx/event_pictures/unspecific_devastation.bk2"
 	}
 	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	
 	duration = 1
 
 	option = { #Temporarily delegate more powers to the provinces
@@ -394,8 +410,14 @@ qingqiu_flood.5 = { #Break the levees?
 	desc = qingqiu_flood.5.d
 	flavor = qingqiu_flood.5.f
 	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 	
@@ -541,8 +563,14 @@ qingqiu_flood.6 = { #Send some sort of force to help rebuild
 	desc = qingqiu_flood.6.d
 	flavor = qingqiu_flood.6.f
 	
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_capitalists_meeting.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/capitalists_meeting"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 	
@@ -709,8 +737,14 @@ qingqiu_flood.7 = { #What to do about shantytowns
 	desc = qingqiu_flood.7.d
 	flavor = qingqiu_flood.7.f
 	
+	event_image = {
+		video = "gfx/event_pictures/middleeast_middleclass_cafe.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/middleclass_cafe"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 	
@@ -909,8 +943,14 @@ qingqiu_flood.8 = { #Christians offer aid
 	desc = qingqiu_flood.8.d
 	flavor = qingqiu_flood.8.f
 	
+	event_image = {
+		video = "gfx/event_pictures/southamerica_christianity.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/christianity"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 
 	duration = 1
 	
@@ -948,8 +988,14 @@ qingqiu_flood.9 = { #Contact Gran Colombia - spread christianity a lil too
 	desc = qingqiu_flood.9.d
 	flavor = qingqiu_flood.9.f
 	
+	event_image = {
+		video = "gfx/event_pictures/asia_politician_parliament_motion.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 	
@@ -974,7 +1020,13 @@ qingqiu_flood.10 = { #Event for GCO, if they exist
 	flavor = qingqiu_flood.10.f
 	
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+	
+	event_image = {
+		video = "gfx/event_pictures/southamerica_aristocrats.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	
 	duration = 1
 
@@ -1004,8 +1056,14 @@ qingqiu_flood.11 = { #Positive response from GCO
 	desc = qingqiu_flood.11.d
 	flavor = qingqiu_flood.11.f
 	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/signed_contract"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 	
@@ -1058,7 +1116,13 @@ qingqiu_flood.12 = { #Negative response from GCO
 	flavor = qingqiu_flood.12.f
 	
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/middleeast/courtroom_upheaval"
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_vandalized_storefront.bk2"
+	}
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 
@@ -1079,8 +1143,14 @@ qingqiu_flood.13 = { #Event for when GC doesn't exist - charity from an industri
 	desc = qingqiu_flood.13.d
 	flavor = qingqiu_flood.13.f
 	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_trains.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 
@@ -1101,8 +1171,14 @@ qingqiu_flood.14 = { #Bringing in fresh water
 	desc = qingqiu_flood.14.d
 	flavor = qingqiu_flood.14.f
 	
+	event_image = {
+		video = "gfx/event_pictures/asia_dead_cattle_poor_harvest.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/asia/dead_cattle_poor_harvest"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 	
@@ -1194,7 +1270,7 @@ qingqiu_flood.14 = { #Bringing in fresh water
 		name = qin_boiling_seawater
 		months = 11
 		}
-	name = qingqiu_flood.14.b
+	name = qingqiu_flood.14.c
 	}	
 	
 	option = { #Build acqueducts
@@ -1247,7 +1323,11 @@ qingqiu_flood.14 = { #Bringing in fresh water
 				months = -1
 			}
 		}
-	name = qingqiu_flood.14.c
+	add_modifier = {
+		name = qin_aqueducts_funding
+		duration = -1
+		}
+	name = qingqiu_flood.14.b
 	}	
 }
 
@@ -1258,8 +1338,14 @@ qingqiu_flood.15 = { #Long-term rebuilding
 	desc = qingqiu_flood.15.d
 	flavor = qingqiu_flood.15.f
 	
+	event_image = {
+		video = "gfx/event_pictures/asia_politician_parliament_motion.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/asia/politician_parliament_motion"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 1
 	
@@ -1290,6 +1376,16 @@ qingqiu_flood.15 = { #Long-term rebuilding
 }
 
 qingqiu_flood.16 = { #No reply from Sanbao UNITARY
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_devastation.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	
 	type = country_event
 	placement = ROOT
 	title = qingqiu_flood.16.t
@@ -1308,6 +1404,16 @@ qingqiu_flood.16 = { #No reply from Sanbao UNITARY
 }
 
 qingqiu_flood.17 = { #No reply from Sanbao FEDERAL/UNREFORMED
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_devastation.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	
 	type = country_event
 	placement = ROOT
 	title = qingqiu_flood.17.t
@@ -1332,8 +1438,14 @@ qingqiu_flood.18 = { #Sucess!
 	desc = qingqiu_flood.18.d
 	flavor = qingqiu_flood.18.f
 	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	
 	duration = 1
 	

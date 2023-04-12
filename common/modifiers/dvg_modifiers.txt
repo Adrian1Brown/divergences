@@ -226,8 +226,12 @@ qin_relocating_shanties = {
 qin_aqueducts = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	state_infrastructure_add = -15
-	country_tax_income_add = -1500
 	building_group_bg_agriculture_throughput_mult = 0.15
+}
+
+qin_aqueducts_funding = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_tax_income_add = -3000
 }
 
 qin_river_extraction = {
