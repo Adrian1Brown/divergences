@@ -9,6 +9,8 @@
  je_qingqiu_flood:0 "The Great Flood of 1862"
  je_qingqiu_flood_goal:0 "We have endured the flood"
  je_qingqiu_flood_reason:0 "With Sanbao underwater, the valley flooded and our people suffering, our nation has been paralyzed! We must overcome this crisis, should we wish to maintain stability. NOTE - YOU WILL FAIL IF THE PROGRESS BAR FILLS UP, YOUR GOAL IS TO STOP THIS FROM HAPPENING"
+ je_qingqiu_yicheng_railway:0 "The Cross-Dayan Railway"
+ je_qingqiu_yicheng_railway_reason:0 "With our recently consolidated control over Yicheng and our new expertise in railway construction, we should invest in a railway across the Mingxing Shan, a site at Changfeng has been chosen as an ideal location for an end station for a line from Sanbao."
  
  ###Events###
  

@@ -61,7 +61,9 @@ je_qingqiu_flood = {
 #Might change this later if it's confusing
 
 #This JE is triggered by the first event in the flood sequence
-	
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
 	fail = {
 		NOT = {
 			has_global_variable = qin_flood_active
@@ -110,5 +112,59 @@ je_qingqiu_flood = {
 	
 	current_value = {
 		value = var:qin_flood_value
+	}
+}
+
+je_qingqiu_yicheng_railway = {
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+	
+	is_shown_when_inactive = {
+		is_player = yes
+		NOT = { has_global_variable = trans_dayan_railway_done }
+		OR = {
+			any_scope_state = {
+				state_region = s:STATE_YICHENG
+				percent > 0.2
+				owner = ROOT
+			}
+			any_scope_state = {
+				state_region = s:STATE_DAYAN
+			}
+			any_scope_state = {
+				state_region = s:STATE_QINGQIU
+			}
+		}
+	}
+	
+	possible = {
+		has_technology_researched = railways
+		any_scope_state = {
+			state_region = s:STATE_YICHENG
+		}
+		any_scope_state = {
+			state_region = s:STATE_DAYAN
+		}
+		any_scope_state = {
+			state_region = s:STATE_QINGQIU
+		}
+	}
+	
+	complete = {
+		any_scope_state = {
+			state_region = s:STATE_YICHENG
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_DAYAN
+			has_building = building_railway
+		}
+		any_scope_state = {
+			state_region = s:STATE_QINGQIU
+			has_building = building_railway
+		}	
+	}
+	
+	on_complete = {
+		set_global_variable = trans_dayan_railway_done
 	}
 }
