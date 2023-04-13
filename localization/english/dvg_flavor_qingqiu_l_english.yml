@@ -35,7 +35,56 @@
  qingqiu_federation.5.d:0 "After many weeks of hard and grueling work by our valiant builders, we've finally completed the railway across Dayan, linking Changfeng and Sanbao!"
  qingqiu_federation.5.f:0 "Weaving through the mountains, past the gold fields of Dayan and along the Grey River, stretches a band of wood and steel, seemlingly endless should you stand in the middle of it. As the first train begins its journey from Sanbao to Changfeng, our railway builders sit back in Sanbao, proudly looking down the line as the joint Golden Sleeper monuments are built in Sanbao and Changfeng. Now eager passangers and prospectors in Sanbao stand at the platform waiting for the next train to bring them to the goldfields out west, creating a new wave of migration in Qingqiu!"
  qingqiu_federation.5.a:0 "Onwards to Changfeng!"
+ 
+ #Breakaway starter events
+ 
+ qingqiu_federation.6.t:0 "Nisemono"
+ qingqiu_federation.6.d:0 ""Qingqiu itself was nothing but a fraudulent state, that is clear. Yet now I wonder, will I lead Xiazhou to a similar fate?""
+ qingqiu_federation.6.f:0 "On the site of the former Juban District, begins the construction of a government building, shovels breaking the dirt as people gather in the a hotel converted into a temporary government house. Inside sits a nervous Jun Iwasaki, the current head of Xiazhou, only in charge by slim chance, and perhaps unluckily. Iwasaki never expected to lead the city she called home, yet with the death of her father and prominent Sanbao League member, Yuji Iwasaki and older brothers in the floods of Sanbao, Jun Iwasaki now finds herself as the last capable member of the still powerful Iwasaki trading family. However now the newly formed Xiazhou League expects great things from her, someone never intended to be little more than someone standing politely in the background, with little experience, she must bring her best for Xiazhou!"
+ qingqiu_federation.6.a:0 "Tabun... Tabun..."
+ qingqiu_federation.7.t:0 "Circumstances"
+ qingqiu_federation.7.d:0
+ qingqiu_federation.7.f:0
+ qingqiu_federation.7.a:0
+ qingqiu_federation.8.t:0 "Two Step"
+ qingqiu_federation.8.d:0
+ qingqiu_federation.8.f:0
+ qingqiu_federation.8.a:0
+ qingqiu_federation.9.t:0 "Over the Hill"
+ qingqiu_federation.9.d:0
+ qingqiu_federation.9.f:0
+ qingqiu_federation.9.a:0
+ qingqiu_federation.10.t:0 "Weather"
+ qingqiu_federation.10.d:0
+ qingqiu_federation.10.f:0
+ qingqiu_federation.10.a:0
+ qingqiu_federation.11.t:0 "Everything's Alright"
+ qingqiu_federation.11.d:0
+ qingqiu_federation.11.f:0
+ qingqiu_federation.11.a:0
+ qingqiu_federation.12.t:0 "Holy Hell"
+ qingqiu_federation.12.d:0
+ qingqiu_federation.12.f:0
+ qingqiu_federation.12.a:0
+ qingqiu_federation.13.t:0 "Neighbour"
+ qingqiu_federation.13.d:0
+ qingqiu_federation.13.f:0
+ qingqiu_federation.13.a:0
+ qingqiu_federation.14.t:0 "Loneliness"
+ qingqiu_federation.14.d:0
+ qingqiu_federation.14.f:0
+ qingqiu_federation.14.a:0
+ qingqiu_federation.15.t:0 "Out of State"
+ qingqiu_federation.15.d:0
+ qingqiu_federation.15.f:0
+ qingqiu_federation.15.a:0
+ qingqiu_federation.16.t:0 "Nominated"
+ qingqiu_federation.16.d:0
+ qingqiu_federation.16.f:0
+ qingqiu_federation.16.a:0
+ 
  #Flood Chain
+ 
  qingqiu_flood.1.t:0 "Swift Actions"
  qingqiu_flood.1.d:0 "With the valley flooded and our towns underwater, we must take action immediately!"
  qingqiu_flood.1.f:0 "The valley has been the most badly affected area of the entire country, with its large fields and pastures it's obvious that we cannot standby idly by whilst our people suffer! As of now, our farmers are struggling to stay afloat, we have recieved reports that some of them have been clinging to telegraph poles in order to stay above water, every day that passes will only result in more casualties. Reports have also come from towns in the valley regarding people stranded on rooftops with what little they have left, rescuing them would take time but result in a brief economic slowdown!"
