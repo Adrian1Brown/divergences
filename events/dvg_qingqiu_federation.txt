@@ -151,12 +151,12 @@ qingqiu_federation.4 = { #Unitary State
 	}
 }
 
-qingqiu_yicheng_railway.1 = {
+qingqiu_federation.5 = {
 	type = country_event
 	placement = ROOT
-	title = qingqiu_yicheng_railway.1.t
-	desc = qingqiu_yicheng_railway.1.d
-	flavor = qingqiu_yicheng_railway.1.f
+	title = qingqiu_federation.5.t
+	desc = qingqiu_federation.5.d
+	flavor = qingqiu_federation.5.f
 
 	event_image = {
 		video = "gfx/event_pictures/unspecific_trains.bk2"
@@ -177,6 +177,6 @@ qingqiu_yicheng_railway.1 = {
 				months = -101
 			}
 		}
-	name = qingqiu_yicheng_railway.1.a
+	name = qingqiu_federation.5.a
 	}
 }

@@ -115,7 +115,7 @@ je_qingqiu_flood = {
 	}
 }
 
-je_qingqiu_yicheng_railway = {
+je_qingqiu_yicheng_railway = { #Yicheng Railway/Sanbao-Changfeng Railway 
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	
 	is_shown_when_inactive = {
@@ -168,6 +168,6 @@ je_qingqiu_yicheng_railway = {
 	
 	on_complete = {
 		set_global_variable = trans_dayan_railway_done
-		trigger_event = { id = qingqiu_yicheng_railway.1 }
+		trigger_event = { id = qingqiu_federation.5 }
 	}
 }
