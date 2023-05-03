@@ -192,3 +192,15 @@ je_qingqiu_yicheng_railway = { #Yicheng Railway/Sanbao-Changfeng Railway
 #		}
 #	}	
 #}
+
+je_sanbao_city_is_dead = {
+
+}
+
+je_sanbao_state_is_dead = {
+
+}
+
+je_black_sheep = { #jomg the references!!!!!
+
+}

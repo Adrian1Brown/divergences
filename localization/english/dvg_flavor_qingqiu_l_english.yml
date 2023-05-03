@@ -11,6 +11,9 @@
  je_qingqiu_flood_reason:0 "With Sanbao underwater, the valley flooded and our people suffering, our nation has been paralyzed! We must overcome this crisis, should we wish to maintain stability. NOTE - YOU WILL FAIL IF THE PROGRESS BAR FILLS UP, YOUR GOAL IS TO STOP THIS FROM HAPPENING"
  je_qingqiu_yicheng_railway:0 "The Cross-Dayan Railway"
  je_qingqiu_yicheng_railway_reason:0 "With our recently consolidated control over Yicheng and our new expertise in railway construction, we should invest in a railway across the Mingxing Shan, a site at Changfeng has been chosen as an ideal location for an end station for a line from Sanbao."
+ je_sanbao_city_is_dead:0 "Rebuilding the Dead City"
+ je_sanbao_state_is_dead:0 "The Dead State"
+ je_black_sheep:0 "The Black Sheep Province"
  
  ###Events###
  
@@ -40,7 +43,7 @@
  
  qingqiu_federation.6.t:0 "Nisemono"
  qingqiu_federation.6.d:0 ""Qingqiu itself was nothing but a fraudulent state, that is clear. Yet now I wonder, will I lead Xiazhou to a similar fate?""
- qingqiu_federation.6.f:0 "On the site of the former Juban District, begins the construction of a government building, shovels breaking the dirt as people gather in the a hotel converted into a temporary government house. Inside sits a nervous Jun Iwasaki, the current head of Xiazhou, only in charge by slim chance, and perhaps unluckily. Iwasaki never expected to lead the city she called home, yet with the death of her father and prominent Sanbao League member, Yuji Iwasaki and older brothers in the floods of Sanbao, Jun Iwasaki now finds herself as the last capable member of the still powerful Iwasaki trading family. However now the newly formed Xiazhou League expects great things from her, someone never intended to be little more than someone standing politely in the background, with little experience, she must bring her best for Xiazhou!"
+ qingqiu_federation.6.f:0 "On the site of the former Juban District, begins the construction of a government building, shovels breaking the dirt as people gather in the a hotel converted into a temporary government house. Inside sits a nervous Jun Iwasaki, the current head of Xiazhou, only in charge by slim chance, and perhaps unluckily. Iwasaki never expected to lead the city she called home, yet with the death of her father and prominent Sanbao League member, Yuji Iwasaki and older brothers in the floods of Sanbao, Jun Iwasaki now finds herself as the last capable member of the still powerful Iwasaki trading family. However now the newly formed Japanese-dominated Xiazhou League expects great things from her, along with the non-Japanese Xiazhouans, yet with increased Japanese presence and a growing power base, tensions are building between the powerful Japanese minority and the Xiazhouans, neither of which hope for a return to 1818... Now Iwasaki leads an increasingly tense Xiazhou, as someone never intended to be little more than someone standing politely in the background, with little experience, she must bring her best for Xiazhou!"
  qingqiu_federation.6.a:0 "Tabun... Tabun..."
  qingqiu_federation.7.t:0 "Circumstances"
  qingqiu_federation.7.d:0
@@ -59,9 +62,9 @@
  qingqiu_federation.10.f:0
  qingqiu_federation.10.a:0
  qingqiu_federation.11.t:0 "Everything's Alright"
- qingqiu_federation.11.d:0
- qingqiu_federation.11.f:0
- qingqiu_federation.11.a:0
+ qingqiu_federation.11.d:0 "Piece by piece, day by day, body by body, Sanbao moves slowly in these dark days, a city in decay."
+ qingqiu_federation.11.f:0 "A city dragged through hell and left to live for eternity in a pool of stagnant, bloodstained water. Whether the city itself is to blame or the people in it, justice is served in the end, with both meeting their demise in watery graves with no remorse. As the city around us crumbles, we can only wander the streets with those that have lost it all, uprighting fallen shelves and pretending that the smell isn't as bad as it really is. The valley behinds us screams no more, the farmers fall silent as the waterlogged feilds only serve as the resting places for all those that toiled within them, the remnants of Jinhe wash out into the valley as the only thing the valley has left to provide. The symbol of Qingqiu, the catalyst of the rebellion against the foreign invaders, the trading capital of Qingqiu, a city incomparable to any other, now lies in ruin, dead in the water as it lays with the people that inhabited it. Sanbao is dead and so is everything in it."
+ qingqiu_federation.11.a:0 "We'll pick up again, build back, but never cross the line"
  qingqiu_federation.12.t:0 "Holy Hell"
  qingqiu_federation.12.d:0
  qingqiu_federation.12.f:0

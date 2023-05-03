@@ -164,6 +164,8 @@ qingqiu_federation.5 = {
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/trains"
 	
+	duration = 1
+	
 	option = {
 		s:STATE_DAYAN.region_state:QIN = {
 			add_modifier = {
@@ -187,6 +189,15 @@ qingqiu_federation.6 = { #Xiazhou starter
 	title = qingqiu_federation.6.t
 	desc = qingqiu_federation.6.d
 	flavor = qingqiu_federation.6.f
+	
+	duration = 2
+	
+	option = {
+		add_journal_entry = {
+		type = je_black_sheep
+		}
+	name = qingqiu_federation.6.a
+	}
 }
 
 qingqiu_federation.7 = { #Currently unnamed Chunggu nation starter
@@ -227,6 +238,37 @@ qingqiu_federation.11 = { #Sanbao starter
 	title = qingqiu_federation.11.t
 	desc = qingqiu_federation.11.d
 	flavor = qingqiu_federation.11.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_devastation.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/devastation"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	
+	duration = 2
+	
+	option = {
+	name = qingqiu_federation.11.a
+		add_journal_entry = {
+			type = je_sanbao_city_is_dead
+		}
+		add_journal_entry = {
+			type = je_sanbao_state_is_dead
+		}
+		s:STATE_QINGQIU.region_state:QIN = {
+			add_modifier = {
+				name = qin_the_dead_city
+				months = -1
+			}
+		}
+		add_modifier = {
+			name = qin_the_dead_state
+			months = -1
+		}
+	}
 }
 
 qingqiu_federation.12 = { #Shangu Siwang starter
