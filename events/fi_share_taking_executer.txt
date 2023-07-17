@@ -49,9 +49,6 @@ fi_share_taking_executer.1 = {
 				country = root
 				value = scope:take_share_target_state.state_total_number_capped_10_times_3
 			}
-			scope:take_share_target_state.state_region = {
-				add_claim = prev
-			}
 		}
 
 		change_infamy = scope:take_share_target_state.state_total_number_capped_10
