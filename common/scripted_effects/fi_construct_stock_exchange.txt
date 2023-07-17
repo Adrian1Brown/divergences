@@ -191,10 +191,10 @@
 						NOT = { has_game_rule = autonomous_investment_pool }
 					}
 				} 
-				market_capital = { start_building_construction = building_investment_industry_low }
+				capital = { start_building_construction = building_investment_industry_low }
 			}
 			else = {
-				market_capital = { start_privately_funded_building_construction = building_investment_industry_low }
+				capital = { start_privately_funded_building_construction = building_investment_industry_low }
 			}
 		}
 		else_if = {
@@ -208,10 +208,10 @@
 						NOT = { has_game_rule = autonomous_investment_pool }
 					}
 				} 
-				market_capital = { start_building_construction = building_investment_industry }
+				capital = { start_building_construction = building_investment_industry }
 			}
 			else = {
-				market_capital = { start_privately_funded_building_construction = building_investment_industry }
+				capital = { start_privately_funded_building_construction = building_investment_industry }
 			}
 		}
 		else_if = {
@@ -225,10 +225,10 @@
 						NOT = { has_game_rule = autonomous_investment_pool }
 					}
 				} 
-				market_capital = { start_building_construction = building_investment_industry_very_high }
+				capital = { start_building_construction = building_investment_industry_very_high }
 			}
 			else = {
-				market_capital = { start_privately_funded_building_construction = building_investment_industry_very_high }
+				capital = { start_privately_funded_building_construction = building_investment_industry_very_high }
 			}
 		}
 		else = {
@@ -239,10 +239,10 @@
 						NOT = { has_game_rule = autonomous_investment_pool }
 					}
 				} 
-				market_capital = { start_building_construction = building_investment_industry_high }
+				capital = { start_building_construction = building_investment_industry_high }
 			}
 			else = {
-				market_capital = { start_privately_funded_building_construction = building_investment_industry_high }
+				capital = { start_privately_funded_building_construction = building_investment_industry_high }
 			}
 		}
 	}

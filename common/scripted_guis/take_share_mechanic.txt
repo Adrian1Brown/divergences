@@ -435,7 +435,7 @@ buy_share_scripted_gui = {
 		}
 		OR = {
 			scope:investor_country = {
-				market_capital = { owner = scope:investor_country }
+				capital = { owner = scope:investor_country }
 			}
 			scope:invested_building = {
 				owner = scope:investor_country
