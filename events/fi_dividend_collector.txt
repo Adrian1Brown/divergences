@@ -54,17 +54,11 @@ fi_dividend_collector.1 = {
 					}
 				}
 			}
-			market_capital = {
+			capital = {
 				create_building_effect = {
 					BUILDING_TYPE = building_investment_industry
 				}
 			}
-		}
-		if = {
-			limit = {
-				NOT = { market_capital = { owner = root } }
-			}
-			trigger_event = { id = fi_dividend_collector.2 }
 		}
 		every_scope_building = {
 			limit = {
@@ -73,7 +67,7 @@ fi_dividend_collector.1 = {
 			state = {
 				if = {
 					limit = {
-						NOT = { root.market_capital = this }
+						NOT = { root.capital = this }
 					}
 					remove_building = building_investment_industry
 				}
@@ -90,7 +84,7 @@ fi_dividend_collector.1 = {
 							has_variable = total_invested_building
 							prev.level < var:total_invested_building
 						}
-						market_capital = {
+						capital = {
 							create_building_effect = {
 								BUILDING_TYPE = building_investment_industry
 							}
@@ -134,88 +128,6 @@ fi_dividend_collector.1 = {
 	}
 }
 
-fi_dividend_collector.2 = {
-	type = country_event
-	duration = 3
-	title = fi_dividend_collector.2.t
-	desc = fi_dividend_collector.2.d
-	flavor = fi_dividend_collector.2.f
-
-	event_image = {
-		video = "unspecific_vandalized_storefront"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_trade.dds"
-
-	trigger = {
-		any_scope_building = {
-			is_building_type = building_investment_industry
-		}
-		
-		NOT = {
-			market_capital = { owner = root }
-		}
-	}
-
-	immediate = {
-		every_scope_state = {
-			limit = {
-				has_building = building_investment_industry
-			}
-			remove_building = building_investment_industry
-		}
-		save_scope_as = fi_target_country
-		fi_id_building_executor = {
-			FUNCTION = cancel_queued_construction
-		}
-		
-		if = {
-			limit = {
-				any_country = {
-					has_variable = mine_exclusive
-					var:mine_exclusive = root.var:fi_identification
-				}
-			}
-			random_country = {
-				limit = {
-					has_variable = mine_exclusive
-					var:mine_exclusive = root.var:fi_identification
-				}
-				remove_variable = mine_exclusive
-				remove_modifier = mine_exclusive_right
-			}
-		}
-		if = {
-			limit = {
-				has_variable = total_invested_building
-				var:total_invested_building > 0
-			}
-			save_scope_as = investor_country
-			every_state = {
-				limit = {
-					NOT = {	owner = root }
-				}
-				fi_id_remove_all_from_state_country = yes
-			}
-		}
-		remove_variable = fi_identification
-		remove_variable = total_invested_building
-
-	}
-	option = { 
-		name = fi_dividend_collector.2.a
-		default_option = yes
-		add_radicals = {
-			value = small_radicals
-			strata = rich
-		}
-		custom_tooltip = {
-			text = fi_market_collapse
-		}
-	}
-}
 
 fi_dividend_collector.3 = {
 	type = country_event
@@ -298,7 +210,6 @@ fi_dividend_collector.3 = {
 	}
 }
 
-
 fi_dividend_collector.4 = {
 	type = country_event
 	hidden = yes
@@ -338,7 +249,7 @@ fi_dividend_collector.6 = {
 	trigger = {
 		has_variable = fi_identification
 		has_variable = number_of_foreign_construction
-		market_capital = {
+		capital = {
 			OR = {
 				NOT = {
 					any_scope_building = {

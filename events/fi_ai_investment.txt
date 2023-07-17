@@ -9,7 +9,6 @@ fi_ai_investment.1 = {
 			has_variable = fi_identification
 			country_rank >= rank_value:great_power
 		}
-		market_capital = { owner = root }
 		has_wasted_construction = yes
 		investment_pool > 500000
 		construction_queue_private_duration < 31
