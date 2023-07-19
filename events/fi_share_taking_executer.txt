@@ -621,9 +621,6 @@ fi_share_taking_executer.7 = {
 	option = { 
 		name = fi_share_taking_executer.7.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -725,9 +722,6 @@ fi_share_taking_executer.8 = {
 	option = { 
 		name = fi_share_taking_executer.8.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -829,9 +823,6 @@ fi_share_taking_executer.9 = {
 	option = { 
 		name = fi_share_taking_executer.9.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -933,9 +924,6 @@ fi_share_taking_executer.10 = {
 	option = { 
 		name = fi_share_taking_executer.10.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1038,9 +1026,6 @@ fi_share_taking_executer.11 = {
 	option = { 
 		name = fi_share_taking_executer.11.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1143,9 +1128,7 @@ fi_share_taking_executer.13 = {
 	option = { 
 		name = fi_share_taking_executer.13.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
+
 			owner = {
 				change_relations = {
 					country = root
@@ -1248,9 +1231,6 @@ fi_share_taking_executer.15 = {
 	option = { 
 		name = fi_share_taking_executer.15.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1353,9 +1333,6 @@ fi_share_taking_executer.21 = {
 	option = { 
 		name = fi_share_taking_executer.21.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1457,9 +1434,6 @@ fi_share_taking_executer.23 = {
 	option = { 
 		name = fi_share_taking_executer.23.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1561,9 +1535,6 @@ fi_share_taking_executer.25 = {
 	option = { 
 		name = fi_share_taking_executer.25.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1665,9 +1636,6 @@ fi_share_taking_executer.27 = {
 	option = { 
 		name = fi_share_taking_executer.27.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1769,9 +1737,6 @@ fi_share_taking_executer.29 = {
 	option = { 
 		name = fi_share_taking_executer.29.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1873,9 +1838,6 @@ fi_share_taking_executer.31 = {
 	option = { 
 		name = fi_share_taking_executer.31.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -1977,9 +1939,6 @@ fi_share_taking_executer.33 = {
 	option = { 
 		name = fi_share_taking_executer.33.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -2081,9 +2040,6 @@ fi_share_taking_executer.35 = {
 	option = { 
 		name = fi_share_taking_executer.35.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -2185,9 +2141,6 @@ fi_share_taking_executer.37 = {
 	option = { 
 		name = fi_share_taking_executer.37.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
@@ -2289,9 +2242,6 @@ fi_share_taking_executer.39 = {
 	option = { 
 		name = fi_share_taking_executer.39.b
 		scope:tech_target_state = {
-			state_region = {
-				add_claim = root
-			}
 			owner = {
 				change_relations = {
 					country = root
