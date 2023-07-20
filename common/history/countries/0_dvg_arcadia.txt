@@ -69,7 +69,7 @@
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_homesteading
 		activate_law = law_low_income_tax
-		activate_law = law_chartered_mandates
+		activate_law = law_type:law_debtors_prisons
 				
 		effect_starting_per_capita_tax = yes
 
@@ -133,7 +133,7 @@
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_homesteading
 		activate_law = law_low_income_tax
-		activate_law = law_chartered_mandates
+		activate_law = law_type:law_debtors_prisons
 				
 		effect_starting_per_capita_tax = yes
 

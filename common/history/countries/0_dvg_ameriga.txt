@@ -219,7 +219,7 @@
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_low_income_tax
-		activate_law = law_chartered_mandates
+		activate_law = law_type:law_debtors_prisons
 				
 		effect_starting_per_capita_tax = yes
 
