@@ -519,3 +519,425 @@ else_if = {
                 }
         }
 }
+
+
+every_id_building_executor = {
+
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_coal_mine
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_iron_mine
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_lead_mine
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_sulfur_mine
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_gold_mine
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_logging_camp
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_fishing_wharf
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_whaling_station
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_rubber_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_oil_rig
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_railway
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_coffee_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_cotton_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_dye_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_opium_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_tea_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_tobacco_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_sugar_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_banana_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_silk_plantation
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_rye_farm
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_wheat_farm
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_rice_farm
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_maize_farm
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_millet_farm
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_livestock_ranch
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_food_industry
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_textile_mills
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_furniture_manufacturies
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_glassworks
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_tooling_workshops
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_paper_mills
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_chemical_plants
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_synthetics_plants
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_steel_mills
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_motor_industry
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_shipyards
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_war_machine_industry
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_electrics_industry
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_arms_industry
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_munition_plants
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_arts_academy
+        }
+every_id_executor = {
+                FUNCTION = $FUNCTION$
+                BUILDING = building_power_plant
+        }
+}
+
+
+every_id_executor = {
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 1 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 1
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 2 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 2
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 3 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 3
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 4 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 4
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 5 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 5
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 6 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 6
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 7 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 7
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 8 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 8
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 9 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 9
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 10 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 10
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 11 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 11
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 12 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 12
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 13 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 13
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 14 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 14
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 15 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 15
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 16 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 16
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 17 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 17
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 18 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 18
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 19 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 19
+    }
+}
+if = {
+   limit = {
+      any_country = { 
+         has_variable = fi_identification
+         var:fi_identification = 20 
+      }
+   }
+   $FUNCTION$ = {
+      BUILDING = $BUILDING$
+      ID = 20
+    }
+}
+
+}

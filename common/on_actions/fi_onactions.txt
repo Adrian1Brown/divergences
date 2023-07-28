@@ -66,22 +66,11 @@ fi_construction_queue_clear_actions ={
 
 on_yearly_pulse_country = {
 	on_actions = {
-		breakIf_notGreatPower_actions
-		fi_list_clear_actions
 		ai_construct_actions
 		mine_exclusive_actions
 	}
 }
-breakIf_notGreatPower_actions ={
-	events = {
-		fi_dividend_collector.2
-	}
-}
-fi_list_clear_actions ={
-	events = {
-		fi_dividend_collector.5
-	}
-}
+
 ai_construct_actions ={
 	events = {
 		fi_ai_investment.1
@@ -96,4 +85,13 @@ mine_exclusive_actions ={
 		1 = fi_share_taking_executer.41
 	}
 }
-
+on_five_year_pulse_country = {
+	on_actions = {
+		fi_list_clear_actions
+	}
+}
+fi_list_clear_actions ={
+	events = {
+		fi_dividend_collector.5
+	}
+}
