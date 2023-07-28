@@ -124,6 +124,7 @@ destroyed_total_number_capped_10 = {
 ai_construct_how_many_building = {
 	value = investment_pool
 	divide = 50000
+	subtract = construction_queue_num_queued_private_levels
 }
 
 country_gdp_dividend_penalty_calc = {
