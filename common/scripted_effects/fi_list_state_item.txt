@@ -71,6 +71,17 @@ every_list_state_item = {
 			has_variable = $ID$_$BUILDING$_number
 		}
 		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						has_variable = fi_identification
+						var:fi_identification = $ID$
+					}
+				}
+			}
+			remove_variable = $ID$_$BUILDING$_number
+		}
+		if = {
 			limit = { NOT = { has_variable = fi_state_total_number } }
 			set_variable = {
 				name = fi_state_total_number

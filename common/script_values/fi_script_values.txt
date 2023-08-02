@@ -123,7 +123,7 @@ destroyed_total_number_capped_10 = {
 
 ai_construct_how_many_building = {
 	value = investment_pool
-	divide = 50000
+	divide = 70000
 	subtract = construction_queue_num_queued_private_levels
 }
 
@@ -171,14 +171,14 @@ building_iron_mine_id = { value = 12 }
 building_lead_mine_id = { value = 13 }
 building_sulfur_mine_id = { value = 14}
 building_gold_mine_id = { value = 15}
-building_coffee_plantation_id = { value = 21}
-building_cotton_plantation_id = { value = 22}
-building_dye_plantation_id = { value = 23}
-building_opium_plantation_id = { value = 24}
-building_tea_plantation_id = { value = 25}
-building_tobacco_plantation_id = { value = 26}
-building_sugar_plantation_id = { value = 27}
-building_banana_plantation_id = { value = 28}
+building_coffee_plantation_id = { value = 29}
+building_cotton_plantation_id = { value = 29}
+building_dye_plantation_id = { value = 29}
+building_opium_plantation_id = { value = 29}
+building_tea_plantation_id = { value = 29}
+building_tobacco_plantation_id = { value = 29}
+building_sugar_plantation_id = { value = 29}
+building_banana_plantation_id = { value = 29}
 building_silk_plantation_id = { value = 29}
 building_rye_farm_id = { value = 29}
 building_wheat_farm_id = { value = 29}

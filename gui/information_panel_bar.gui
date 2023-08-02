@@ -688,6 +688,7 @@ types information_panel_bar_types {
 				}
 				#### +++
 				using = fifi_investment_panel_bar_button
+				using = fifi_industry_focus_panel_bar_button
 				#### ===
 			}
 		}
