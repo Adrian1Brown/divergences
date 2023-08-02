@@ -186,10 +186,13 @@
 							name = invested_foriegn_building
 							multiplier = share_multiplier
 						}
-						
 						set_local_variable = {	
 							name = profit_calc_store
-							value = $BUILDING$_share_calculater
+							value = state.var:$ID$_$BUILDING$_number
+						}
+						change_local_variable = {
+							name = profit_calc_store
+							divide = level
 						}
 						change_local_variable = {
 							name = profit_calc_store
