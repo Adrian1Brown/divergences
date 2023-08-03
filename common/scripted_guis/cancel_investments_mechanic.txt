@@ -5,6 +5,13 @@ cancel_investments_coal_mine = {
 		investor_country
 		invested_building
     }
+cancel_investments_coal_mine = {
+	scope = country
+	saved_scopes = {
+		invested_state
+		investor_country
+		invested_building
+    }
 
 	is_shown = {
 		exists = scope:invested_building

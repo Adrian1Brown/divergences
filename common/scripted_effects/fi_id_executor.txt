@@ -1,4 +1,4 @@
-﻿fi_id_building_executor={
+fi_id_building_executor={
 fi_id_executor={FUNCTION=$FUNCTION$ BUILDING=building_coal_mine}
 fi_id_executor={FUNCTION=$FUNCTION$ BUILDING=building_iron_mine}
 fi_id_executor={FUNCTION=$FUNCTION$ BUILDING=building_lead_mine}
