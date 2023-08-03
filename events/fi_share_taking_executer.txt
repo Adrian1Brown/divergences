@@ -1128,7 +1128,6 @@ fi_share_taking_executer.13 = {
 	option = { 
 		name = fi_share_taking_executer.13.b
 		scope:tech_target_state = {
-
 			owner = {
 				change_relations = {
 					country = root
