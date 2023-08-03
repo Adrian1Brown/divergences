@@ -1,6 +1,7 @@
 ﻿ai_check_can_construct = {
     any_scope_state = {
         market_access > 0.95
+        market_access_after_invest > 0.9
         OR = {
             AND = {
                 NOT = { 
@@ -26,6 +27,7 @@
 ai_check_can_construct_random = {
     any_scope_state = {
         market_access > 0.95
+        market_access_after_invest > 0.9
         OR = {
             OR = {
                 AND = {
@@ -64,55 +66,224 @@ ai_check_can_construct_random = {
                     building_whaling_station_total_queued < 1
                 }
                 AND = {
-                    NOT = { any_scope_building = { is_building_type = building_railway } }
-                    building_railway_condition = yes
-                    building_railway_total_queued < 1
+                    NOT = { any_scope_building = { is_building_type = building_oil_rig } }
+                    building_oil_rig_condition = yes
+                    building_oil_rig_total_queued < 1
                 }
             }
             AND = {
                 any_scope_building = {
                     occupancy > 0.95
                     cash_reserves_ratio > 0.95
-                    OR = {
-                        AND = {
-                            building_coal_mine_can_queue = yes
-                            is_building_type = building_coal_mine
-                        }
-                        AND = {
-                            building_iron_mine_can_queue = yes
-                            is_building_type = building_iron_mine
-                        }
-                        AND = {
-                            building_lead_mine_can_queue = yes
-                            is_building_type = building_lead_mine
-                        }
-                        AND = {
-                            building_sulfur_mine_can_queue = yes
-                            is_building_type = building_sulfur_mine
-                        }
-                        AND = {
-                            building_logging_camp_can_queue = yes
-                            is_building_type = building_logging_camp
-                        }
-                        AND = {
-                            building_fishing_wharf_can_queue = yes
-                            is_building_type = building_fishing_wharf
-                        }
-                        AND = {
-                            building_whaling_station_can_queue = yes
-                            is_building_type = building_whaling_station
-                        }
-                        AND = {
-                            building_rubber_plantation_can_queue = yes
-                            is_building_type = building_rubber_plantation
-                        }
-                        AND = {
-                            building_railway_can_queue = yes
-                            is_building_type = building_railway
-                        }
-                    }
+                    check_if_random_building_can_queue = yes
                 } 
             }
+        }
+    }
+}
+ai_check_can_construct_resource = {
+    any_scope_state = {
+        market_access > 0.95
+        market_access_after_invest > 0.9
+        OR = {
+            OR = {
+                AND = {
+                    NOT = { any_scope_building = { is_building_type = building_coal_mine } }
+                    building_coal_mine_condition = yes
+                    building_coal_mine_total_queued < 1
+                }
+                AND = {
+                    NOT = { any_scope_building = { is_building_type = building_iron_mine } }
+                    building_iron_mine_condition = yes
+                    building_iron_mine_total_queued < 1
+                }
+                AND = {
+                    NOT = { any_scope_building = { is_building_type = building_lead_mine } }
+                    building_lead_mine_condition = yes
+                    building_lead_mine_total_queued < 1
+                }
+                AND = {
+                    NOT = { any_scope_building = { is_building_type = building_sulfur_mine } }
+                    building_sulfur_mine_condition = yes
+                    building_sulfur_mine_total_queued < 1
+                }
+                AND = {
+                    NOT = { any_scope_building = { is_building_type = building_logging_camp } }
+                    building_logging_camp_condition = yes
+                    building_logging_camp_total_queued < 1
+                }
+                AND = {
+                    NOT = { any_scope_building = { is_building_type = building_fishing_wharf } }
+                    building_fishing_wharf_condition = yes
+                    building_fishing_wharf_total_queued < 1
+                }
+                AND = {
+                    NOT = { any_scope_building = { is_building_type = building_whaling_station } }
+                    building_whaling_station_condition = yes
+                    building_whaling_station_total_queued < 1
+                }
+                AND = {
+                    NOT = { any_scope_building = { is_building_type = building_oil_rig } }
+                    building_oil_rig_condition = yes
+                    building_oil_rig_total_queued < 1
+                }
+            }
+            AND = {
+                any_scope_building = {
+                    occupancy > 0.95
+                    cash_reserves_ratio > 0.95
+                    check_if_resource_building_can_queue = yes
+                } 
+            }
+        }
+    }
+}
+check_if_resource_building_can_queue = {
+    OR = {
+        AND = {
+            building_coal_mine_can_queue = yes
+            is_building_type = building_coal_mine
+        }
+        AND = {
+            building_iron_mine_can_queue = yes
+            is_building_type = building_iron_mine
+        }
+        AND = {
+            building_lead_mine_can_queue = yes
+            is_building_type = building_lead_mine
+        }
+        AND = {
+            building_sulfur_mine_can_queue = yes
+            is_building_type = building_sulfur_mine
+        }
+        AND = {
+            building_logging_camp_can_queue = yes
+            is_building_type = building_logging_camp
+        }
+        AND = {
+            building_fishing_wharf_can_queue = yes
+            is_building_type = building_fishing_wharf
+        }
+        AND = {
+            building_whaling_station_can_queue = yes
+            is_building_type = building_whaling_station
+        }
+        AND = {
+            building_rubber_plantation_can_queue = yes
+            is_building_type = building_rubber_plantation
+        }
+        AND = {
+            building_oil_rig_can_queue = yes
+            is_building_type = building_oil_rig
+        }
+    }
+}
+
+check_if_random_building_can_queue = {
+    OR = {
+        AND = {
+            building_coal_mine_can_queue = yes
+            is_building_type = building_coal_mine
+        }
+        AND = {
+            building_iron_mine_can_queue = yes
+            is_building_type = building_iron_mine
+        }
+        AND = {
+            building_lead_mine_can_queue = yes
+            is_building_type = building_lead_mine
+        }
+        AND = {
+            building_sulfur_mine_can_queue = yes
+            is_building_type = building_sulfur_mine
+        }
+        AND = {
+            building_logging_camp_can_queue = yes
+            is_building_type = building_logging_camp
+        }
+        AND = {
+            building_fishing_wharf_can_queue = yes
+            is_building_type = building_fishing_wharf
+        }
+        AND = {
+            building_whaling_station_can_queue = yes
+            is_building_type = building_whaling_station
+        }
+        AND = {
+            building_rubber_plantation_can_queue = yes
+            is_building_type = building_rubber_plantation
+        }
+        AND = {
+            building_railway_can_queue = yes
+            is_building_type = building_railway
+        }
+        AND = {
+            building_food_industry_can_queue = yes
+            is_building_type = building_food_industry
+        }
+        AND = {
+            building_textile_mills_can_queue = yes
+            is_building_type = building_textile_mills
+        }
+        AND = {
+            building_furniture_manufacturies_can_queue = yes
+            is_building_type = building_furniture_manufacturies
+        }
+        AND = {
+            building_glassworks_can_queue = yes
+            is_building_type = building_glassworks
+        }
+        AND = {
+            building_tooling_workshops_can_queue = yes
+            is_building_type = building_tooling_workshops
+        }
+        AND = {
+            building_paper_mills_can_queue = yes
+            is_building_type = building_paper_mills
+        }
+        AND = {
+            building_chemical_plants_can_queue = yes
+            is_building_type = building_chemical_plants
+        }
+        AND = {
+            building_synthetics_plants_can_queue = yes
+            is_building_type = building_synthetics_plants
+        }
+        AND = {
+            building_steel_mills_can_queue = yes
+            is_building_type = building_steel_mills
+        }
+        AND = {
+            building_motor_industry_can_queue = yes
+            is_building_type = building_motor_industry
+        }
+        AND = {
+            building_shipyards_can_queue = yes
+            is_building_type = building_shipyards
+        }
+        AND = {
+            building_war_machine_industry_can_queue = yes
+            is_building_type = building_war_machine_industry
+        }
+        AND = {
+            building_electrics_industry_can_queue = yes
+            is_building_type = building_electrics_industry
+        }
+        AND = {
+            building_arms_industry_can_queue = yes
+            is_building_type = building_arms_industry
+        }
+        AND = {
+            building_munition_plants_can_queue = yes
+            is_building_type = building_munition_plants
+        }
+        AND = {
+            building_arts_academy_can_queue = yes
+            is_building_type = building_arts_academy
+        }
+        AND = {
+            building_power_plant_can_queue = yes
+            is_building_type = building_power_plant
         }
     }
 }

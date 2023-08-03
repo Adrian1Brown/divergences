@@ -38,6 +38,10 @@ buy_share_state_scripted_gui = {
 	is_valid = {
 		scope:invested_state = {
 			NOT = { has_variable = buy_share_counter }
+			OR = {
+				NOT = { has_variable = fi_state_item_number }
+				NOT = { var:fi_state_total_number = var:fi_state_item_number }
+			}
 		}
 	}
 
@@ -46,6 +50,12 @@ buy_share_state_scripted_gui = {
 			set_variable = {
 				name = buy_share_country
 				value = 0
+			}
+			if = { 
+				limit = {
+					NOT = { has_variable = fi_identification }
+				}
+				fi_assign_id = yes
 			}
 		}
 		scope:invested_state = {
@@ -435,7 +445,7 @@ buy_share_scripted_gui = {
 		}
 		OR = {
 			scope:investor_country = {
-				market_capital = { owner = scope:investor_country }
+				capital = { owner = scope:investor_country }
 			}
 			scope:invested_building = {
 				owner = scope:investor_country

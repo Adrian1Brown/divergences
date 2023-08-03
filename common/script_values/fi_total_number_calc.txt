@@ -44,6 +44,22 @@
 	add = building_arts_academy_total_queued
 	add = building_power_plant_total_queued
 }
+market_access_after_invest = {
+	value = infrastructure
+	divide = {
+		value = 0
+		if = {
+			limit = {
+				has_variable = ai_invest_how_many_in_state
+			}
+			add = var:ai_invest_how_many_in_state
+		}
+		multiply = 2
+		add = infrastructure_usage
+		min = 1
+	}
+	max = 1
+}
 state_total_number_capped_10_times_3 = {
 	value = state_total_number_capped_10
 	multiply = -3
@@ -98,6 +114,7 @@ state_total_number = {
     add = building_arts_academy_total_number
     add = building_power_plant_total_number
 }
+
 building_coal_mine_total_queued = {
 	value = 0
 	if = {

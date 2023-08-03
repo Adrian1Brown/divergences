@@ -20,6 +20,12 @@ fi_list_all_clear = {
 		}
 		every_country = {
 			limit = {
+				has_variable_list = invested_every_states
+			}
+			clear_variable_list = invested_every_states
+		}
+		every_country = {
+			limit = {
 				has_variable = fi_sort_by_total_number_foreign
 			}
 			remove_variable = fi_sort_by_total_number_foreign
@@ -121,6 +127,12 @@ fi_list_all_clear = {
 			}
 			remove_variable = fi_state_profit_calculater
 		}
+		every_state = {
+			limit = {
+				has_variable = fi_state_every_profit_calculater
+			}
+			remove_variable = fi_state_every_profit_calculater
+		}
 	}
 }
 
@@ -144,7 +156,6 @@ fi_state_list_validation = {
 			if = {
 				limit = {
 					has_variable = fi_identification
-					#has_variable_list = invested_states
 				}
 				every_state = {
 					fi_add_list = yes
@@ -619,44 +630,65 @@ fi_state_list_validation = {
 			}
 			remove_variable = fi_state_profit_calculater
 		}
-		
-		
-		every_state = {
-			limit = {
-				state_total_number > 0
-			}
-			set_variable = {
-				name = fi_state_total_number
-				value = state_total_number
-			}
-			set_variable = {
-				name = fi_state_total_queued
-				value = state_total_queued
-			}
+
+		every_id_building_executor = {
+			FUNCTION = every_list_state_item
 		}
 		scope:investor_country = {
+			ordered_in_list = {
+				variable = list_before_order
+				order_by = gdp
+				max = 9999
+				check_range_bounds = no
+				scope:investor_country = {
+					add_to_variable_list = {
+						name = invested_every_states
+						target = prev
+					}
+				}
+			}
+			clear_variable_list = list_before_order
 			save_scope_as = fi_target_country
 		}
-		if = {
-			limit = {
-				scope:investor_country = {
-					has_variable = fi_identification
-				}
-			}
-			fi_id_building_executor = {
-				FUNCTION = fi_list_state_item
-			}
-			every_state = {
-				limit = { has_variable = state_profit_building_number }
+		scope:investor_country = {
+			every_in_list = {
+				variable = invested_every_states
 				change_variable = {
-					name = fi_state_profit_calculater
-					divide = var:state_profit_building_number
+					name = fi_state_every_profit_calculater
+					divide = var:state_every_profit_building_number
 				}
 				change_variable = {
-					name = fi_state_profit_calculater
+					name = fi_state_every_profit_calculater
 					divide = 1000
 				}
-				remove_variable = state_profit_building_number
+				remove_variable = state_every_profit_building_number
+				set_variable = {
+					name = fi_state_item_number
+					value = 0
+				}
+			}
+		
+
+			if = {
+				limit = {
+					has_variable = fi_identification
+				}
+				fi_id_building_executor = {
+					FUNCTION = fi_list_state_item
+				}
+				every_in_list = {
+					variable = invested_every_states
+					limit = { has_variable = state_profit_building_number }
+					change_variable = {
+						name = fi_state_profit_calculater
+						divide = var:state_profit_building_number
+					}
+					change_variable = {
+						name = fi_state_profit_calculater
+						divide = 1000
+					}
+					remove_variable = state_profit_building_number
+				}
 			}
 		}
 		
