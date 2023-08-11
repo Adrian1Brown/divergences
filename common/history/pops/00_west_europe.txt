@@ -391,20 +391,8 @@
 		region_state:PRO = {
 			create_pop = {
 				culture = occitan
-				size = 1776120
+				size = 1827467
 			}
-		}
-		region_state:SAV = {
-			create_pop = {
-				culture = occitan
-				size = 51347
-			}
-			create_pop = {
-				culture = north_italian
-				size = 130733
-			}
-		}
-		region_state:PAP = {
 			create_pop = {
 				culture = occitan
 				size = 75672
@@ -413,9 +401,12 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 24027
-			}
+			}			
+			create_pop = {
+			culture = north_italian
+			size = 130733
 		}
-	}
+	}		
 	
 	#Burgundy
 	s:STATE_FLANDERS = {
