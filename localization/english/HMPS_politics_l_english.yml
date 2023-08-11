@@ -45,8 +45,7 @@
  gov_council_democracy_federal:0 "Federal Council Republic"
  gov_anarchist_commune_unitary:0 "Anarchist Commune"
  gov_anarchist_commune_federal:0 "Commune Federation"
- gov_technate:0 "Technate"
- 
+ gov_technate:0 "Plutocracy"
  
  gov_presidential_democracy_unitary_desc:1 "This is a [concept_government] where the [concept_country] is ruled by a unitary, democratically [Concept('concept_election','$concept_elected$')] presidency."
  gov_presidential_democracy_federal_desc:1 "This is a [concept_government] where the [concept_country] is ruled by a federal, democratically [Concept('concept_election','$concept_elected$')] presidency."
@@ -58,7 +57,7 @@
  gov_council_democracy_federal_desc:1 "This is a [concept_government] where the [concept_country] is ruled by a federal, democratically [Concept('concept_election','$concept_elected$')] council."
  gov_anarchist_commune_unitary_desc:1 "This is a [concept_government] where the [concept_country] does not have a formal leadership structure and instead is made of self organizing communes."
  gov_anarchist_commune_federal_desc:1 "This is a [concept_government] where the [concept_country] does not have a formal leadership structure and instead is made of federally organized communes."
- gov_technate_desc:1 "This is a [concept_government] where the [concept_country] is ruled by a self-selecting group of elite academics, led by a [Concept('concept_ruler','$RULER_TITLE_DIRECTOR$')]."
+ gov_technate_desc:1 "This is a [concept_government] where the [concept_country] is ruled by a self-selecting group of elite academics and industrialists, led by a [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')]."
  
  gov_presidential_democracy_aristocratic:0 "Presidential Aristocratic Republic"
  gov_presidential_democracy_aristocratic_desc:0 "This is a [concept_government] where the [concept_country] is ruled by an aristocratic elite who vote for a [Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')]."
@@ -99,7 +98,6 @@
  RULER_TITLE_COUNCILLOR:0 "Councillor"
  RULER_TITLE_FEDERAL_COUNCILLOR:0 "Federal Councillor"
  RULER_TITLE_FEDERAL_REPRESENTATIVE:0 "Federal Representative"
- RULER_TITLE_DIRECTOR:0 "Director"
  
  # Law Groups
  SERVICES:0 "Institutional Framework"
@@ -118,10 +116,10 @@
  
  law_independent_executive:0 "Independent Executive"
  law_independent_executive_desc:0 "The executive branch derives its legitimacy separate to the legitimacy of the legislature."
- law_presidential_republic:0 "Dual Executive"
- law_presidential_republic_desc:0 "The legitimacy of the executive branch is a combination of the excutive leader's legitimacy, and the approval of the legislature."
- law_parliamentary_republic:0 "Parliamentary System"
- law_parliamentary_republic_desc:0 "The legislature grants legitimacy to the executive, which can be revoked by a simple majoritarian vote of no confidence."
+ law_dual_executive:0 "Dual Executive"
+ law_dual_executive_desc:0 "The legitimacy of the executive branch is a combination of the excutive leader's legitimacy, and the approval of the legislature."
+ law_parliamentary_system:0 "Parliamentary System"
+ law_parliamentary_system_desc:0 "The legislature grants legitimacy to the executive, which can be revoked by a simple majoritarian vote of no confidence."
  law_council_republic:0 "Labor Councils"
  law_council_republic_desc:0 "The executive council is made up from delegates of the regions and industry."
  law_single_party_state:0 "Political Bureau"
@@ -143,6 +141,8 @@
  # Power Distribution Laws
  law_vanguardism:0 "Vanguardism"
  law_vanguardism_desc:0 "An elite intellectual and bureaucratic class hold complete power over the government."
+ law_technocracy:0 "Corporatism"
+ law_technocracy_desc:0 "The nation is governed by a largely unelected group of academic and industrial interests."
  law_clerical_voting:0 "Clerical Voting"
  law_clerical_voting_desc:0 "Government agenda is voted on and set by the Synod of clerics"
  
@@ -161,7 +161,7 @@
  law_single_transferable_vote:0 "Single Transferable Vote"
  law_single_transferable_vote_desc:0 "A ranked transferable voting system where in single, or multi-member, districts candidates are elected upon achieving the minimum vote threshold, with the least popular candidate eliminated each counting round."
  law_jefferson_method:0 "Jefferson Method"
- law_jefferson_method_desc:0 "Seats in the legislature are assigned according to the highest average of votes per existing number of assigned seates, therefore with a minor bias towards larger parties."
+ law_jefferson_method_desc:0 "Seats in the legislature are assigned according to the highest average of votes per existing number of assigned seats, therefore with a minor bias towards larger parties."
  law_pure_proportional:0 "Pure Proportional"
  law_pure_proportional_desc:0 "The fraction of votes won per party correlate exactly to the fraction of seats occupied per party in the legislature."
  
@@ -277,8 +277,8 @@
  ideology_american_republicanism_desc:0 "This group believes the best leaders are elected by public vote and support a republican form of government. Despite this, they prefer to keep the current political status quo."
  ideology_american_liberalism:0 "American Liberalism"
  ideology_american_liberalism_desc:0 "This group views liberty and legal equality as important values to be safeguarded."
- ideology_protectionism:0 "Protectionism"
- ideology_protectionism_desc:0 "This groups thinks their goods should be protected from foreign powers."
+ ideology_protectionism:0 "Protectionist"
+ ideology_protectionism_desc:0 "This groups seeks to limit foreign imports."
  ideology_cultural_inclusiveness:0 "Cultural Inclusiveness"
  ideology_cultural_inclusiveness_desc:0 "This group values hard work, regardless of heritage."
  ideology_civic_religion:0 "Civic Religion"
@@ -337,6 +337,8 @@
  constitutional_crisis:0 "Constitutional Crisis"
  the_bear_wakes:0 "The Bear Wakes"
  the_bear_coma:0 "National Slumber"
+ decembrist_suppression_failure:0 "Decembrist Survival"
+ decembrist_suppression_success:0 "Decembrists Suppressed"
  southern_planter_victory:0 "Victory Of The Southern Planters"
  
  #France nerf

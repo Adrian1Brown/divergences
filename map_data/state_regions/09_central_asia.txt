@@ -52,6 +52,7 @@ STATE_KUBAN = {
     id = 434
     subsistence_building = "building_subsistence_farms"
     provinces = { "x16687C" "x1ED727" "x23F98B" "x2790A8" "x2CF115" "x2E1A32" "x405000" "x405080" "x56FD87" "x594403" "x61D073" "x668A47" "x6BB70E" "x76C012" "x793FDE" "x7BCBCC" "x83F33B" "x891792" "x9809B7" "x9A01E0" "xAF4F59" "xB63D94" "xBCF376" "xC05001" "xC88562" "xD5648D" "xD9CD9D" "xEE9B40" }
+    traits = { "state_trait_don_river"}
     city = "xC88562"
     port = "x405000"
     farm = "x522F82"
