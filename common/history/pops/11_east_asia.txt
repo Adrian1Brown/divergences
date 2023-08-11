@@ -1218,53 +1218,11 @@
 	}
 	
 	#Korea
-	s:STATE_SARIWON = {
-		region_state:KOR = {
-			create_pop = {
-				culture = korean
-				size = 1274480
-			}
-		}
-	}
-	s:STATE_PYONGYANG = {
-		region_state:KOR = {
-			create_pop = {
-				culture = korean
-				size = 2190200
-			}
-		}
-	}
 	s:STATE_SEOUL = {
 		region_state:KOR = {
 			create_pop = {
 				culture = korean
-				size = 2565040
-			}
-			create_pop = {
-				culture = japanese
-				size = 213
-			}
-		}
-	}
-	s:STATE_YANGHO = {
-		region_state:KOR = {
-			create_pop = {
-				culture = korean
-				size = 1376964
-			}
-			create_pop = {
-				culture = japanese
-				size = 34
-			}
-		}
-		region_state:JAP = {
-			create_pop = {
-				culture = korean
-				size = 152996
-			}
-			create_pop = {
-				culture = japanese
-				size = 306
+				size = 2818978
 			}
 		}
 	}
@@ -1272,11 +1230,31 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = korean
-				size = 1763840
+				size = 3596627
 			}
+		}
+	}
+	s:STATE_YANGHO = {
+		region_state:KOR = {
 			create_pop = {
-				culture = japanese
-				size = 765
+				culture = korean
+				size = 4552487
+			}
+		}
+	}
+	s:STATE_SARIWON = {
+		region_state:KOR = {
+			create_pop = {
+				culture = korean
+				size = 1620102
+			}
+		}
+	}
+	s:STATE_PYONGYANG = {
+		region_state:KOR = {
+			create_pop = {
+				culture = korean
+				size = 3612828
 			}
 		}
 	}
@@ -1330,11 +1308,11 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = japanese
-				size = 2028115
+				size = 2374632
 			}
 			create_pop = {
 				culture = japanese
-				size = 784805
+				size = 917280
 				religion = shinto
 			}
 		}
@@ -1343,11 +1321,11 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = japanese
-				size = 3941146
+				size = 4050072
 			}
 			create_pop = {
 				culture = japanese
-				size = 1028774
+				size = 1123204
 				religion = shinto
 			}
 		}
@@ -1367,11 +1345,11 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = japanese
-				size = 3622979
+				size = 4127776
 			}
 			create_pop = {
 				culture = japanese
-				size = 1589941
+				size = 1745764
 				religion = shinto
 			}
 		}
@@ -1380,11 +1358,11 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = japanese
-				size = 5615812
+				size = 6178176
 			}
 			create_pop = {
 				culture = japanese
-				size = 1439228
+				size = 1686204
 				religion = shinto
 			}
 		}
@@ -1393,11 +1371,11 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = japanese
-				size = 1761920
+				size = 2024340
 			}
 			create_pop = {
 				culture = japanese
-				size = 520360
+				size = 744588
 				religion = shinto
 			}
 		}
@@ -1406,11 +1384,11 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = japanese
-				size = 940933
+				size = 1161416
 			}
 			create_pop = {
 				culture = japanese
-				size = 399427
+				size = 352420
 				religion = shinto
 			}
 		}
@@ -1419,11 +1397,11 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = japanese
-				size = 2712207
+				size = 3170167
 			}
 			create_pop = {
 				culture = japanese
-				size = 923430
+				size = 1067036
 				religion = shinto
 			}
 		}
