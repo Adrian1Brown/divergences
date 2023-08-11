@@ -159,7 +159,7 @@
 			}		
 			create_building={
 				building="building_construction_sector"
-				level=1
+				level=4
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" }
 			}
@@ -367,7 +367,7 @@
 			}
 			create_building={
 				building="building_construction_sector"
-				level=1
+				level=6
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" }
 			}
@@ -519,7 +519,7 @@
 			}		
 			create_building={
 				building="building_construction_sector"
-				level=1
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" }
 			}
@@ -1059,7 +1059,7 @@
 			}
 			create_building={
 				building="building_construction_sector"
-				level=1
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" }
 			}
@@ -1293,7 +1293,7 @@
 			}	
 			create_building={
 				building="building_construction_sector"
-				level=1
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" }
 			}
@@ -1369,7 +1369,7 @@
 			}
 			create_building={
 				building="building_construction_sector"
-				level=1
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_wooden_buildings" }
 			}
