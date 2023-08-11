@@ -560,7 +560,7 @@ dvg_caladero.11 = {
 				limit = {
 					NOT = { has_law = law_type:law_professional_army }
 				}
-				activate_law = law_type:law_professional_army
+				activate_law = law_type:law_limited_conscription
 			}
 			if = {
 				limit = {
