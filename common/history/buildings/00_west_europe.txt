@@ -946,13 +946,13 @@
 		region_state:DUA={
 			create_building={
 				building="building_government_administration"
-				level=5
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}			
 			create_building={
 				building="building_construction_sector"
-				level=3
+				level=5
 				reserves=1
 				activate_production_methods={ "pm_iron_frame_buildings" }
 			}				
@@ -1043,12 +1043,6 @@
 				level=5
 				reserves=1
 				activate_production_methods={ "pm_dye_workshops" "pm_craftsman_sewing" "pm_traditional_looms" "pm_privately_owned_building_textile_mills" }
-			}
-			create_building={
-				building="building_construction_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" }
 			}				
 			create_building={
 				building="building_arms_industry"
@@ -1147,12 +1141,6 @@
 				level=9
 				reserves=1
 				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" "pm_privately_owned_building_tooling_workshops" }
-			}
-			create_building={
-				building="building_construction_sector"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_iron_frame_buildings" }
 			}				
 			create_building={
 				building="building_steel_mills"
@@ -1594,7 +1582,7 @@
 		region_state:DUA={
 			create_building={
 				building="building_government_administration"
-				level=5
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}		
@@ -1880,7 +1868,7 @@
 		region_state:DUA={
 			create_building={
 				building="building_government_administration"
-				level=5
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
 			}
