@@ -13,7 +13,10 @@ types ACL_gui_types {
                 using = ACL_cut_75_sound
                 datacontext = "[GetScriptedGui('ACL_sgui_cut_75')]"
                 onclick     = "[ScriptedGui.Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
-                enabled     = "[And( ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ), Not( Character.IsInBattle ))]"
+                enabled     = "[And(
+                    ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ),
+                    Not( Character.IsInBattle )
+                )]"
             }
             blockoverride "setvisible" { # Controls selected (enlarged) button graphic & selected frame + arrow
                 datacontext = "[GetScriptedGui('ACL_sgui_cut_75')]"
@@ -37,7 +40,10 @@ types ACL_gui_types {
                 using = ACL_cut_50_sound
                 datacontext = "[GetScriptedGui('ACL_sgui_cut_50')]"
                 onclick     = "[ScriptedGui.Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
-                enabled     = "[And( ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ), Not( Character.IsInBattle ))]"
+                enabled     = "[And(
+                    ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ),
+                    Not( Character.IsInBattle )
+                )]"
             }
             blockoverride "setvisible" {
                 datacontext = "[GetScriptedGui('ACL_sgui_cut_50')]"
@@ -61,7 +67,10 @@ types ACL_gui_types {
                 using = ACL_cut_25_sound
                 datacontext = "[GetScriptedGui('ACL_sgui_cut_25')]"
                 onclick     = "[ScriptedGui.Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
-                enabled     = "[And( ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ), Not( Character.IsInBattle ))]"
+                enabled     = "[And(
+                    ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ),
+                    Not( Character.IsInBattle )
+                )]"
             }
             blockoverride "setvisible" {
                 datacontext = "[GetScriptedGui('ACL_sgui_cut_25')]"
@@ -85,7 +94,10 @@ types ACL_gui_types {
                 using = ACL_normal_sound
                 datacontext = "[GetScriptedGui('ACL_sgui_normal')]"
                 onclick     = "[ScriptedGui.Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
-                enabled     = "[And( ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ), Not( Character.IsInBattle ))]"
+                enabled     = "[And(
+                    ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ),
+                    Not( Character.IsInBattle )
+                )]"
             }
             blockoverride "setvisible" {
                 datacontext = "[GetScriptedGui('ACL_sgui_normal')]"
@@ -109,7 +121,16 @@ types ACL_gui_types {
                 using = ACL_over_25_sound
                 datacontext = "[GetScriptedGui('ACL_sgui_over_25')]"
                 onclick     = "[ScriptedGui.Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
-                enabled     = "[And( ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ), Not( Character.IsInBattle ))]"
+                enabled     = "[And(
+                    And(
+                        ScriptedGui.IsValid( GuiScope.SetRoot( Character.MakeScope ).End ),
+                        Not( Character.IsInBattle )
+                    ),
+                    EqualTo_string(
+                        AccessGameRules.AccessNamedGameRule('ACL_allow_overstacking').GetSetting.GetKey,
+                        'ACL_allow_overstacking_yes'
+                    )
+                )]"
             }
             blockoverride "setvisible" {
                 datacontext = "[GetScriptedGui('ACL_sgui_over_25')]"
@@ -127,9 +148,9 @@ types ACL_gui_types {
 
         block "command_limit_controls" {
             ACL_set_level_bar_cmd_lim = {
-                position = { 10 0 }
-                parentanchor = left|vcenter
-                margin_left = 9
+                position = { 0 0 }
+                parentanchor = center
+                margin_left = 12
             }
         }
     }

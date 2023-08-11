@@ -439,7 +439,7 @@ types commander_panel_types
 		datacontext = "[CommanderPanel.AccessCharacter]"
 
 		blockoverride "window_header_name" {
-			text = "[Character.GetFullName]"
+			text = "[Character.GetCustom('GetUniversalFullName')]"
 		}
 
 		blockoverride "window_header_name_line_two" {
@@ -529,15 +529,15 @@ types commander_panel_types
 
 
 				widget = {
-					size = { @panel_width_plus_14 520 }
+					size = { @panel_width_plus_14 570 }
 					### TODO: fix the backgrounds to fit the set container size (currently 540 x 600)
 					
 					character_with_background = {
-						size = { @panel_width_plus_14 520 }
+						size = { @panel_width_plus_14 570 }
 					}
 
 					widget = {
-						size = { @panel_width 520 }
+						size = { @panel_width 570 }
 
 						flowcontainer = {
 							parentanchor = right|vcenter
@@ -605,7 +605,7 @@ types commander_panel_types
 									widget = {
 										name = "tutorial_highlight_character_panel_promote_button"
 
-										size = { 240 50 }
+										size = { 210 43 }
 
 										promote_commander_button = {
 											parentanchor = center
@@ -628,10 +628,10 @@ types commander_panel_types
 									}
 								}
 							}
-							
-							### Command Limit Adjustment
+                            
+                            ### Command Limit Adjustment
                             ACL_command_limit_selection = {
-                                visible = "[And( Or(Character.IsGeneral, Character.IsAdmiral) , Not( Character.GetCountry.IsAIOrOtherPlayer ) )]"
+                                visible = "[And( And( Or(Character.IsGeneral, Character.IsAdmiral) , Not( Character.GetCountry.IsAIOrOtherPlayer ) ), Not( Character.IsInExilePool ) )]"
                             }
 
 							### BATTALIONS, ATTRITION, MORALE
@@ -1500,7 +1500,6 @@ types commander_panel_types
 		block "size" {
 			size = { 240 50 }
 		}
-		position = { -10 0 }
 		enabled = "[IsValid(Character.GetPromoteCommand)]"
 		onclick = "[PopupManager.AskConfirmationWithSound(Character.GetPromoteCommand, 'event:/SFX/UI/Military/commander_promote')]"
 	}
