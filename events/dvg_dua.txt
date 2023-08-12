@@ -192,13 +192,6 @@ dvg_dua.1 = {
 			culture = cu:british
 		}
 
-		ig:ig_intelligentsia = {
-			add_modifier = {
-				name = dvg_displeased_ig
-				months = normal_modifier_time
-			}
-		}
-
 		trigger_event = {
 			id = dvg_dua.101
 			days = 1
@@ -478,7 +471,7 @@ dvg_dua.101 = {
 			text = dvg_raise_occ_revolt_7_tt
 			change_variable = {
 				name = occ_revolt
-				add = 7
+				add = 6
 			}
 		}
 		
@@ -486,7 +479,7 @@ dvg_dua.101 = {
 			text = dvg_raise_eng_revolt_7_tt
 			change_variable = {
 				name = eng_revolt
-				add = 7
+				add = 6
 			}
 		}
 
@@ -566,12 +559,6 @@ dvg_dua.110 = { # Patron
 			culture = cu:welsh
 		}
 
-		ig:ig_intelligentsia = {
-			add_modifier = {
-				name = dvg_displeased_ig
-				months = normal_modifier_time
-			}
-		}
 
 		ig:ig_rural_folk = {
 			add_modifier = {
@@ -607,13 +594,6 @@ dvg_dua.110 = { # Patron
 		add_radicals = {
 			value = medium_radicals
 			culture = cu:occitan
-		}
-
-		ig:ig_intelligentsia = {
-			add_modifier = {
-				name = dvg_displeased_ig
-				months = normal_modifier_time
-			}
 		}
 
 		ig:ig_rural_folk = {
@@ -659,13 +639,6 @@ dvg_dua.110 = { # Patron
 		add_radicals = {
 			value = medium_radicals
 			culture = cu:irish
-		}
-
-		ig:ig_intelligentsia = {
-			add_modifier = {
-				name = dvg_displeased_ig
-				months = normal_modifier_time
-			}
 		}
 
 		ig:ig_rural_folk = {
@@ -1674,7 +1647,7 @@ dvg_dua.121 = { #Scottish subversion
 			NOT = { is_subject_of = root }
 		}
 		any_state = {
-			owner = c:SCO
+			owner = c:SCA
 			OR = {
 				region = sr:region_north_sea_coast
 				region = sr:region_england

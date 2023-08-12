@@ -61,10 +61,11 @@ dod_infamy.2 = {
 	
 	trigger = {
 		has_modifier = no_concert_of_europe
+		has_global_variable = anglois_accepted
+		has_global_variable = elbian_confederation
 		set_global_variable = concert_of_europe 
 		OR = {
-			exists = c:ELB
-			exists = c:HRE
+			exists = c:HLR
 			exists = c:RUS
 			exists = c:ITA
 			exists = c:PLC

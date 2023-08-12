@@ -99,9 +99,10 @@ je_hre_external = {
 
 	on_fail = {
 		set_global_variable = hre_fail
-		add_journal_entry = {
-			type = je_elbian_confederation 
+		trigger_event = {
+			id = elbian_confederation.1
 		}
+		set_global_variable = elbian_confederation	
 	}
 
 	# 12 Years
@@ -109,12 +110,10 @@ je_hre_external = {
 
 	on_timeout = {
 		set_global_variable = hre_fail
-		#trigger_event = {
-			#id = elbian_confederation.4
-		#}
-		add_journal_entry = {
-			type = je_elbian_confederation 
+		trigger_event = {
+			id = elbian_confederation.1
 		}
+		set_global_variable = elbian_confederation	
 	}
 
 	invalid = {

@@ -11,6 +11,8 @@
 		trigger_event = {
 			id = elbian_confederation.1
 		}
+
+	set_global_variable = elbian_confederation	
 	}
 
 	fail = {
@@ -27,6 +29,7 @@
 		trigger_event = {
 			id = elbian_confederation.1
 		}
+		set_global_variable = elbian_confederation			
 	}
 
 	on_monthly_pulse = {
