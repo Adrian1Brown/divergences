@@ -143,7 +143,7 @@
 		
 		activate_law = law_type:law_presidential_republic
 		activate_law = law_type:law_oligarchy
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
@@ -188,7 +188,7 @@
 		add_technology_researched = line_infantry
 		
 		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
@@ -230,7 +230,7 @@
 		add_technology_researched = academia
 		add_technology_researched = law_enforcement
 		
-		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
