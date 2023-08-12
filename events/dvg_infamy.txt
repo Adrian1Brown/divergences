@@ -1,7 +1,6 @@
 ﻿namespace = dod_infamy
 
 dod_infamy.1 = {
-	
 	popup = yes
 
     type = country_event
@@ -22,7 +21,7 @@ dod_infamy.1 = {
 
 	trigger = {
 		NOT = {
-			AND = {
+			OR = {
 				has_modifier = no_concert_of_europe
 				has_global_variable = concert_of_europe
 			}
@@ -43,7 +42,7 @@ dod_infamy.1 = {
 }
 
 dod_infamy.2 = {
-
+	
 	popup = yes
 
     type = country_event
