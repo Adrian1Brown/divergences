@@ -226,7 +226,7 @@ ARN = { #Aragon
 
 	tier = kingdom
 	
-	cultures = { catalan }
+	cultures = { catalan south_italian}
 	capital = STATE_CATALONIA
 }
 
@@ -237,7 +237,7 @@ ARI = { #Aragon-Italy
 
 	tier = empire
 	
-	cultures = { catalan }
+	cultures = { catalan south_italian north_italian central_italian venetian} 
 	capital = STATE_LAZIO
 }
 
