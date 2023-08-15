@@ -1265,7 +1265,7 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=10
+				level=30
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
@@ -1287,7 +1287,7 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=10
+				level=20
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
@@ -1315,7 +1315,7 @@
 			}
 			create_building={
 				building="building_barracks"
-				level=5
+				level=15
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
