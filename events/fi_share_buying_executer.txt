@@ -275,6 +275,7 @@ fi_share_buying_executer.4 = {
 				has_variable = selling_share_country
 			}
 			save_scope_as = fi_target_country
+			save_scope_as = seller_country
 			change_variable = {
 				name = selling_share_country
 				subtract = 1
@@ -345,6 +346,29 @@ fi_share_buying_executer.4 = {
 				fi_id_executor_no_building = {
 					FUNCTION = fi_id_select_building_4
 				}
+				scope:buy_share_country = {
+					save_scope_as = fi_target_country
+				}
+				remove_variable = fi_state_item_number
+				fi_id_building_executor = {
+					FUNCTION = fi_buy_share_update_gui
+				}
+				remove_variable = fi_state_total_number
+				every_id_building_executor = {
+					FUNCTION = fi_buy_share_update_gui2
+				}
+				if = {
+					limit = {
+						has_variable = fi_state_total_number
+						var:fi_state_total_number = 0
+					}
+					root = {
+						remove_list_variable = {
+							name = invested_my_states
+							target = prev
+						}
+					}
+				}
 			}
 		}
 		ai_chance = {base = 4}
@@ -367,6 +391,29 @@ fi_share_buying_executer.4 = {
 				fi_sell_share_effect = yes
 				fi_id_executor_no_building = {
 					FUNCTION = fi_id_select_building_4
+				}
+				scope:buy_share_country = {
+					save_scope_as = fi_target_country
+				}
+				remove_variable = fi_state_item_number
+				fi_id_building_executor = {
+					FUNCTION = fi_buy_share_update_gui
+				}
+				remove_variable = fi_state_total_number
+				every_id_building_executor = {
+					FUNCTION = fi_buy_share_update_gui2
+				}
+				if = {
+					limit = {
+						has_variable = fi_state_total_number
+						var:fi_state_total_number = 0
+					}
+					root = {
+						remove_list_variable = {
+							name = invested_my_states
+							target = prev
+						}
+					}
 				}
 			}
 		}

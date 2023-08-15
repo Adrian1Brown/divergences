@@ -173,19 +173,6 @@ fi_dividend_collector.3 = {
 			value = small_radicals
 			strata = rich
 		}
-		if = {
-			limit = {
-				scope:destroyed_building_country = {
-					OR = {
-						NOT = { has_variable = mine_exclusive }
-						var:mine_exclusive = root.var:fi_identification
-					}
-				}
-			}
-			scope:destroyed_building_state.state_region = {
-				add_claim = root
-			}
-		}
 		set_variable = investor_country
 		scope:destroyed_building_country = {
 			change_infamy = destroyed_total_number_capped_10

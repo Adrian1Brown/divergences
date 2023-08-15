@@ -841,6 +841,11 @@ template fifi_button_cancel {
 	onclick = "[ScriptedGui.Execute(GuiScope.AddScope('investor_country', GetPlayer.MakeScope).End )]"
 }
 
+template fifi_panel_bar_button {
+	using = fifi_investment_panel_bar_button
+	using = fifi_industry_focus_panel_bar_button
+}
+
 template fifi_investment_panel_bar_button {
 	#widget needed to prevent you from clicking on the map
 	widget = {

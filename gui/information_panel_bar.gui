@@ -687,8 +687,7 @@ types information_panel_bar_types {
 					input_action = map_list
 				}
 				#### +++
-				using = fifi_investment_panel_bar_button
-				using = fifi_industry_focus_panel_bar_button
+				using = fifi_panel_bar_button
 				#### ===
 			}
 		}

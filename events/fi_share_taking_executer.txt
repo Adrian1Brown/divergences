@@ -48,7 +48,7 @@ fi_share_taking_executer.1 = {
 			change_relations = {
 				country = root
 				value = scope:take_share_target_state.state_total_number_capped_10_times_3
-			}
+			}			
 		}
 
 		change_infamy = scope:take_share_target_state.state_total_number_capped_10
@@ -152,22 +152,38 @@ fi_share_taking_executer.41 = {
 		every_state = {
 			fi_add_list = yes
 		}
-		set_variable = tech_target_country
-		random_in_list = {
-			variable = invested_states
+		if = {
 			limit = {
-				owner = {
-					NOT = {
-						has_variable = mine_exclusive
-						OR = {
-							has_technology_researched = watertube_boiler
-							has_technology_researched = dynamite
+				any_in_list = {
+					variable = invested_states
+					owner = {
+						NOT = {
+							has_variable = mine_exclusive
+							OR = {
+								has_technology_researched = watertube_boiler
+								has_technology_researched = dynamite
+							}
 						}
 					}
 				}
 			}
-			set_variable = tech_target_state
-			owner = { trigger_event = { id = fi_share_taking_executer.5 } }
+			set_variable = tech_target_country
+			random_in_list = {
+				variable = invested_states
+				limit = {
+					owner = {
+						NOT = {
+							has_variable = mine_exclusive
+							OR = {
+								has_technology_researched = watertube_boiler
+								has_technology_researched = dynamite
+							}
+						}
+					}
+				}
+				set_variable = tech_target_state
+				owner = { trigger_event = { id = fi_share_taking_executer.5 } }
+			}
 		}
 	}
 }
@@ -200,22 +216,38 @@ fi_share_taking_executer.42 = {
 		every_state = {
 			fi_add_list = yes
 		}
-		set_variable = tech_target_country
-		random_in_list = {
-			variable = invested_states
+		if = {
 			limit = {
-				owner = {
-					NOT = {
-						has_variable = mine_exclusive
-						OR = {
-							has_technology_researched = watertube_boiler
-							has_technology_researched = dynamite
+				any_in_list = {
+					variable = invested_states
+					owner = {
+						NOT = {
+							has_variable = mine_exclusive
+							OR = {
+								has_technology_researched = watertube_boiler
+								has_technology_researched = dynamite
+							}
 						}
 					}
 				}
 			}
-			set_variable = tech_target_state
-			owner = { trigger_event = { id = fi_share_taking_executer.5 } }
+			set_variable = tech_target_country
+			random_in_list = {
+				variable = invested_states
+				limit = {
+					owner = {
+						NOT = {
+							has_variable = mine_exclusive
+							OR = {
+								has_technology_researched = watertube_boiler
+								has_technology_researched = dynamite
+							}
+						}
+					}
+				}
+				set_variable = tech_target_state
+				owner = { trigger_event = { id = fi_share_taking_executer.5 } }
+			}
 		}
 	}
 }
@@ -248,22 +280,38 @@ fi_share_taking_executer.43 = {
 		every_state = {
 			fi_add_list = yes
 		}
-		set_variable = tech_target_country
-		random_in_list = {
-			variable = invested_states
+		if = {
 			limit = {
-				owner = {
-					NOT = {
-						has_variable = mine_exclusive
-						OR = {
-							has_technology_researched = watertube_boiler
-							has_technology_researched = dynamite
+				any_in_list = {
+					variable = invested_states
+					owner = {
+						NOT = {
+							has_variable = mine_exclusive
+							OR = {
+								has_technology_researched = watertube_boiler
+								has_technology_researched = dynamite
+							}
 						}
 					}
 				}
 			}
-			set_variable = tech_target_state
-			owner = { trigger_event = { id = fi_share_taking_executer.5 } }
+			set_variable = tech_target_country
+			random_in_list = {
+				variable = invested_states
+				limit = {
+					owner = {
+						NOT = {
+							has_variable = mine_exclusive
+							OR = {
+								has_technology_researched = watertube_boiler
+								has_technology_researched = dynamite
+							}
+						}
+					}
+				}
+				set_variable = tech_target_state
+				owner = { trigger_event = { id = fi_share_taking_executer.5 } }
+			}
 		}
 	}
 }
@@ -295,22 +343,38 @@ fi_share_taking_executer.44 = {
 		every_state = {
 			fi_add_list = yes
 		}
-		set_variable = tech_target_country
-		random_in_list = {
-			variable = invested_states
+		if = {
 			limit = {
-				owner = {
-					NOT = {
-						has_variable = mine_exclusive
-						OR = {
-							has_technology_researched = watertube_boiler
-							has_technology_researched = dynamite
+				any_in_list = {
+					variable = invested_states
+					owner = {
+						NOT = {
+							has_variable = mine_exclusive
+							OR = {
+								has_technology_researched = watertube_boiler
+								has_technology_researched = dynamite
+							}
 						}
 					}
 				}
 			}
-			set_variable = tech_target_state
-			owner = { trigger_event = { id = fi_share_taking_executer.5 } }
+			set_variable = tech_target_country
+			random_in_list = {
+				variable = invested_states
+				limit = {
+					owner = {
+						NOT = {
+							has_variable = mine_exclusive
+							OR = {
+								has_technology_researched = watertube_boiler
+								has_technology_researched = dynamite
+							}
+						}
+					}
+				}
+				set_variable = tech_target_state
+				owner = { trigger_event = { id = fi_share_taking_executer.5 } }
+			}
 		}
 	}
 }
@@ -617,10 +681,19 @@ fi_share_taking_executer.7 = {
 		custom_tooltip = {
 			text = fi_shaft_mining_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.7.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -630,6 +703,17 @@ fi_share_taking_executer.7 = {
 		}
 		custom_tooltip = {
 			text = fi_shaft_mining_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -718,10 +802,19 @@ fi_share_taking_executer.8 = {
 		custom_tooltip = {
 			text = fi_rubber_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.8.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -731,6 +824,17 @@ fi_share_taking_executer.8 = {
 		}
 		custom_tooltip = {
 			text = fi_rubber_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -819,10 +923,19 @@ fi_share_taking_executer.9 = {
 		custom_tooltip = {
 			text = fi_oil_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.9.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -832,6 +945,17 @@ fi_share_taking_executer.9 = {
 		}
 		custom_tooltip = {
 			text = fi_oil_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -920,10 +1044,19 @@ fi_share_taking_executer.10 = {
 		custom_tooltip = {
 			text = fi_railway_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.10.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -934,6 +1067,17 @@ fi_share_taking_executer.10 = {
 
 		custom_tooltip = {
 			text = fi_railway_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1022,10 +1166,19 @@ fi_share_taking_executer.11 = {
 		custom_tooltip = {
 			text = fi_enclosure_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.11.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1036,6 +1189,17 @@ fi_share_taking_executer.11 = {
 
 		custom_tooltip = {
 			text = fi_enclosure_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1124,11 +1288,19 @@ fi_share_taking_executer.13 = {
 		custom_tooltip = {
 			text = fi_manufacturies_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.13.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
-
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1139,6 +1311,17 @@ fi_share_taking_executer.13 = {
 
 		custom_tooltip = {
 			text = fi_manufacturies_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1227,10 +1410,19 @@ fi_share_taking_executer.15 = {
 		custom_tooltip = {
 			text = fi_intensive_agriculture_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.15.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1241,6 +1433,17 @@ fi_share_taking_executer.15 = {
 
 		custom_tooltip = {
 			text = fi_intensive_agriculture_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1329,10 +1532,19 @@ fi_share_taking_executer.21 = {
 		custom_tooltip = {
 			text = fi_aniline_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.21.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1343,6 +1555,17 @@ fi_share_taking_executer.21 = {
 
 		custom_tooltip = {
 			text = fi_aniline_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1430,10 +1653,19 @@ fi_share_taking_executer.23 = {
 		custom_tooltip = {
 			text = fi_steelworking_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.23.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1444,6 +1676,17 @@ fi_share_taking_executer.23 = {
 
 		custom_tooltip = {
 			text = fi_steelworking_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1531,10 +1774,19 @@ fi_share_taking_executer.25 = {
 		custom_tooltip = {
 			text = fi_atmospheric_engine_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.25.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1545,6 +1797,17 @@ fi_share_taking_executer.25 = {
 
 		custom_tooltip = {
 			text = fi_atmospheric_engine_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1632,10 +1895,19 @@ fi_share_taking_executer.27 = {
 		custom_tooltip = {
 			text = fi_navigation_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.27.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1646,6 +1918,17 @@ fi_share_taking_executer.27 = {
 
 		custom_tooltip = {
 			text = fi_navigation_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1733,10 +2016,19 @@ fi_share_taking_executer.29 = {
 		custom_tooltip = {
 			text = fi_military_aviation_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.29.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1747,6 +2039,17 @@ fi_share_taking_executer.29 = {
 
 		custom_tooltip = {
 			text = fi_military_aviation_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1834,10 +2137,19 @@ fi_share_taking_executer.31 = {
 		custom_tooltip = {
 			text = fi_telephone_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.31.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1848,6 +2160,17 @@ fi_share_taking_executer.31 = {
 
 		custom_tooltip = {
 			text = fi_telephone_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -1935,10 +2258,19 @@ fi_share_taking_executer.33 = {
 		custom_tooltip = {
 			text = fi_gunsmithing_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.33.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -1949,6 +2281,17 @@ fi_share_taking_executer.33 = {
 
 		custom_tooltip = {
 			text = fi_gunsmithing_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -2036,10 +2379,19 @@ fi_share_taking_executer.35 = {
 		custom_tooltip = {
 			text = fi_percussion_cap_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.35.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -2050,6 +2402,17 @@ fi_share_taking_executer.35 = {
 
 		custom_tooltip = {
 			text = fi_percussion_cap_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -2137,10 +2500,19 @@ fi_share_taking_executer.37 = {
 		custom_tooltip = {
 			text = fi_romanticism_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.37.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -2151,6 +2523,17 @@ fi_share_taking_executer.37 = {
 
 		custom_tooltip = {
 			text = fi_romanticism_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -2238,10 +2621,19 @@ fi_share_taking_executer.39 = {
 		custom_tooltip = {
 			text = fi_electrical_generation_tt
 		}
+		ai_chance = {
+			base = 100
+		}
 	}
 	option = { 
 		name = fi_share_taking_executer.39.b
+		trigger = {
+			scope:tech_target_state.owner = {
+				is_country_type = unrecognized
+			}
+		}
 		scope:tech_target_state = {
+ 
 			owner = {
 				change_relations = {
 					country = root
@@ -2252,6 +2644,17 @@ fi_share_taking_executer.39 = {
 
 		custom_tooltip = {
 			text = fi_electrical_generation_tt
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					scope:tech_target_state = {
+						is_coastal = yes
+					}
+				}
+				add = 50
+			}
 		}
 	}
 }
@@ -2326,7 +2729,7 @@ fi_share_taking_executer.46 = {
 
 	trigger = {
 		custom_tooltip = {
-			text = yes_check
+			text = FI_PANEL_HEADER_NAME
 			has_variable = mine_exclusive_return
 			any_country = {
 				has_variable = mine_exclusive
