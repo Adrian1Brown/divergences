@@ -43,7 +43,7 @@
 			birth_date = 1798.5.5
 			ig_leader = yes
 			interest_group = ig_landowners
-			ideology = ideology_royalist
+			ideology = ideology_jingoist
 			traits = {
 				charismatic
 			}
