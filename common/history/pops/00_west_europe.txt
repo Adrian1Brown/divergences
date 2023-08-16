@@ -920,12 +920,12 @@
 			}
 			create_pop = {
 				culture = north_german
-				size = 552311
+				size = 752311
 				religion = catholic
 			}
 			create_pop = {
 				culture = north_german
-				size = 494762
+				size = 994762
 			}
 			create_pop = {
 				culture = polish

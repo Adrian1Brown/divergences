@@ -49,7 +49,7 @@
 		add_declared_interest = region_france
 		add_declared_interest = region_new_england
 		add_declared_interest = region_south_china
-		add_declared_interest = region_andes
+		add_declared_interest = region_occitania
 		add_declared_interest = region_zanj
 	}
 	c:DUA = {

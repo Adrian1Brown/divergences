@@ -1,5 +1,4 @@
 ﻿cancel_building_effect  = {
-        trigger_event = { id = fi_dividend_collector.4 }
         if = {
                 limit = {
                         NOT = { has_variable = total_invested_building }
@@ -11,6 +10,7 @@
                         limit = { has_building = building_investment_industry}
                         remove_building = building_investment_industry 
                 }
+                trigger_event = { id = fi_dividend_collector.4 }
         }
         else_if = {
                 limit = { NOT = { has_variable = total_invested_building } }
@@ -21,8 +21,13 @@
                 }
                 capital = { remove_building = building_investment_industry }
                 remove_variable = total_invested_building
+                trigger_event = { id = fi_dividend_collector.4 }
+        }
+        else_if = {
+                limit = { var:total_invested_building > 999 }
         }
         else = {
+                trigger_event = { id = fi_dividend_collector.4 }
                 capital = { remove_building =  building_investment_industry 
                         switch = {
                                 trigger = owner.var:total_invested_building

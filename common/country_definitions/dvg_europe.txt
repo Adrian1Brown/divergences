@@ -28,7 +28,7 @@ BRG = { #Burgundy
 
 	tier = empire
 	
-	cultures = { burgundian }
+	cultures = { burgundian rheinish }
 	capital = STATE_FLANDERS
 }
 
@@ -156,7 +156,7 @@ SCA = { #Scandinavia
 
 	tier = empire
 	
-	cultures = { scandinavian scottish}
+	cultures = { scandinavian scottish finnish latvian}
 	capital = STATE_ZEALAND
 }
 
