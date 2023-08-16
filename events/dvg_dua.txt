@@ -1055,13 +1055,6 @@ dvg_dua.114 = { #The 'Immortals'
 			}
 		}
 
-		ig:ig_intelligentsia = {
-			add_modifier = {
-				name = dvg_displeased_ig
-				months = normal_modifier_time
-			}
-		}
-
 		ai_chance = {
 			base = 60
 		}
@@ -1103,12 +1096,7 @@ dvg_dua.115 = { #Celebration of the German Revolution
 
 	option = {
 		name = dvg_dua.115.a
-		default_option = yes
-
-		change_relations = { 
-			country = c:BOH
-			value = -100 
-		}  
+		default_option = yes 
 
 		custom_tooltip = {
 			text = dvg_decrease_occ_revolt_1_tt
