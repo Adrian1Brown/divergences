@@ -47,6 +47,10 @@
 			type = puppet
 		}
 		create_diplomatic_pact = {
+			country = c:POM
+			type = puppet
+		}
+		create_diplomatic_pact = {
 			country = c:CRL
 			type = protectorate
 		}
@@ -134,6 +138,7 @@
 			country = c:BEI
 			type = dominion
 		}
+		
 	}
 	c:BEI = {
 		create_diplomatic_pact = {

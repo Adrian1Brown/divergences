@@ -1,7 +1,7 @@
 ﻿DIPLOMACY = {
 	c:BRG = {
 		create_diplomatic_pact = {
-			country = c:MUN
+			country = c:RHI
 			type = customs_union
 		}
 		create_diplomatic_pact = {
