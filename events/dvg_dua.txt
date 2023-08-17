@@ -3220,7 +3220,7 @@ dvg_dua.513 = { #Midi Revolution - DUA won
 			text = dvg_raise_anglois_acc
 			change_variable = {
 				name = anglois_acc
-				add = 1
+				add = 5
 			}
 		}
 
@@ -4025,11 +4025,15 @@ dvg_dua.526 = { #Total Revolution won
 
 	immediate = {
 		set_global_variable = dua_global_revolted_won
+
 	}
 	
 	option = {
 		name = dvg_dua.526.a
 		default_option = yes
+
+		trigger_event = { id = dvg_dua.2 }
+
 
 		ai_chance = {
 			base = 1

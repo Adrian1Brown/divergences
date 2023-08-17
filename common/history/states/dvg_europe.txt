@@ -243,6 +243,9 @@
 		
 		add_homeland = burgundian
 		add_homeland = rheinish
+
+		add_claim = c:BOH
+		
 	}
 	s:STATE_BURGUNDY = {
 		create_state = {

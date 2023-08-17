@@ -343,6 +343,9 @@
 		
 		add_homeland = bidan
 		add_homeland = haratin
+
+		add_claim = c:VEN
+		
 	}
 	s:STATE_INNER_MAURITANIA = {
 		create_state = {
