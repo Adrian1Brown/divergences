@@ -1,4 +1,5 @@
 check_investable = {
+	exists = market_capital
 	OR = {
 		market_capital = {
 			this = scope:investor_country.market_capital

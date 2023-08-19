@@ -187,7 +187,9 @@ FI_PIE_CHART_TOOLTIP_COUNTRY1: "Structure moyenne des parts de tous les bâtimen
 FI_PIE_CHART_TOOLTIP_COUNTRY2: "Structure moyenne des parts de tous les bâtiments non gouvernementaux présents dans le pays cible."
 
 fi_share_buying_executer.4.t: "Achat de Part"
-fi_share_buying_executer.4.d: "Votre demande d'achat d'une part dans [SCOPE.sCountry('seller_country').GetName] a reçu une réponse. Les capitalistes de [SCOPE.sCountry('seller_country').GetName] sont disposés à vous vendre une part dans [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName] si vous payez #bold #gold [SCOPE.sCountry('seller_country').MakeScope.ScriptValue('fi_price_display')|1]%#!#! du prix du marché."
+fi_share_buying_executer.41.d: "Votre demande d'achat d'une part dans [SCOPE.sCountry('seller_country').GetName] a reçu une réponse. Les capitalistes de [SCOPE.sCountry('seller_country').GetName] sont disposés à vous vendre une part dans [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName] si vous payez #bold #gold un prix supérieur#!#! au prix du marché."
+fi_share_buying_executer.42.d: "Votre demande d'achat d'une part dans [SCOPE.sCountry('seller_country').GetName] a reçu une réponse. Les capitalistes de [SCOPE.sCountry('seller_country').GetName] sont disposés à vous vendre une part dans [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName] si vous payez #bold #gold le même prix#!#! que le prix du marché."
+fi_share_buying_executer.43.d: "Votre demande d'achat d'une part dans [SCOPE.sCountry('seller_country').GetName] a reçu une réponse. Les capitalistes de [SCOPE.sCountry('seller_country').GetName] sont disposés à vous vendre une part dans [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName] si vous payez #bold #gold un prix inférieur#!#! au prix du marché."
 fi_share_buying_executer.4.a: "Payer avec le trésor public"
 fi_share_buying_executer.4.b: "Obtenir un investissement des capitalistes"
 fi_share_buying_executer.4.c: "Abandonner"
@@ -221,3 +223,15 @@ fi_share_taking_executer.46.t: "Acquérir un Droit Exclusif d'Exploitation de Mi
 fi_share_taking_executer.46.d: "Nous avons remporté une bataille glorieuse et repris notre [concept_ownership_share] qui a été pris par [SCOPE.sCountry('war_target_country').GetName]. [SCOPE.sCountry('remove_target').GetName] a accepté de céder le #bold #gold Droit Exclusif d'Exploitation de Mines#!#! à [GetPlayer.GetName], qui a une technologie et une civilisation supérieures."
 fi_share_taking_executer.46.f: ""La gloire de [GetPlayer.GetName] durera éternellement!""
 fi_share_taking_executer.46.a: "Bien joué"
+
+je_fi_protectorate: "Assujettissement Économique"
+je_fi_protectorate_reason: "\nRecevoir des investissements d'autres pays peut être à la fois avantageux et désavantageux.\nCependant, une chose est claire : il est risqué que la majorité des industries d'une nation tombent aux mains des étrangers.\n\nLorsque le ratio du capital d'investissement étranger dépasse un certain seuil, la résistance pour ne pas devenir un protectorat devient futile.\nUne fois que le Score de Protectorat atteint #gold 100 points#!, le processus de devenir un protectorat commence. Actuellement, la propriété étrangère représente #gold [GetPlayer.MakeScope.Var('fi_protectorate_highest').GetValue|0]%#! des industries de [GetPlayer.GetName], contribuant #gold [GetPlayer.MakeScope.Var('fi_protectorate_highest').GetValue|0] points#! au Score de Protectorat.\nLe reste du score est déterminé par des facteurs tels que la puissance militaire, le prestige et l'attitude. (Ce score est le même que le score de protectorat classique.)"
+fi_je_finished_tt: "[GetPlayer.GetName] devient un protectorat d'un autre pays."
+fi_je_fail_tt: "Aucune obligation n'existe avec la nation investisseuse."
+
+fi_diplomatic_events.1.t: "Résultat de l'Assujettissement Économique"
+fi_diplomatic_events.1.d: "En raison d'investissements importants de la part de [GetPlayer.GetName], [SCOPE.sCountry('fi_dip_event_target').GetName] est devenu complètement assujetti économiquement. Avec une seule lettre, ils s'inclineront."
+fi_diplomatic_events.1.f: "Selon des informations fiables, [SCOPE.sCountry('fi_dip_event_target').MakeScope.Var('fi_dip_event_target').GetValue|0]% des entreprises de [SCOPE.sCountry('fi_dip_event_target').GetName] sont détenues par [GetPlayer.GetName]. Cela a conduit à la croyance que l'économie de [SCOPE.sCountry('fi_dip_event_target').GetName] ne peut pas fonctionner sans [GetPlayer.GetName]..."
+fi_diplomatic_events.1.a: "Je comprends."
+
+FI_PROTECTORATE_BONUS_ON_INVESTMENT: "Occupation de la Structure de Propriété due aux Investissements Étrangers"

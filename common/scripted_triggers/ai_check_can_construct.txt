@@ -1,7 +1,10 @@
 ﻿ai_check_can_construct = {
     any_scope_state = {
         market_access > 0.95
-        market_access_after_invest > 0.9
+        OR = {
+            NOT = { has_variable = ai_invest_how_many_in_state}
+            var:ai_invest_how_many_in_state < 10
+        }
         OR = {
             AND = {
                 NOT = { 
@@ -27,7 +30,10 @@
 ai_check_can_construct_random = {
     any_scope_state = {
         market_access > 0.95
-        market_access_after_invest > 0.9
+        OR = {
+            NOT = { has_variable = ai_invest_how_many_in_state}
+            var:ai_invest_how_many_in_state < 10
+        }
         OR = {
             OR = {
                 AND = {
@@ -84,7 +90,10 @@ ai_check_can_construct_random = {
 ai_check_can_construct_resource = {
     any_scope_state = {
         market_access > 0.95
-        market_access_after_invest > 0.9
+        OR = {
+            NOT = { has_variable = ai_invest_how_many_in_state}
+            var:ai_invest_how_many_in_state < 10
+        }
         OR = {
             OR = {
                 AND = {

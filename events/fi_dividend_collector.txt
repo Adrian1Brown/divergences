@@ -75,7 +75,7 @@ fi_dividend_collector.1 = {
 			root = {
 				if = {
 					limit = {
-						prev.level < 1000
+						prev.level < 2000
 						has_variable = total_invested_building
 						prev.level < var:total_invested_building
 					}
@@ -93,7 +93,7 @@ fi_dividend_collector.1 = {
 				}
 				if = {
 					limit = {
-						prev.level < 1000
+						prev.level < 2000
 						has_variable = total_invested_building
 						prev.level > var:total_invested_building
 					}
@@ -105,7 +105,7 @@ fi_dividend_collector.1 = {
 				}
 				change_variable = {
 					name = dividend_collect_sum
-					divide = prev.occupancy
+					divide = fi_occupancy_min
 				}
 				change_variable = {
 					name = dividend_collect_sum

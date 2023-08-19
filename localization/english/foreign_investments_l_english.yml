@@ -185,7 +185,9 @@ FI_PIE_CHART_TOOLTIP_COUNTRY2: "Average share structure of all non-governmental 
 
 
 fi_share_buying_executer.4.t: "Buying Share"
-fi_share_buying_executer.4.d: "Your request to buy a share in [SCOPE.sCountry('seller_country').GetName] has been replied to. The capitalists in [SCOPE.sCountry('seller_country').GetName] are willing to sell you a share in [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName] if you pay #bold #gold [SCOPE.sCountry('seller_country').MakeScope.ScriptValue('fi_price_display')|1]%#!#! of the market price."
+fi_share_buying_executer.41.d: "Your request to buy a share in [SCOPE.sCountry('seller_country').GetName] has been replied to. The capitalists in [SCOPE.sCountry('seller_country').GetName] are willing to sell you a share in [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName] if you pay #bold #gold higher price#!#! than the market price."
+fi_share_buying_executer.42.d: "Your request to buy a share in [SCOPE.sCountry('seller_country').GetName] has been replied to. The capitalists in [SCOPE.sCountry('seller_country').GetName] are willing to sell you a share in [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName] if you pay #bold #gold same price#!#! as the market price."
+fi_share_buying_executer.43.d: "Your request to buy a share in [SCOPE.sCountry('seller_country').GetName] has been replied to. The capitalists in [SCOPE.sCountry('seller_country').GetName] are willing to sell you a share in [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName] if you pay #bold #gold lower price#!#! than the market price."
 fi_share_buying_executer.4.a: "Pay from the treasury"
 fi_share_buying_executer.4.b: "Get investment from capitalists"
 fi_share_buying_executer.4.c: "Let's quit"
@@ -219,3 +221,15 @@ fi_share_taking_executer.46.t: "Acquire a Mining Exclusive Right"
 fi_share_taking_executer.46.d: "We have won a glorious battle and regained our [concept_ownership_share] that was taken from [SCOPE.sCountry('war_target_country').GetName]. [SCOPE.sCountry('remove_target').GetName] has agreed to cede the #bold #gold Mining Exclusive Right#!#! to [GetPlayer.GetName], who has higher technology and civilization."
 fi_share_taking_executer.46.f: ""The glory of [GetPlayer.GetName] will last forever!""
 fi_share_taking_executer.46.a: "Well done"
+
+je_fi_protectorate: "Economic Subjugation"
+je_fi_protectorate_reason: "\nReceiving investments from other countries can be both advantageous and disadvantageous.\nHowever, one thing is clear: it is risky for the majority of a nation's industries to fall into the hands of foreigners.\n\nWhen the ratio of foreign investment capital exceeds a certain threshold, resistance to becoming a protectorate becomes futile.\nOnce the Protectorate Score reaches #gold 100 points#!, the process of becoming a protectorate begins. Currently, foreign ownership accounts for #gold [GetPlayer.MakeScope.Var('fi_protectorate_highest').GetValue|0]%#! of [GetPlayer.GetName]'s industries, contributing #gold [GetPlayer.MakeScope.Var('fi_protectorate_highest').GetValue|0] points#! to the Protectorate Score.\nThe remaining score is determined by factors such as military power, prestige, and attitude. (This score is the same as the vanilla protectorate score.)"
+fi_je_finished_tt: "[GetPlayer.GetName] becomes a protectorate of another country."
+fi_je_fail_tt: "No obligation exists with the investing nation."
+
+fi_diplomatic_events.1.t: "Outcome of Economic Subjugation"
+fi_diplomatic_events.1.d: "Due to significant investments by [GetPlayer.GetName], [SCOPE.sCountry('fi_dip_event_target').GetName] has become completely economically subjugated. With just a single letter, they will bow down."
+fi_diplomatic_events.1.f: "According to reliable information, [SCOPE.sCountry('fi_dip_event_target').MakeScope.Var('fi_dip_event_target').GetValue|0]% of [SCOPE.sCountry('fi_dip_event_target').GetName]'s companies are owned by [GetPlayer.GetName]. This has led to the belief that [SCOPE.sCountry('fi_dip_event_target').GetName]'s economy cannot function without [GetPlayer.GetName]..."
+fi_diplomatic_events.1.a: "I understand."
+
+FI_PROTECTORATE_BONUS_ON_INVESTMENT: "Occupation of Ownership Structure due to Foreign Investment"

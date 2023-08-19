@@ -149,6 +149,7 @@
 						limit = {
 							state = {
 								is_split_state = yes
+								owner = { has_revolution = yes }
 							}
 							state.state_region = { 
 								any_scope_state = {

@@ -93,96 +93,6 @@ types state_panel_types {
 				tooltip = "[State.GetPotentialQualificationsDesc]"
 			}
 		}
-
-
-		# Infrastructure and Taxation Cap
-		flowcontainer = {
-			parentanchor = hcenter|vcenter
-			direction = horizontal
-			margin = { 10 0 }
-			position = { 15 4 }
-			spacing = 15
-			flowcontainer = {
-				parentanchor = hcenter|vcenter
-				margin = { 0 0 }
-				direction = vertical
-				spacing = 4
-
-				textbox = {
-					parentanchor = hcenter|vcenter
-					raw_text = "[concept_infrastructure]"
-					size = { 100 10 }
-					layoutstretchfactor_horizontal = 10
-					layoutpolicy_horizontal = expanding
-					elide = right
-					fontsize_min = 6
-					align = nobaseline
-				}
-				flowcontainer = {
-					parentanchor = hcenter|vcenter
-					direction = horizontal
-					spacing = 2
-					button_icon_round_action = {
-						tooltip = "[StatesPanel.AccessBuilding('building_railway').GetQueueConstructionTooltip]"
-						size = { 32 32 }
-						onclick = "[Execute( StatesPanel.AccessBuilding('building_railway').QueueConstruction )]"
-						enabled = "[IsValid( StatesPanel.AccessBuilding('building_railway').QueueConstruction )]"
-
-						blockoverride "icon" {
-							texture = "gfx/interface/icons/state_status_icons/state_infrastructure.dds"
-						}
-					}
-					textbox = {
-						parentanchor = left|top
-						align = left|nobaseline
-						elide = right
-						raw_text = "#tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_DESC [Subtract_CFixedPoint(State.GetInfrastructure, State.GetInfrastructureUsage)|0+=*]#!#!"
-						fontsize = 20
-						size = { 60 30 }
-					}
-				}
-			}
-			flowcontainer = {
-				parentanchor = hcenter|vcenter
-				margin = { 0 0 }
-				direction = vertical
-				spacing = 4
-
-				textbox = {
-					parentanchor = hcenter|vcenter
-					raw_text = "[concept_tax_capacity]"
-					size = { 100 10 }
-					layoutstretchfactor_horizontal = 10
-					layoutpolicy_horizontal = expanding
-					elide = right
-					fontsize_min = 6
-					align = nobaseline
-				}
-				flowcontainer = {
-					parentanchor = hcenter|vcenter
-					direction = horizontal
-					spacing = 2
-					button_icon_round_action = {
-						tooltip = "[StatesPanel.AccessBuilding('building_government_administration').GetQueueConstructionTooltip]"
-						size = { 32 32 }
-						onclick = "[Execute( StatesPanel.AccessBuilding('building_government_administration').QueueConstruction )]"
-						enabled = "[IsValid( StatesPanel.AccessBuilding('building_government_administration').QueueConstruction )]"
-
-						blockoverride "icon" {
-							texture = "gfx/interface/icons/state_status_icons/state_tax_capacity.dds"
-						}
-					}
-					textbox = {
-						parentanchor = left|top
-						align = left|nobaseline
-						elide = right
-						raw_text = "#tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_DESC [Subtract_CFixedPoint(State.CalcTaxCapacity, State.CalcTaxCapacityUsage)|0+=*]#!#!"
-						fontsize = 20
-						size = { 60 30 }
-					}
-				}
-			}
-		}
 	}
 
 	type state_panel_buildings_content = flowcontainer {
@@ -236,14 +146,13 @@ types state_panel_types {
 		### URBAN BUILDINGS
 		flowcontainer = {
 			parentanchor = hcenter
-			minimumsize = { @panel_width -1 }
 			direction = vertical
 			visible = "[Not(GetVariableSystem.Exists('buildings_list'))]"
 			using = default_content_fade
 			spacing = 10
 			margin_top = 10
 			
-			improved_building_grid_header_building_item = {
+			header_building_item = {
 				datacontext = "[StatesPanel.AccessBuilding('building_urban_center')]"
 				tooltipwidget = {
 					FancyTooltip_Building = {}
@@ -264,20 +173,20 @@ types state_panel_types {
 					flipdirection = yes
 
 					item = {
-						improved_building_grid_building_item = {
+						building_item = {
 						}
 					}
 				}
 
 				widget = {
-					size = { 135 220 }
+					size = { 135 180 }
 					####visible = "[State.GetCountry.IsLocalPlayer]"
 					####enabled = "[GreaterThan_int32( StatesPanel.AccessState.GetNumConstructableUrbanBuildings,'(int32)0')]"
 					position = "[StatesPanel.CalcBuildUrbanBuildingsButtonPosition]"
 					
 					button_icon_plus_square = {
 						enabled = "[Not(IsDataModelEmpty(StatesPanel.AccessState.AccessPotentialUrbanBuildings))]"
-						size = { 135 220 }
+						size = { 135 170 }
 						tooltip = "BUILD_URBAN_BUILDING"
 						onclick = "[StatesPanel.ToggleBuildUrbanBuildingsMenu(PdxGuiWidget.AccessSelf)]"
 
@@ -365,12 +274,12 @@ types state_panel_types {
 			fixedgridbox = {
 				datamodel = "[State.AccessCappedRuralBuildings]"
 				addcolumn = 135
-				addrow = 225
+				addrow = 180
 				datamodel_wrap = 4
 				flipdirection = yes
 
 				item = {
-					improved_building_grid_building_item = {
+					building_item = {
 					}
 				}
 			}
@@ -408,7 +317,7 @@ types state_panel_types {
 			spacing = 10
 			
 			### UNUSED ARABLE LAND
-			improved_building_grid_header_building_item = {
+			header_building_item = {
 				tooltipwidget = {
 					FancyTooltip_Building = {}
 				}
@@ -422,12 +331,12 @@ types state_panel_types {
 			fixedgridbox = {
 				datamodel = "[State.AccessUncappedRuralBuildings]"
 				addcolumn = 135
-				addrow = 225
+				addrow = 180
 				datamodel_wrap = 4
 				flipdirection = yes
 
 				item = {
-					improved_building_grid_building_item = {
+					building_item = {
 					}
 				}
 			}
@@ -474,12 +383,12 @@ types state_panel_types {
 					fixedgridbox = {
 						datamodel = "[State.AccessDevelopmentBuildings]"
 						addcolumn = 135
-						addrow = 225
+						addrow = 180
 						datamodel_wrap = 4
 						flipdirection = yes
 
 						item = {
-							improved_building_grid_building_item = {
+							building_item = {
 							}
 						}
 					}
@@ -584,14 +493,14 @@ types state_buildings
 						
 						### EMPLOYMENT WARNING
 						icon = {
-							visible = "[And(And(Not(Building.IsSubsistenceBuilding), Building.HasFailedHires), Building.IsActive)]"
+							visible = "[Not(Building.ShouldShowAsHiring)]"
 							size = { 30 30 }
 							texture = "gfx/interface/icons/generic_icons/employment_not_full.dds"
 							tooltip = "NOT_FULLY_EMPLOYED"
 						}
 
 						icon = {
-							visible = "[And(And(Not(Building.IsSubsistenceBuilding), Not(Building.HasFailedHires)), Building.IsActive)]"
+							visible = "[Building.ShouldShowAsHiring]"
 							size = { 30 30 }
 							texture = "gfx/interface/icons/generic_icons/employment_not_full_hiring.dds"
 							tooltip = "TOOLTIP_BUILDING_HIRING"

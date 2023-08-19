@@ -1,7 +1,7 @@
 ﻿fi_clear_list = {
 
 switch = {
-        trigger = root.var:fi_identification = 1
+        trigger = root.var:fi_identification
 1={
         if = {
                 limit = {

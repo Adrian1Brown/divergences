@@ -186,7 +186,9 @@ FI_PIE_CHART_TOOLTIP_COUNTRY1: "[GetPlayer.GetName]에 존재하는 모든 비�
 FI_PIE_CHART_TOOLTIP_COUNTRY2: "대상 국가에 존재하는 모든 비정부 건물들의 평균 지분 구조입니다."
 
 fi_share_buying_executer.4.t: "지분 구매"
-fi_share_buying_executer.4.d: "[SCOPE.sCountry('seller_country').GetName]의 [SCOPE.sBuilding('buy_share_target_building').GetName] 지분을 구매하겠다는 요청에 대한 답장이 돌아왔다. [SCOPE.sCountry('seller_country').GetName]의 자본가들은 시세의 #bold #gold [SCOPE.sCountry('seller_country').MakeScope.ScriptValue('fi_price_display')|1]%#!#!에 달하는 가격만 지불한다면 [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName]의 지분을 팔겠다고 한다."
+fi_share_buying_executer.41.d: "[SCOPE.sCountry('seller_country').GetName]의 [SCOPE.sBuilding('buy_share_target_building').GetName] 지분을 구매하겠다는 요청에 대한 답장이 돌아왔다. [SCOPE.sCountry('seller_country').GetName]의 자본가들은 시세보다 #bold #gold 높은#!#!정도의 가격을 지불한다면 [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName]의 지분을 팔겠다고 한다."
+fi_share_buying_executer.42.d: "[SCOPE.sCountry('seller_country').GetName]의 [SCOPE.sBuilding('buy_share_target_building').GetName] 지분을 구매하겠다는 요청에 대한 답장이 돌아왔다. [SCOPE.sCountry('seller_country').GetName]의 자본가들은 시세와 #bold #gold 같은#!#!정도의 가격을 지불한다면 [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName]의 지분을 팔겠다고 한다."
+fi_share_buying_executer.43.d: "[SCOPE.sCountry('seller_country').GetName]의 [SCOPE.sBuilding('buy_share_target_building').GetName] 지분을 구매하겠다는 요청에 대한 답장이 돌아왔다. [SCOPE.sCountry('seller_country').GetName]의 자본가들은 시세보다 #bold #gold 낮은#!#!정도의 가격을 지불한다면 [SCOPE.sState('buy_share_target_state').GetName] [SCOPE.sBuilding('buy_share_target_building').GetName]의 지분을 팔겠다고 한다."
 fi_share_buying_executer.4.a: "국고에서 지불한다"
 fi_share_buying_executer.4.b: "자본가들에게서 투자를 받는다"
 fi_share_buying_executer.4.c: "그만 두자"
@@ -218,3 +220,15 @@ fi_share_taking_executer.46.t: "광업 독점권 획득"
 fi_share_taking_executer.46.d: "영광스러운 전투에서 승리하여 [SCOPE.sCountry('war_target_country').GetName]에게 빼앗겼던 우리의 [concept_ownership_share]을 되찾았다. [SCOPE.sCountry('remove_target').GetName]은 더 높은 기술력과 문명을 가진 [GetPlayer.GetName]에게 #bold #gold 광업 독점권#!#!을 양도하기로 합의하였다."
 fi_share_taking_executer.46.f: ""[GetPlayer.GetName]이여 영원하라!""
 fi_share_taking_executer.46.a: "잘 되었다"
+
+je_fi_protectorate: "경제적 예속"
+je_fi_protectorate_reason: "\n타국에게서 투자를 받는 것은 장점이 될수도, 단점이 될수도 있습니다.\n하지만 확실한 것이 하나 있습니다. 국가 산업의 대부분이 외국인에게 넘어간다는건 위험합니다.\n\n해외의 투자 자본 비율이 일정 비율을 넘기면 피보호국화에 저항할 수 없게 됩니다.\n피보호국화 점수가 #gold 100점#!이 되면 피보호국화가 진행됩니다. 현재 [GetPlayer.GetName] 산업의 #gold [GetPlayer.MakeScope.Var('fi_protectorate_highest').GetValue|0]%#!는 외국인이 소유하고 있으며, 이는 피보호국화 점수에 #gold [GetPlayer.MakeScope.Var('fi_protectorate_highest').GetValue|0]점#! 만큼 기여합니다.\n나머지 점수는 군사력/위신/태도 등에 따라 결정됩니다.(바닐라 피보호국 점수와 같습니다)"
+fi_je_finished_tt: "[GetPlayer.GetName](이)가 타국의 피보호국이 됩니다."
+fi_je_fail_tt: "투자국에게 특약이 존재하지 않음"
+
+fi_diplomatic_events.1.t: "경제적 예속의 결과"
+fi_diplomatic_events.1.d: "[SCOPE.sCountry('fi_dip_event_target').GetName]에 대한 [GetPlayer.GetName]의 막대한 투자로 [SCOPE.sCountry('fi_dip_event_target').GetName]은 완전히 경제적으로 예속되었습니다. 편지 한장으로 그들은 굴복할 것입니다."
+fi_diplomatic_events.1.f: ""믿을만한 정보에 따르면 [SCOPE.sCountry('fi_dip_event_target').GetName] 회사의 #gold [SCOPE.sCountry('fi_dip_event_target').MakeScope.Var('fi_dip_event_target').GetValue|0]%#!는 [GetPlayer.GetName]의 소유라고 합니다. 이로 인해 [SCOPE.sCountry('fi_dip_event_target').GetName]의 경제는 [GetPlayer.GetName] 없이 성립할 수 없다고 여겨지며...""
+fi_diplomatic_events.1.a: "알았다."
+
+FI_PROTECTORATE_BONUS_ON_INVESTMENT: "해외 투자로 인한 지분 구조 잠식율"

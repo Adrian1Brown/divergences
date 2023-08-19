@@ -96,7 +96,6 @@ trigger=scope:fi_target_country.var:fi_identification
 }
 }
 
-
 every_id_building_executor={
 every_id_executor={FUNCTION=$FUNCTION$ BUILDING=building_coal_mine}
 every_id_executor={FUNCTION=$FUNCTION$ BUILDING=building_iron_mine}
@@ -165,4 +164,27 @@ $FUNCTION$={BUILDING=$BUILDING$ ID=17}
 $FUNCTION$={BUILDING=$BUILDING$ ID=18}
 $FUNCTION$={BUILDING=$BUILDING$ ID=19}
 $FUNCTION$={BUILDING=$BUILDING$ ID=20}
+}
+
+every_id_executor_no_building={
+$FUNCTION$={ID=1}
+$FUNCTION$={ID=2}
+$FUNCTION$={ID=3}
+$FUNCTION$={ID=4}
+$FUNCTION$={ID=5}
+$FUNCTION$={ID=6}
+$FUNCTION$={ID=7}
+$FUNCTION$={ID=8}
+$FUNCTION$={ID=9}
+$FUNCTION$={ID=10}
+$FUNCTION$={ID=11}
+$FUNCTION$={ID=12}
+$FUNCTION$={ID=13}
+$FUNCTION$={ID=14}
+$FUNCTION$={ID=15}
+$FUNCTION$={ID=16}
+$FUNCTION$={ID=17}
+$FUNCTION$={ID=18}
+$FUNCTION$={ID=19}
+$FUNCTION$={ID=20}
 }
