@@ -313,7 +313,7 @@ dvg_spain.6 = {
 				limit = {
 					NOT = { has_law = law_type:law_presidential_republic }
 				}
-				activate_law = law_type:law_presidential_republic
+				 activate_law = law_type:law_republic
 			}
 			if = {
 				limit = {

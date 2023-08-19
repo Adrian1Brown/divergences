@@ -2053,7 +2053,7 @@ enact_preferred_governance_principle = {
 				}
 			}
 		}
-		activate_law = law_type:law_presidential_republic
+		 activate_law = law_type:law_republic
 	}
 	else_if = {
 		limit = {
@@ -2108,7 +2108,7 @@ enact_preferred_governance_principle = {
 				}
 			}
 		}
-		activate_law = law_type:law_presidential_republic
+		 activate_law = law_type:law_republic
 	}
 	else_if = {
 		limit = {
@@ -2122,7 +2122,7 @@ enact_preferred_governance_principle = {
 		activate_law = law_type:law_theocracy
 	}
 	else = {
-		activate_law = law_type:law_presidential_republic
+		 activate_law = law_type:law_republic
 		if = {
 			limit = {
 				civil_war_origin_country = {
