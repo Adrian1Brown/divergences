@@ -445,7 +445,7 @@ je_total_revolution = {
 	}
 
 	goal_add_value = {
-		value = 22
+		value = 26
 	}
 
 	progressbar = yes
