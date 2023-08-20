@@ -5,7 +5,7 @@
 
 	tier = empire
 	
-	cultures = { mongol }
+	cultures = { mongol uzbek }
 	religion = sunni
 	capital = STATE_DZUNGARIA
 }
