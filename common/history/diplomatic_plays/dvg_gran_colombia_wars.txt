@@ -1,4 +1,5 @@
-﻿DIPLOMATIC_PLAYS = {
+﻿
+DIPLOMATIC_PLAYS = {
 	c:SPA = {
 		create_diplomatic_play = {
 			name = caladeran_war_of_independence
