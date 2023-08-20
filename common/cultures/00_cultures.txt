@@ -5020,7 +5020,7 @@ russian={
 ruthenian={
 	color= rgb{ 99 163 206 }
 	religion = catholic
-	traits = { central_slavic european_heritage }
+	traits = { west_slavic east_slavic european_heritage }
 	male_common_first_names={
 		Alexei
 		Andrei
@@ -5130,7 +5130,7 @@ ruthenian={
 byelorussian={
 	color= rgb{ 211 184 207 }
 	religion = catholic
-	traits = { central_slavic european_heritage }
+	traits = { west_slavic east_slavic european_heritage }
 	male_common_first_names={
 		Alaksandr
 		Alexei
