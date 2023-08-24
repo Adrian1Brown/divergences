@@ -51,23 +51,13 @@ dvg_central_rus.1 = {
 
 		add_journal_entry = {
 			type = je_russian_anarchy
-		}
-
-		show_as_tooltip = {
-            custom_tooltip = {
-                text = diplomatic_plays_blocked_until_russian_anarchy
-                add_modifier = {
-                    name = diplomatic_plays_blocked
-                    months = -1
-                }	
-            }	
+		}	
 			add_modifier = {
 				name = dvg_rock_and_hard_place
 				months = -1
 			}
 		}
 	}
-}
 
 # start event MSO
 dvg_central_rus.2 = {
@@ -115,22 +105,13 @@ dvg_central_rus.2 = {
 		add_journal_entry = {
 			type = je_russian_anarchy
 		}
-
-		show_as_tooltip = {
-            custom_tooltip = {
-                text = diplomatic_plays_blocked_until_russian_anarchy
-                add_modifier = {
-                    name = diplomatic_plays_blocked
-                    months = -1
-                }	
-            }	
+	
 			add_modifier = {
 				name = dvg_rock_and_hard_place
 				months = -1
 			}
 		}
 	}
-}
 
 # start event SMO
 dvg_central_rus.3 = {
@@ -169,19 +150,10 @@ dvg_central_rus.3 = {
 		add_journal_entry = {
 			type = je_russian_anarchy
 		}
-
-		show_as_tooltip = {
-            custom_tooltip = {
-                text = diplomatic_plays_blocked_until_russian_anarchy
-                add_modifier = {
-                    name = diplomatic_plays_blocked
-                    months = -1
-                }	
-            }	
+	
 			add_modifier = {
 				name = dvg_rock_and_hard_place
 				months = -1
 			}
 		}
 	}
-}
