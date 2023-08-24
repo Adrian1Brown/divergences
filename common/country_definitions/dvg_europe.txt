@@ -1146,7 +1146,7 @@ FRA = { #France
 
 	tier = kingdom
 	
-	cultures = { french }
+	cultures = { french occitan }
 	capital = STATE_ILE_DE_FRANCE
 }
 
