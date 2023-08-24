@@ -63,12 +63,12 @@ dod_infamy.2 = {
 		has_modifier = no_concert_of_europe
 		OR = {
 			has_global_variable = anglois_accepted
-			has_global_variable = elbian_confederation
 			exists = c:HLR
 			exists = c:RUS
 			exists = c:ITA
 			exists = c:PLC
 			exists = c:ARI
+			exists = c:ELB
 		}
 	}
 

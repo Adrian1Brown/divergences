@@ -149,6 +149,17 @@ BOH = { #Bohemia
 	is_named_from_capital = yes
 }
 
+ELB = { #Elbians
+	color = { 161 139 40 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { czech north_german}	
+	capital = STATE_BOHEMIA
+}
+
 SCA = { #Scandinavia
 	color = { 62  122  189 }
 

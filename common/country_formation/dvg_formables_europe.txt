@@ -434,6 +434,38 @@ OCC = { #Occitania
 	ai_will_do = { always = yes }
 }
 
+ELB = {
+	states = {
+		STATE_BOHEMIA
+		STATE_BRANDENBURG
+		STATE_ANHALT
+		STATE_SILESIA
+		STATE_MORAVIA
+		STATE_POMERANIA
+		STATE_MECKLENBURG
+		STATE_SCHLESWIG_HOLSTEIN
+		STATE_HANNOVER
+		STATE_THURINGIA
+		STATE_SAXONY
+	}
+
+	required_states_fraction = 1
+
+	ai_will_do = { always = yes}
+	
+	possible = {
+		any_country = {
+			OR = {
+				country_has_primary_culture = cu:czech
+				country_has_primary_culture = cu:north_german
+			}
+				
+			has_technology_researched = nationalism
+		}
+
+	}
+	
+}
 HLR = { #Holy Roman Empire
 	states = {
 		STATE_BOHEMIA
