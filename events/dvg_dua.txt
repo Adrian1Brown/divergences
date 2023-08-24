@@ -2662,7 +2662,7 @@ dvg_dua.500 = { #Total Revolution
 						country = c:DUA
 						value = -100
 					}
-					
+
 					activate_law = law_type:law_national_supremacy
 				}
 			}
@@ -3002,6 +3002,7 @@ dvg_dua.510 = { #Midi Revolution
 						value = 0.25
 						culture = cu:occitan
 					}
+					activate_law = law_type:law_national_supremacy
 				}
 			}
 
@@ -3381,6 +3382,7 @@ dvg_dua.520 = { #Glorious Revolution
 						value = 0.25
 						culture = cu:british
 					}
+					activate_law = law_type:law_national_supremacy
 				}
 			}
 
