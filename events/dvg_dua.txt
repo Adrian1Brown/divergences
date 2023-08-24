@@ -2531,6 +2531,7 @@ dvg_dua.500 = { #Total Revolution
 							NOT = { has_law = law_type:law_parliamentary_republic }
 						}
 						activate_law = law_type:law_parliamentary_republic
+						activate_law = law_type:law_national_supremacy
 					}
 					add_loyalists = {
 						value = 0.35
@@ -2661,6 +2662,8 @@ dvg_dua.500 = { #Total Revolution
 						country = c:DUA
 						value = -100
 					}
+					
+					activate_law = law_type:law_national_supremacy
 				}
 			}
 		}
