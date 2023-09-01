@@ -1023,7 +1023,7 @@
 	s:STATE_PIEDMONT = {
 		create_state = {
 			country = c:SAV
-			owned_provinces = { "x1140E0" "x11C061" "x54728A" "xA9397D" "xAA6958" "xACB500" "xD080E0" "xDA86EA" "xF00544" }
+			owned_provinces = { "x1140E0" "x11C061" "x54728A" "xA9397D" "xAA6958" "xACB500" "xD080E0" "xDA86EA" "xF00544" "x5080E0" }
 		}
 		create_state = {
 			country = c:GEN
@@ -1035,15 +1035,11 @@
 	s:STATE_SAVOY = {
 		create_state = {
 			country = c:SAV
-			owned_provinces = { "x56B04B" "x6B4BA4" "x7ACC0B" "x9041E0" "x90C060" "xD000E0" "xDDDD3B" }
+			owned_provinces = { "x56B04B" "x6B4BA4" "x7ACC0B" "x9041E0" "x90C060" "xD000E0" "xDDDD3B" "x7516B6" }
 		}
 		create_state = {
 			country = c:BRG
 			owned_provinces = { "xA042B5" }
-		}
-		create_state = {
-			country = c:DUA
-			owned_provinces = { "x7516B6" }
 		}
 		create_state = {
 			country = c:FIO
