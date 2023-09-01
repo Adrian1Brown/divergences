@@ -429,8 +429,8 @@ law_command_economy = {
 		law_serfdom
 		law_anarchy
 		law_independent_executive
-		law_presidential_republic
-		law_parliamentary_republic
+		law_dual_executive
+		law_parliamentary_system
 	}
 	
 	unlocking_technologies = {
@@ -586,15 +586,28 @@ law_industry_banned = {
 	}
 
 	modifier = {
-		interest_group_ig_rural_folk_pol_str_mult = 0.25
-		state_aristocrats_investment_pool_contribution_add = 0.25
-		technology_invention_cost_mult = 0.25
+		country_aristocrats_pol_str_mult = 0.5
+		country_farmers_pol_str_mult = 0.25
+	
+		state_shopkeepers_investment_pool_efficiency_mult = -1
+		state_capitalists_investment_pool_efficiency_mult = -1
+		state_aristocrats_investment_pool_efficiency_mult = -1
+		state_farmers_investment_pool_efficiency_mult = -1
+		country_tech_research_speed_mult = -0.25
 		country_tech_spread_mult = -0.25
 		country_subsidies_bg_agriculture = yes
 		country_subsidies_bg_ranching = yes
 		country_subsidies_bg_plantations = yes
 		country_subsidies_bg_infrastructure = yes
 		country_subsidies_bg_trade = yes
+		
+		country_authority_mult = 0.1
+		building_group_bg_agriculture_throughput_mult = 0.05
+		building_group_bg_ranching_throughput_mult = 0.05
+		building_group_bg_plantations_throughput_mult = 0.05
+		building_group_bg_mining_throughput_mult = 0.05
+		building_group_bg_logging_throughput_mult = 0.05
+		building_group_bg_rubber_throughput_mult = 0.05
 	}
 
 	build_from_investment_pool = {

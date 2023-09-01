@@ -1,0 +1,18 @@
+﻿forts_explained = {
+	is_shown = {
+		is_ai = no
+		NOT = { has_variable = forts_understood }
+	}
+
+	possible = {
+		is_ai = no
+		NOT = { has_variable = forts_understood }
+	}
+
+	when_taken = {
+		set_variable = forts_understood
+		custom_tooltip = {
+			text = forts_tooltip
+		}
+	}
+}

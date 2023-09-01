@@ -149,6 +149,110 @@ save_industrialized_pm_building_and_state = {
 		}
 	}
 }
+
+warlord_setup_effect = {
+	set_country_type = recognized
+	add_modifier = {
+        name = warlords_westernisation
+        months = 180
+		is_decaying = yes
+    }
+	add_modifier = {
+		name = chinese_political_instability			
+		is_decaying = yes
+		years = 20
+	}
+	add_modifier = {
+		name = chinese_economic_stagnation
+		is_decaying = yes
+		years = 20
+	}
+	activate_law = law_type:law_autocracy 
+	activate_law = law_type:law_republic
+	
+	add_primary_culture = cu:han
+	
+	ig:ig_landowners = { 
+		set_interest_group_name = ig_scholar_officials
+		remove_ideology = ideology_paternalistic
+		add_ideology = ideology_republican_paternalistic
+	}
+	
+	ig:ig_intelligentsia = { 
+		set_interest_group_name = ig_literati
+	}
+	
+	ig:ig_devout = {
+		set_interest_group_name = ig_confucian
+		remove_ideology = ideology_pious
+		remove_ideology = ideology_moralist
+		add_ideology = ideology_confucian
+	}
+		
+	every_scope_character = {
+		random_list = {
+			80 =  {
+			}
+			20 = {
+				add_trait = bandit
+			}
+		}			
+	}
+	
+	every_state = {
+		limit = {
+			OR = {
+				state_region = {
+					is_homeland = cu:han
+				}
+				state_region = {
+					is_homeland = cu:manchu
+				}
+				state_region = s:STATE_HINGGAN
+				state_region = s:STATE_ALXA
+				state_region = s:STATE_QINGHAI
+			}
+		}
+		this.state_region = {
+			add_claim = root
+		}
+	}
+}
+warlord_breakaway_setup_effect = {
+	set_country_type = recognized
+	add_modifier = {
+        name = warlords_westernisation
+        months = 180
+		is_decaying = yes
+    }
+	activate_law = law_type:law_autocracy 
+	activate_law = law_type:law_republic
+	
+	ig:ig_landowners = { 
+		remove_ideology = ideology_paternalistic
+		add_ideology = ideology_republican_paternalistic
+	}
+	
+	add_modifier = {
+        name = snori_kor_clothes_modifier
+        months = -1
+    }
+	set_variable = {
+		name = snori_clothes_decision_taken
+	}
+}
+
+prince_setup_effect = {
+	set_country_type = recognized
+	add_modifier = {
+        name = warlords_westernisation
+        months = 180
+		is_decaying = yes
+    }
+	activate_law = law_type:law_monarchy
+	activate_law = law_type:law_autocracy
+}
+
 scripted_effect_parties_emergence = {
 	if = {
 		limit = {
@@ -315,6 +419,21 @@ save_agitator_law_scopes = {
 }
 
 generate_french_monarch = {
+	hidden_effect = {
+		if = {
+			limit = {
+				any_scope_character = {
+					is_heir = yes
+				}
+			}
+			random_scope_character = {
+				limit = {
+					is_heir = yes
+				}
+				kill_character = yes
+			}
+		}
+	}
 	if = {
 		limit = {
 			has_variable = orleanist_restoration_var
@@ -578,7 +697,7 @@ generate_french_monarch = {
 				# Infante Juan, Count of Montizón - Carlist
 				first_name = "Jean"
 				last_name = "de_Bourbon"
-				ruler = yes
+				heir = yes
 				birth_date = 1822.5.15
 				culture = cu:spanish
 				interest_group = ig_landowners
@@ -623,7 +742,7 @@ generate_french_monarch = {
 				first_name = "Charles"
 				last_name = "de_Bourbon"
 				heir = yes
-				birth_date = 1822.5.15
+				birth_date = 1848.3.30
 				culture = cu:spanish
 				interest_group = ig_landowners
 				ideology = ideology_legitimist
@@ -649,7 +768,7 @@ generate_french_monarch = {
 				first_name = "Charles"
 				last_name = "de_Bourbon"
 				ruler = yes
-				birth_date = 1822.5.15
+				birth_date = 1848.3.30
 				culture = cu:spanish
 				interest_group = ig_landowners
 				ideology = ideology_legitimist
@@ -733,7 +852,7 @@ generate_french_monarch = {
 		}
 		else_if = {
 			limit = {
-				year >= 1831
+				year >= 1931
 			}
 			create_character = {
 				# Infante Alfonso Carlos, Duke of San Jaime - Carlist
@@ -760,7 +879,7 @@ generate_french_monarch = {
 				first_name = "Alphonse"
 				last_name = "de_Bourbon"
 				heir = yes
-				birth_date = 1849.9.12
+				birth_date = 1886.5.17
 				culture = cu:spanish
 				interest_group = ig_armed_forces
 				ideology = ideology_legitimist
@@ -969,9 +1088,11 @@ generate_french_monarch = {
 						set_variable = {
 							name = bonapartist_leader
 						}		
-						set_variable = napoleon_iii_var	
+						set_variable = napoleon_iii_var
+						set_global_variable = napoleon_iii_spawn
 						set_character_as_ruler = yes
 						add_character_role = politician
+						remove_character_role = agitator
 					}
 				}
 			}
@@ -983,8 +1104,10 @@ generate_french_monarch = {
 							name = bonapartist_leader
 						}		
 						set_variable = napoleon_iii_var
-						set_character_as_ruler = yes	
-						add_character_role = politician	
+						set_global_variable = napoleon_iii_spawn
+						set_character_as_ruler = yes
+						add_character_role = politician
+						remove_character_role = agitator
 					}
 				}
 			}
@@ -1156,5 +1279,33 @@ generate_french_monarch = {
 	}
 	ruler = {
 		save_scope_as = french_monarch_scope
+	}
+}
+
+clean_up_exile_character_roles = { # scope: character
+	if = {
+		limit = {
+			NOT = { has_role = agitator }
+		}
+		add_character_role = agitator
+	}
+	if = {
+		limit = {
+			has_role = politician
+		}
+		set_as_interest_group_leader = no
+		remove_character_role = politician
+	}
+	if = {
+		limit = {
+			has_role = general
+		}
+		remove_character_role = general
+	}
+	if = {
+		limit = {
+			has_role = admiral
+		}
+		remove_character_role = admiral
 	}
 }

@@ -105,19 +105,19 @@
 					}
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_kpl
-			# 	trigger = {
-			# 		exists = c:LUX
-			# 		THIS = c:LUX
-			# 		any_interest_group = {
-			# 			is_powerful = yes
-			# 			leader = {
-			# 				has_ideology = ideology:ideology_vanguardist
-			# 			}
-			# 		}
-			# 	}
-			# }
+			triggered_desc = {
+				desc = party_kpl
+				trigger = {
+					exists = c:LUX
+					THIS = c:LUX
+					any_interest_group = {
+						is_powerful = yes
+						leader = {
+							has_ideology = ideology:ideology_vanguardist
+						}
+					}
+				}
+			}
 			triggered_desc = {
 				desc = party_bkp
 				trigger = {
@@ -216,7 +216,6 @@
 						OR = {
 							country_has_primary_culture = cu:north_german
 							country_has_primary_culture = cu:south_german
-							country_has_primary_culture = cu:rheinish #DVG
 						}
 						any_interest_group = {
 							is_powerful = yes
@@ -312,7 +311,6 @@
 				has_ideology = ideology:ideology_bonapartist
 				has_ideology = ideology:ideology_legitimist
 				has_ideology = ideology:ideology_theocrat
-				has_ideology = ideology:ideology_anglois
 			}
 		}
 		OR = {
@@ -448,7 +446,7 @@
 					}
 				}
 				owner = {
-					has_law = law_type:law_land_based_taxation
+					NOT = { has_law = law_type:law_no_poll_taxes }
 				}
 			}
 			add = {
@@ -476,7 +474,7 @@
 		if = { # against free trade - peasant/communist alliance
 			limit = {
 				OR = {
-					has_ideology = ideology:ideology_socialist
+					#has_ideology = ideology:ideology_socialist
 					has_ideology = ideology:ideology_agrarian
 				}
 				owner = {
@@ -496,7 +494,7 @@
 		if = { # against laissez-faire - peasant/socialist alliance
 			limit = {
 				OR = {
-					has_ideology = ideology:ideology_socialist
+					#has_ideology = ideology:ideology_socialist
 					has_ideology = ideology:ideology_agrarian
 					leader = {
 						has_ideology = ideology:ideology_protectionist
@@ -527,15 +525,16 @@
 						has_ideology = ideology:ideology_loyalist
 						owner = {
 							NOR = {
-								has_law = law_type:law_proportional_taxation
-								has_law = law_type:law_per_capita_based_taxation
+								has_law = law_type:law_moderate_corporation_tax
+								has_law = law_type:law_moderate_income_tax
 							}
 						}
 					}
 				}
 				owner = {
 					NOT = {
-						has_law = law_type:law_graduated_taxation
+						has_law = law_type:law_high_corporation_tax
+						has_law = law_type:law_high_income_tax
 					}
 				}
 			}
@@ -584,6 +583,20 @@
 			add = {
 				value = 5
 				desc = "from_slavery"
+			}
+		}
+		if = {
+			limit = {
+				owner = {
+	         		has_variable = only_valid_party
+	         	}
+	         	 owner.var:only_valid_party = {
+		        	is_party_type = communist_party
+		        }
+			}
+			add = {
+				value = 3
+				desc = "from_only_legal_party"
 			}
 		}
 		if = {

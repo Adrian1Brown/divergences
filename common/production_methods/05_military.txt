@@ -157,7 +157,7 @@ pm_squad_infantry = {
 
 		throughput_scaled = {
 			unit_offense_add = 55
-			unit_defense_add = 65
+			unit_defense_add = 55
 		}
 		
 		unscaled = {
@@ -182,7 +182,6 @@ pm_mechanized_infantry = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -201,7 +200,7 @@ pm_mechanized_infantry = {
 
 		throughput_scaled = {
 			unit_offense_add = 75
-			unit_defense_add = 75
+			unit_defense_add = 55
 		}
 
 		unscaled = {
@@ -298,7 +297,6 @@ pm_shrapnel_artillery = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}		
 
 	building_modifiers = {
@@ -309,7 +307,7 @@ pm_shrapnel_artillery = {
 
 		throughput_scaled = {
 			unit_offense_add = 30
-			unit_defense_add = 15
+			unit_defense_add = 25
 		}
 
 		unscaled = {
@@ -336,7 +334,6 @@ pm_siege_artillery = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 
 	building_modifiers = {
@@ -347,7 +344,7 @@ pm_siege_artillery = {
 
 		throughput_scaled = {
 			unit_offense_add = 50
-			unit_defense_add = 20
+			unit_defense_add = 30
 		}
 
 		unscaled = {
@@ -411,7 +408,6 @@ pm_motorized_recon = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -421,7 +417,7 @@ pm_motorized_recon = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 10
+			unit_offense_add = 15
 			unit_defense_add = 5
 		}
 
@@ -446,7 +442,6 @@ pm_aerial_recon = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 
 	building_modifiers = {
@@ -456,8 +451,8 @@ pm_aerial_recon = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 15
-			unit_defense_add = 10
+			unit_offense_add = 20
+			unit_defense_add = 5
 		}
 
 		unscaled = {
@@ -518,7 +513,6 @@ pm_infiltrators = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -552,7 +546,6 @@ pm_flamethrower_company = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -587,7 +580,6 @@ pm_chemical_weapons_specialists = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -596,7 +588,7 @@ pm_chemical_weapons_specialists = {
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 50
+			unit_offense_add = 20
 		}
 
 		unscaled = {
@@ -678,7 +670,6 @@ pm_skirmish_infantry_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	building_modifiers = {
 		workforce_scaled = {
@@ -713,7 +704,6 @@ pm_trench_infantry_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	building_modifiers = {
 		workforce_scaled = {
@@ -750,7 +740,6 @@ pm_squad_infantry_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -767,7 +756,7 @@ pm_squad_infantry_conscription = {
 
 		throughput_scaled = {
 			unit_offense_add = 55
-			unit_defense_add = 60
+			unit_defense_add = 55
 		}
 
 		unscaled = {
@@ -787,7 +776,6 @@ pm_mechanized_infantry_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -806,7 +794,7 @@ pm_mechanized_infantry_conscription = {
 
 		throughput_scaled = {
 			unit_offense_add = 75
-			unit_defense_add = 75
+			unit_defense_add = 55
 		}
 
 		unscaled = {
@@ -833,7 +821,6 @@ pm_cannon_artillery_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}
 	
 	building_modifiers = {
@@ -864,7 +851,6 @@ pm_mobile_artillery_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -896,7 +882,6 @@ pm_shrapnel_artillery_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}
 
 	building_modifiers = {
@@ -906,7 +891,7 @@ pm_shrapnel_artillery_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 50
+			unit_offense_add = 30
 			unit_defense_add = 15
 		}
 
@@ -929,7 +914,6 @@ pm_siege_artillery_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}
 
 	building_modifiers = {
@@ -939,8 +923,8 @@ pm_siege_artillery_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 80
-			unit_defense_add = 15
+			unit_offense_add = 50
+			unit_defense_add = 30
 		}
 
 		unscaled = {
@@ -970,7 +954,6 @@ pm_bicycle_messengers_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -980,7 +963,7 @@ pm_bicycle_messengers_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_mult = 0.05
+			unit_offense_add = 5
 		}
 
 		unscaled = {
@@ -1001,7 +984,6 @@ pm_motorized_recon_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -1011,8 +993,8 @@ pm_motorized_recon_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_mult = 0.10
-			unit_defense_mult = 0.05
+			unit_offense_add = 15
+			unit_defense_add = 5
 		}
 
 		unscaled = {
@@ -1031,7 +1013,6 @@ pm_aerial_recon_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 
 	building_modifiers = {
@@ -1041,8 +1022,8 @@ pm_aerial_recon_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_mult = 0.15
-			unit_defense_mult = 0.10
+			unit_offense_add = 20
+			unit_defense_add = 5
 		}
 
 		unscaled = {
@@ -1075,7 +1056,7 @@ pm_machine_gunners_conscription = {
 			building_input_ammunition_add = 1
 		}
 		throughput_scaled = {
-			unit_defense_add = 25
+			unit_defense_add = 20
 		}
 
 		unscaled = {
@@ -1096,7 +1077,6 @@ pm_infiltrators_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -1125,7 +1105,6 @@ pm_flamethrower_company_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -1155,7 +1134,6 @@ pm_chemical_weapons_specialists_conscription = {
 	}
 	disallowing_laws = {
 		law_peasant_levies
-		law_feudal_armies
 	}	
 	
 	building_modifiers = {
@@ -1164,7 +1142,7 @@ pm_chemical_weapons_specialists_conscription = {
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 50
+			unit_offense_add = 20
 		}
 
 		unscaled = {
@@ -1561,13 +1539,15 @@ pm_destroyers = {
 
 		throughput_scaled = {
 			# switched until Paradox fixes
-			unit_offense_add = 20
-			unit_defense_add = 10
+			unit_offense_add =10
+			unit_defense_add = 5
 		}
 
 		unscaled = {
 			unit_morale_loss_mult = -0.1
 #			todo: unit_convoy_defence_mult = 0.25
+			unit_convoy_raiding_interception_mult = 0.25
+			unit_convoy_defense_mult = 0.5
 		}
 	}
 
@@ -1597,14 +1577,16 @@ pm_carriers = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 40	#30
-			unit_defense_add = 30 	#40
+			unit_offense_add = 30	#20
+			unit_defense_add = 20 	#30
 		}
 
 		unscaled = {
 			building_training_rate_add = -10
 			unit_morale_loss_mult = -0.25
 #			todo: unit_convoy_defence_mult = 0.25
+			unit_convoy_raiding_interception_mult = 0.5
+			unit_convoy_defense_mult = 0.5
 		}
 	}
 
