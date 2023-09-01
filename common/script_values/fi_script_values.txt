@@ -13,6 +13,56 @@ total_share_in_building = {
 	add = modifier:building_farmers_shares_add
 	add = modifier:building_laborers_shares_add
 }
+selling_share_country2_value = {
+	value = 1
+	if = {
+		limit = { has_variable = selling_share_country2}
+		add = var:selling_share_country2
+	}
+}
+selling_share_country_value = {
+	value = 1
+	if = {
+		limit = { has_variable = selling_share_country}
+		add = var:selling_share_country
+	}
+}
+buy_share_country2_value = {
+	value = 1
+	if = {
+		limit = { has_variable = buy_share_country2}
+		add = var:buy_share_country2
+	}
+}
+buy_share_country_value = {
+	value = 1
+	if = {
+		limit = { has_variable = buy_share_country}
+		add = var:buy_share_country
+	}
+}
+buy_share_proposing_country_value = {
+	value = 1
+	if = {
+		limit = { has_variable = buy_share_proposing_country}
+		add = var:buy_share_proposing_country
+	}
+}
+buy_share_proposed_country_value = {
+	value = 1
+	if = {
+		limit = { has_variable = buy_share_proposed_country}
+		add = var:buy_share_proposed_country
+	}
+}
+buying_share_maximum_value = {
+	value = investment_pool
+	divide = 1000000
+}
+weekly_profit_divided_by_level = {
+	value = weekly_profit
+	divide = level
+}
 
 fi_protectorate_acceptance = {
 	value = 50
@@ -483,6 +533,10 @@ fi_selling_price = {
 	value = fi_buying_price
 	multiply = -1
 }
+fi_radical_from_selling = {
+	value = 0.005
+	multiply = scope:scope_building_number
+}
 
 destroyed_total_number_capped_10_times_3 = {
 	value = destroyed_total_number_capped_10
@@ -496,7 +550,14 @@ destroyed_total_number_capped_10 = {
 ai_construct_how_many_building = {
 	value = investment_pool
 	divide = 70000
-	subtract = construction_queue_num_queued_private_levels
+	if = {
+		limit = { has_game_rule = autonomous_investment_pool }
+		subtract = construction_queue_num_queued_private_levels
+	}
+	else = {
+		divide = 2
+		subtract = construction_queue_num_queued_levels
+	}
 }
 
 country_gdp_dividend_penalty_calc = {

@@ -63,6 +63,24 @@
 		}
 	}
 }
+clean_up_investment = {
+	every_state = {
+		limit = {
+			has_variable = $ID$_$BUILDING$_number
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						has_variable = fi_identification
+						var:fi_identification = $ID$
+					}
+				}
+			}
+			remove_variable = $ID$_$BUILDING$_number
+		}
+	}
+}
 
 
 every_list_state_item = {
@@ -149,6 +167,42 @@ every_list_state_item = {
 				}
 			}
 			remove_local_variable = profit_calc_store
+		}
+	}
+}
+
+fi_list_chart_calculator = {
+	if = {
+		limit = {
+			has_variable = $ID$_$BUILDING$_number
+		}
+		random_country ={
+			limit = {
+				has_variable = fi_identification
+				var:fi_identification = $ID$
+			}
+			change_variable = {
+				name = fi_target_country1_number
+				add = prev.var:$ID$_$BUILDING$_number
+			}
+		}
+	}
+}
+
+fi_list_chart_calculator2 = {
+	if = {
+		limit = {
+			has_variable = $ID$_$BUILDING$_number
+		}
+		random_country ={
+			limit = {
+				has_variable = fi_identification
+				var:fi_identification = $ID$
+			}
+			change_variable = {
+				name = fi_target_country2_number
+				add = prev.var:$ID$_$BUILDING$_number
+			}
 		}
 	}
 }

@@ -84,6 +84,12 @@
 					trigger_event = { id = fi_dividend_collector.3 }
 					cancel_building_effect = yes
 				}
+				every_scope_building = {
+					limit = {
+						has_modifier = invested_foriegn_building
+					}
+					remove_modifier = invested_foriegn_building
+				}
 				remove_local_variable = destroyed_number
 				remove_variable = $ID$_$BUILDING$_number
 			}

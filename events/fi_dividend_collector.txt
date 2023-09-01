@@ -75,7 +75,7 @@ fi_dividend_collector.1 = {
 			root = {
 				if = {
 					limit = {
-						prev.level < 2000
+						prev.level < 10000
 						has_variable = total_invested_building
 						prev.level < var:total_invested_building
 					}
@@ -93,7 +93,7 @@ fi_dividend_collector.1 = {
 				}
 				if = {
 					limit = {
-						prev.level < 2000
+						prev.level < 10000
 						has_variable = total_invested_building
 						prev.level > var:total_invested_building
 					}
@@ -273,6 +273,34 @@ fi_dividend_collector.6 = {
 				}
 			}
 			trigger_event = { id = fi_dividend_collector.4 }
+		}
+	}
+}
+
+
+fi_dividend_collector.7 = {
+	type = country_event
+	hidden = yes
+
+	trigger = {
+		NOT = { has_variable = fi_identification }
+		any_scope_building = {
+			is_building_group = bg_investment_industry
+		}
+	}
+
+	immediate = {
+		every_scope_state = {
+			limit = {
+				any_scope_building = { is_building_group = bg_investment_industry }
+			}
+			remove_building = building_investment_industry 
+			remove_building = building_investment_industry_low
+			remove_building = building_investment_industry_high
+			remove_building = building_investment_industry_very_high
+		}
+		every_id_building_executor = {
+			FUNCTION = clean_up_investment
 		}
 	}
 }

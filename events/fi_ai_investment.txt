@@ -16,7 +16,15 @@ fi_ai_investment.1 = {
 		}
 		has_wasted_construction = yes
 		construction_queue_private_duration < 52
-		NOT = { has_law = law_type:law_command_economy } 
+		NOT = { has_law = law_type:law_command_economy }
+		OR = {
+			has_game_rule = autonomous_investment_pool
+			OR = {
+				has_law = law_type:law_interventionism
+				has_law = law_type:law_laissez_faire
+				has_law = law_type:law_cooperative_ownership
+			}
+		}
 	}
 
 	immediate = {
@@ -44,7 +52,6 @@ fi_ai_investment.1 = {
 						any_country ={
 							is_subject_of = root
 							ai_check_can_construct_random = yes
-							NOT = {this=root}
 						}
 					}
 					random_list = {
@@ -55,7 +62,7 @@ fi_ai_investment.1 = {
 							}
 						}
 						5 = { 
-							set_variable = {#gdp
+							set_variable = {#rank
 								name = fi_target_country_select
 								value = 2
 							}
@@ -71,7 +78,7 @@ fi_ai_investment.1 = {
 				else = {
 					random_list = {
 						5 = { 
-							set_variable = {#gdp
+							set_variable = {#rank
 								name = fi_target_country_select
 								value = 2
 							}
@@ -91,16 +98,15 @@ fi_ai_investment.1 = {
 					1 = {
 						if = {
 							limit = {
-								any_country ={
-									is_subject_of = root
-									NOT = {this=root}
-									ai_check_can_construct = {
-										BUILDING = building_gold_mine
+								any_state ={
+									owner = {
+										is_subject_of = root
+										OR = {
+											NOT = { has_variable = mine_exclusive }
+											var:mine_exclusive = root.var:fi_identification
+										}
 									}
-									OR = {
-										NOT = { has_variable = mine_exclusive }
-										var:mine_exclusive = root.var:fi_identification
-									}
+									ai_check_can_construct_gold_mine = yes
 								}
 							}
 							set_variable = {#gold
@@ -117,7 +123,7 @@ fi_ai_investment.1 = {
 									}
 								}
 								1 = {
-									set_variable = {#random resources
+									set_variable = {#resources
 										name = fi_target_building_select
 										value = 3
 									}
@@ -128,42 +134,39 @@ fi_ai_investment.1 = {
 						switch = {
 							trigger = var:fi_target_building_select
 							1 = {
-								random_country ={
+								random_state ={
 									limit = {
-										is_subject_of = root
-										NOT = {this = root}
-										ai_check_can_construct = {
-											BUILDING = building_gold_mine
+										owner = {
+											is_subject_of = root
+											OR = {
+												NOT = { has_variable = mine_exclusive }
+												var:mine_exclusive = root.var:fi_identification
+											}
 										}
-										OR = {
-											NOT = { has_variable = mine_exclusive }
-											var:mine_exclusive = root.var:fi_identification
-										}
+										ai_check_can_construct_gold_mine = yes
 									}
-									save_scope_as = target_country
-									fi_ai_construct = { BUILDING = building_gold_mine }
+									fi_ai_construct = {BUILDING = building_gold_mine}
 								}
 							}
 							2 = {
 								random_country ={
 									limit = {
 										is_subject_of = root
-										NOT = {this = root}
-										ai_check_can_construct_random = yes
 										OR = {
 											NOT = { has_variable = mine_exclusive }
 											var:mine_exclusive = root.var:fi_identification
 										}
+										ai_check_can_construct_random = yes
 									}
-									save_scope_as = target_country
 									ordered_scope_building = {
 										limit = {
 											check_if_random_building_can_queue = yes
+											level > 0
 											occupancy > 0.95
 			                  				cash_reserves_ratio > 0.95
 			                  				state = { market_access > 0.95 }
 										}
-										order_by = weekly_profit
+										order_by = weekly_profit_divided_by_level
 										check_range_bounds = no
 										max = 1
 										save_scope_as = fi_target_building
@@ -172,27 +175,18 @@ fi_ai_investment.1 = {
 								}
 							}
 							3 = {
-								random_country ={
+								random_state ={
 									limit = {
-										is_subject_of = root
-										NOT = {this = root}
+										owner = {
+											is_subject_of = root
+											OR = {
+												NOT = { has_variable = mine_exclusive }
+												var:mine_exclusive = root.var:fi_identification
+											}
+										}
 										ai_check_can_construct_resource = yes
-										OR = {
-											NOT = { has_variable = mine_exclusive }
-											var:mine_exclusive = root.var:fi_identification
-										}
 									}
-									save_scope_as = target_country
-									random_scope_building = {
-										limit = {
-											check_if_resource_building_can_queue = yes
-											occupancy > 0.95
-			                  				cash_reserves_ratio > 0.95
-			                  				state = { market_access > 0.95 }
-										}
-										save_scope_as = fi_target_building
-									}
-									fi_ai_construct_selected_building = yes
+									fi_ai_construct_resource_building = yes
 								}
 							}
 						}
@@ -202,16 +196,16 @@ fi_ai_investment.1 = {
 					2 = {
 						if = {
 							limit = {
-								any_country ={
-									check_investable = yes
-									NOT = {this=root}
-									ai_check_can_construct = {
-										BUILDING = building_gold_mine
+								any_state ={
+									owner = {
+										check_investable = yes
+										NOT = {this=root}
+										OR = {
+											NOT = { has_variable = mine_exclusive }
+											var:mine_exclusive = root.var:fi_identification
+										}
 									}
-									OR = {
-										NOT = { has_variable = mine_exclusive }
-										var:mine_exclusive = root.var:fi_identification
-									}
+									ai_check_can_construct_gold_mine = yes
 								}
 							}
 							set_variable = {#gold
@@ -239,23 +233,22 @@ fi_ai_investment.1 = {
 						switch = {
 							trigger = var:fi_target_building_select
 							1 = {
-								ordered_country ={
+								ordered_state ={
 									limit = {
-										check_investable = yes
-										OR = {
-											NOT = { has_variable = mine_exclusive }
-											var:mine_exclusive = root.var:fi_identification
+										owner = {
+											check_investable = yes
+											OR = {
+												NOT = { has_variable = mine_exclusive }
+												var:mine_exclusive = root.var:fi_identification
+											}
+											NOT = {this = root}
 										}
-										NOT = {this = root}
-										ai_check_can_construct = {
-											BUILDING = building_gold_mine
-										}
+										ai_check_can_construct_gold_mine = yes
 									}
 									order_by = gdp
 									check_range_bounds = no
 									max = 1
-									save_scope_as = target_country
-									fi_ai_construct = { BUILDING = building_gold_mine }
+									fi_ai_construct = {BUILDING = building_gold_mine}
 								}
 							}
 							2 = {
@@ -272,15 +265,15 @@ fi_ai_investment.1 = {
 									order_by = gdp
 									check_range_bounds = no
 									max = 1
-									save_scope_as = target_country
 									ordered_scope_building = {
 										limit = {
 											check_if_random_building_can_queue = yes
+											level > 0
 											occupancy > 0.95
 			                  				cash_reserves_ratio > 0.95
 			                  				state = { market_access > 0.95 }
 										}
-										order_by = weekly_profit
+										order_by = weekly_profit_divided_by_level
 										check_range_bounds = no
 										max = 1
 										save_scope_as = fi_target_building
@@ -289,30 +282,22 @@ fi_ai_investment.1 = {
 								}
 							}
 							3 = {
-								ordered_country ={
+								ordered_state ={
 									limit = {
-										check_investable = yes
-										NOT = {this = root}
-										ai_check_can_construct_resource = yes
-										OR = {
-											NOT = { has_variable = mine_exclusive }
-											var:mine_exclusive = root.var:fi_identification
+										owner = {
+											check_investable = yes
+											NOT = {this = root}
+											OR = {
+												NOT = { has_variable = mine_exclusive }
+												var:mine_exclusive = root.var:fi_identification
+											}
 										}
+										ai_check_can_construct_resource = yes
 									}
 									order_by = gdp
 									check_range_bounds = no
 									max = 1
-									save_scope_as = target_country
-									random_scope_building = {
-										limit = {
-											check_if_resource_building_can_queue = yes
-											occupancy > 0.95
-			                  				cash_reserves_ratio > 0.95
-			                  				state = { market_access > 0.95 }
-										}
-										save_scope_as = fi_target_building
-									}
-									fi_ai_construct_selected_building = yes
+									fi_ai_construct_resource_building = yes
 								}
 							}
 						}
@@ -322,16 +307,16 @@ fi_ai_investment.1 = {
 					3 = {
 						if = {
 							limit = {
-								any_country ={
-									check_investable = yes
-									NOT = {this=root}
-									ai_check_can_construct = {
-										BUILDING = building_gold_mine
+								any_state ={
+									owner = {
+										check_investable = yes
+										NOT = {this=root}
+										OR = {
+											NOT = { has_variable = mine_exclusive }
+											var:mine_exclusive = root.var:fi_identification
+										}
 									}
-									OR = {
-										NOT = { has_variable = mine_exclusive }
-										var:mine_exclusive = root.var:fi_identification
-									}
+									ai_check_can_construct_gold_mine = yes
 								}
 							}
 							set_variable = {#gold
@@ -359,20 +344,19 @@ fi_ai_investment.1 = {
 						switch = {
 							trigger = var:fi_target_building_select
 							1 = {
-								random_country ={
+								random_state ={
 									limit = {
-										check_investable = yes
-										OR = {
-											NOT = { has_variable = mine_exclusive }
-											var:mine_exclusive = root.var:fi_identification
+										owner = {
+											check_investable = yes
+											OR = {
+												NOT = { has_variable = mine_exclusive }
+												var:mine_exclusive = root.var:fi_identification
+											}
+											NOT = {this = root}
 										}
-										NOT = {this = root}
-										ai_check_can_construct = {
-											BUILDING = building_gold_mine
-										}
+										ai_check_can_construct_gold_mine = yes
 									}
-									save_scope_as = target_country
-									fi_ai_construct = { BUILDING = building_gold_mine }
+									fi_ai_construct = {BUILDING = building_gold_mine}
 								}
 							}
 							2 = {
@@ -386,15 +370,15 @@ fi_ai_investment.1 = {
 											var:mine_exclusive = root.var:fi_identification
 										}
 									}
-									save_scope_as = target_country
 									ordered_scope_building = {
 										limit = {
 											check_if_random_building_can_queue = yes
+											level > 0
 											occupancy > 0.95
 			                  				cash_reserves_ratio > 0.95
 			                  				state = { market_access > 0.95 }
 										}
-										order_by = weekly_profit
+										order_by = weekly_profit_divided_by_level
 										check_range_bounds = no
 										max = 1
 										save_scope_as = fi_target_building
@@ -403,27 +387,19 @@ fi_ai_investment.1 = {
 								}
 							}
 							3 = {
-								random_country ={
+								random_state ={
 									limit = {
-										check_investable = yes
-										NOT = {this = root}
+										owner = {
+											check_investable = yes
+											NOT = {this = root}
+											OR = {
+												NOT = { has_variable = mine_exclusive }
+												var:mine_exclusive = root.var:fi_identification
+											}
+										}
 										ai_check_can_construct_resource = yes
-										OR = {
-											NOT = { has_variable = mine_exclusive }
-											var:mine_exclusive = root.var:fi_identification
-										}
 									}
-									save_scope_as = target_country
-									random_scope_building = {
-										limit = {
-											check_if_resource_building_can_queue = yes
-											occupancy > 0.95
-			                  				cash_reserves_ratio > 0.95
-			                  				state = { market_access > 0.95 }
-										}
-										save_scope_as = fi_target_building
-									}
-									fi_ai_construct_selected_building = yes
+									fi_ai_construct_resource_building = yes
 								}
 							}
 						}

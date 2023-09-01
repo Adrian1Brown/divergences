@@ -36,7 +36,6 @@ je_fi_protectorate = {
 				value = 1
 			}
 			root = {
-				
 				set_variable = {
 					name = fi_protectorate_target
 					value = 0
@@ -59,6 +58,7 @@ je_fi_protectorate = {
 						NOT = { is_building_group = bg_trade }
 						NOT = { is_building_group = bg_subsistence_agriculture }
 						NOT = { is_building_group = bg_subsistence_ranching }
+						NOT = { is_building_group = bg_investment_industry }
 					}
 					change_local_variable = {
 						name = building_number_calc
@@ -95,6 +95,12 @@ je_fi_protectorate = {
 					if = {
 						limit = {
 							fi_protectorate_acceptance >= 0
+							NOT = { has_variable = fi_dip_timer }
+						}
+						set_variable = {
+							name = fi_dip_timer
+							value = 1
+							years = 1
 						}
 						set_variable = {
 							name = fi_dip_event_target
