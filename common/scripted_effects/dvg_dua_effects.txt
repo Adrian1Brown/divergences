@@ -129,9 +129,6 @@ dua_weekly_pulse_anglois_progress = {
 		}
 		change_variable = { name = anglois_progress_from_laws add = 0.25 }
 	}
-	else = {
-		change_variable = { name = anglois_progress_from_laws add = -0.5 }
-	}
 
 	# From Legitimacy
 	change_variable = { name = anglois_progress_from_legitimacy divide = 100 } #Legitimacy divided by 100, to make it minimum 0 and maximum 1.
