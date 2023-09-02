@@ -10,8 +10,6 @@
 		scope:journal_entry = {
 			is_goal_complete = yes
 		}
-		has_law = law_type:law_national_supremacy
-		has_law = law_taype:law_ethnostate
 	}
 
 	on_complete = {
