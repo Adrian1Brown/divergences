@@ -134,6 +134,7 @@
 		
 		add_homeland = french
 		add_homeland = breton
+		add_homeland = anglois
 	}
 	s:STATE_POITOU = {
 		create_state = {
