@@ -4,7 +4,7 @@
 	traits = { francophone anglophone european_heritage }
 	
 	obsessions = {
-		wine
+		wine tea
 	}
 	
 	male_common_first_names={
@@ -2641,6 +2641,10 @@ amazonien={
 	color= hsv{ 0.231 0.96 0.51 }
 	religion = catholic
 	traits = { francophone amerigan european_heritage }
+
+	obsessions = {
+		coffee
+	}
 	
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Aimery Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
