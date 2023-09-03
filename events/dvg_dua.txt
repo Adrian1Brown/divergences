@@ -229,9 +229,9 @@ dvg_dua.2 = {
 
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_cultural_exclusion }
+				NOT = { has_law = law_type:law_national_supremacy }
 			}
-			activate_law = law_type:law_cultural_exclusion
+			activate_law = law_type:law_national_supremacy
 		}
 
 		custom_tooltip = {
