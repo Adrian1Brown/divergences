@@ -1,5 +1,18 @@
 ﻿### ERA 1
 
+sahara_colonisation = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/quinine.dds"
+	category = society
+	can_research = no
+	
+	modifier = {}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 centralization = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/centralization.dds"
@@ -17,6 +30,28 @@ centralization = {
 	
 	ai_weight = {
 		value = 1.5 # Important in general
+	}
+}
+
+colonization = {
+	# Unlocks Colonial Resettlement, Colonial Exploitation - Colonial Affairs Laws
+	# Unlocks various expedition decisions
+	# Unlocks the Suez Canal
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/colonization.dds"
+	category = society
+
+	modifier = {
+		country_institution_colonial_affairs_max_investment_add = 2
+		country_diplomatic_play_maneuvers_add = 10
+	}	
+	
+	unlocking_technologies = {
+		international_relations
+	}
+	
+	ai_weight = {
+		value = 1
 	}
 }
 
@@ -44,6 +79,41 @@ central_archives = {
 	}
 }
 
+nationalism = {
+	# Unlocks the Immigration Controls Law in Migration
+	# New leaders may spawn with the Ethno-Nationalist Ideology
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = society
+	
+	modifier = {
+		country_authority_mult = 0.1
+		country_diplomatic_play_maneuvers_add = 20
+	}
+	
+	unlocking_technologies = {
+		mass_communication
+		international_relations
+	}
+	
+	ai_weight = {
+		value = 2 # Important in general
+		
+		# Extra-important for major unifications
+		if = {
+			limit = { 
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}				
+			}
+			add = 2
+		}			
+	}
+}
+
 ### ERA 3
 
 civilizing_mission = {
@@ -52,8 +122,10 @@ civilizing_mission = {
 	era = era_3
 	texture = "gfx/interface/icons/invention_icons/civilizing_mission.dds"
 	category = society
+	
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 1
+		country_diplomatic_play_maneuvers_add = 30
 	}
 	
 	unlocking_technologies = {
@@ -125,6 +197,20 @@ central_planning = {
 	}
 }
 
+analytical_philosophy = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/analytical_philosophy.dds"
+	category = society
+	
+	unlocking_technologies = {
+		philosophical_pragmatism
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 #quinine = {
 #	# Permits colonization of state regions with the Malaria trait
 #	era = era_4
@@ -157,6 +243,30 @@ central_planning = {
 #		}
 #	}
 #}
+
+multilateral_alliances = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/multilateral_alliances.dds"
+	category = society
+	
+	modifier = {
+		country_diplomatic_play_maneuvers_add = 40
+		country_allow_multiple_alliances = yes
+	}
+	
+	unlocking_technologies = {	
+		pan-nationalism
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		if = {
+			limit = { country_rank >= rank_value:great_power }
+			add = 2
+		}
+	}
+}
 
 ### ERA 5
 
