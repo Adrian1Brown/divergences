@@ -20,7 +20,6 @@
 		ig_trait_middle_managers
 		ig_trait_xenophobia
 	}
-
 	on_enable = {
 		ig:ig_petty_bourgeoisie = {
 			set_ig_trait = ig_trait:ig_trait_xenophobia

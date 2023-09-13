@@ -21,7 +21,6 @@
 		ig_trait_engines_of_progress
 		ig_trait_tax_avoidance
 	}
-
 	on_enable = {
 		ig:ig_industrialists = {
 			set_ig_trait = ig_trait:ig_trait_tax_avoidance
@@ -43,11 +42,11 @@
 
 	pop_weight = {
 		value = 0
-	
+
 		add = {
 			desc = "POP_CAPITALISTS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = capitalists
 				}
 				value = 200
@@ -240,19 +239,6 @@
 				value = 1
 				add = scope:interest_group.modifier:interest_group_in_government_attraction_mult
 				min = 0
-			}
-		}
-		multiply = {
-			desc = "decentralized_power"	
-			value = 1.0
-			
-			if = {
-				limit = { 
-					owner = {
-						is_country_type = decentralized
-					}
-				}
-				value = 0.0
 			}
 		}
 	}

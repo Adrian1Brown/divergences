@@ -22,7 +22,6 @@
 		ig_trait_industrial_organizers
 		ig_trait_work_to_rule
 	}
-
 	on_enable = {
 		ig:ig_trade_unions = {
 			set_ig_trait = ig_trait:ig_trait_work_to_rule
@@ -292,7 +291,6 @@
 			}
 		}
 	}
-
 
 	monarch_weight = {
 		value = 0.1 # this is just inherently unlikely

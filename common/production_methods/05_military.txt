@@ -1545,7 +1545,6 @@ pm_destroyers = {
 
 		unscaled = {
 			unit_morale_loss_mult = -0.1
-#			todo: unit_convoy_defence_mult = 0.25
 			unit_convoy_raiding_interception_mult = 0.25
 			unit_convoy_defense_mult = 0.5
 		}
@@ -1584,7 +1583,6 @@ pm_carriers = {
 		unscaled = {
 			building_training_rate_add = -10
 			unit_morale_loss_mult = -0.25
-#			todo: unit_convoy_defence_mult = 0.25
 			unit_convoy_raiding_interception_mult = 0.5
 			unit_convoy_defense_mult = 0.5
 		}

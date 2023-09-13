@@ -128,7 +128,7 @@ dp_liberate_subject = {
 			is_subject = yes
 			NOT = { is_subject_of = root }
 		}
-		diplomatic_play_has_no_relations_blocker_with_overlord = yes
+		diplomatic_play_has_no_relations_blocker_with_overlord = yes	
 	}
 
 	on_weekly_pulse = {}
@@ -170,7 +170,7 @@ dp_take_treaty_port = {
 			NOT = { is_country_type = decentralized }
 			NOT = { is_subject_of = root }
 		}
-		diplomatic_play_has_no_relations_blocker_with_overlord = yes		
+		diplomatic_play_has_no_relations_blocker_with_overlord = yes	
 	}
 	
 	on_weekly_pulse = {}
@@ -187,8 +187,13 @@ dp_make_dominion = {
 	texture = "gfx/interface/icons/war_goals/make_dominion.dds"
 	
 	possible = {
-		aggressive_diplomatic_plays_permitted = yes	
-		diplomatic_play_has_no_relations_blocker_with_target = yes	
+		NOT = { has_modifier = diplomatic_plays_blocked }
+		NOT = { has_modifier = neutrality }
+		aggressive_diplomatic_plays_permitted = yes
+		scope:target_country = {
+			NOT = { has_modifier = neutrality }
+		}
+		diplomatic_play_has_no_relations_blocker_with_target = yes
 	}
 	
 	on_weekly_pulse = {}
@@ -204,8 +209,13 @@ dp_make_vassal = {
 	texture = "gfx/interface/icons/war_goals/make_vassal.dds"
 	
 	possible = {
-		aggressive_diplomatic_plays_permitted = yes	
-		diplomatic_play_has_no_relations_blocker_with_target = yes	
+		NOT = { has_modifier = diplomatic_plays_blocked }
+		NOT = { has_modifier = neutrality }
+		aggressive_diplomatic_plays_permitted = yes
+		scope:target_country = {
+			NOT = { has_modifier = neutrality }
+		}	
+		diplomatic_play_has_no_relations_blocker_with_target = yes
 	}
 	
 	on_weekly_pulse = {}
@@ -221,8 +231,13 @@ dp_make_puppet = {
 	texture = "gfx/interface/icons/war_goals/make_puppet.dds"
 	
 	possible = {	
-		aggressive_diplomatic_plays_permitted = yes		
-		diplomatic_play_has_no_relations_blocker_with_target = yes		
+		NOT = { has_modifier = diplomatic_plays_blocked }
+		NOT = { has_modifier = neutrality }
+		aggressive_diplomatic_plays_permitted = yes
+		scope:target_country = {
+			NOT = { has_modifier = neutrality }
+		}
+		diplomatic_play_has_no_relations_blocker_with_target = yes
 	}
 	
 	on_weekly_pulse = {}
@@ -245,8 +260,9 @@ dp_transfer_subject = {
 			NOT = { is_country_type = decentralized }
 			is_subject = yes
 			NOT = { is_subject_of = root }
-		}
-		diplomatic_play_has_no_relations_blocker_with_overlord = yes			
+			NOT = { is_subject_type = subject_type_personal_union }
+		}	
+		diplomatic_play_has_no_relations_blocker_with_overlord = yes				
 	}
 	
 	on_weekly_pulse = {}
@@ -298,6 +314,7 @@ dp_force_recognition = {
 		aggressive_diplomatic_plays_permitted = yes
 		scope:target_country = {
 			is_subject = no
+			NOT = { has_modifier = neutrality }
 			OR = {
 				is_country_type = recognized
 				is_country_type = colonial

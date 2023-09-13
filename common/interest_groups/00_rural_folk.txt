@@ -28,8 +28,38 @@
 			set_ig_trait = ig_trait:ig_trait_honest_work
 			set_ig_trait = ig_trait:ig_trait_farmers_markets
 		}
+	
+		# Frontier Expansion Ideology
+		if = {
+			limit = {
+				OR = {
+					c:VIN ?= this
+				}
+			}
+			ig:ig_rural_folk = {
+				remove_ideology = ideology_isolationist
+				add_ideology = ideology_isolationist_expansionism
+			}
+		}
+		# Heimin
+		if = {
+			limit = {
+				country_has_primary_culture = cu:japanese
+			}
+			ig:ig_rural_folk = {
+				set_interest_group_name = ig_peasants
+			}
+		}
+		# Maka'āinana
+		if = {
+			limit = {
+				country_has_primary_culture = cu:hawaiian
+			}
+			ig:ig_rural_folk = {
+				set_interest_group_name = ig_maka_ainana
+			}
+		}
 	}
-
 	on_disable = {}
 	on_character_ig_membership = {}
 

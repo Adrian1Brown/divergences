@@ -28,8 +28,38 @@
 			set_ig_trait = ig_trait:ig_trait_avant_garde
 			set_ig_trait = ig_trait:ig_trait_propagandists
 		}
+		
+		# Papal Intellegentsia
+		if = {
+			limit = {
+				c:PAP ?= this
+			}
+			ig:ig_intelligentsia = {
+				remove_ideology = ideology_anti_clerical
+			}
+		}
+		# Hawaiian Democrats
+		else_if = {
+			limit = {
+				country_has_primary_culture = cu:hawaiian
+			}
+			ig:ig_intelligentsia = {
+				set_interest_group_name = ig_hawaiian_democrats
+			}
+		}
+		# Literati
+		else_if = {
+			limit = {
+				any_primary_culture = {
+					has_discrimination_trait = han_chinese
+				}
+			}
+			ig:ig_intelligentsia = { 
+				set_interest_group_name = ig_literati
+				remove_ideology = ideology_anti_clerical
+			}
+		}
 	}
-
 	on_disable = {}
 	on_character_ig_membership = {}
 
@@ -82,231 +112,105 @@
 				value = 100
 			}
 		}
-		add = {
-			desc = "POP_ENGINEERS"
-			if = {
-				limit = { 
-					is_pop_type = engineers
-				}
-				value = 50
-			}
-		}
-		
+
 		add = {
 			desc = "POP_CAPITALISTS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = capitalists
 				}
 				value = 50
 			}
-		}				
-		
+		}
+
 		add = {
 			desc = "POP_ARISTOCRATS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = aristocrats
 				}
 				value = 50
 			}
-		}		
+		}
 		
 		add = {
 			desc = "LITERACY_50_60"
-			
+
 			if = {
-				limit = { 
+				limit = {
 					literacy_rate >= 0.50
 					literacy_rate < 0.60
-				}
-				add = 5
-			}
-		}		
-		add = {
-			desc = "LITERACY_60_70"
-			
-			if = {
-				limit = { 
-					literacy_rate >= 0.60
-					literacy_rate < 0.70
 				}
 				add = 10
 			}
 		}
+
+		add = {
+			desc = "LITERACY_60_70"
+
+			if = {
+				limit = {
+					literacy_rate >= 0.60
+					literacy_rate < 0.70
+				}
+				add = 12
+			}
+		}
+
 		add = {
 			desc = "LITERACY_70_80"
-			
+
 			if = {
-				limit = { 
+				limit = {
 					literacy_rate >= 0.70
 					literacy_rate < 0.80
 				}
-				add = 15
+				add = 14
 			}
-		}		
+		}
+
 		add = {
 			desc = "LITERACY_80_90"
-			
+
 			if = {
-				limit = { 
+				limit = {
 					literacy_rate >= 0.80
 					literacy_rate < 0.90
 				}
-				add = 20
+				add = 16
 			}
-		}		
+		}
+
 		add = {
 			desc = "LITERACY_90_100"
-			
+
 			if = {
-				limit = { 
+				limit = {
 					literacy_rate >= 0.90
 				}
-				add = 25
-			}
-		}	
-		add = {
-			desc = "law_autocracy"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_autocracy
-					}
-				}
-				value = 20
+				add = 18
 			}
 		}
-		add = {
-			desc = "law_oligarchy"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_oligarchy
-					}
-				}
-				value = 10
-			}
-		}
-		add = {
-			desc = "law_anarchy"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_anarchy
-					}
-				}
-				value = 10
-			}
-		}
-		add = {
-			desc = "law_outlawed_dissent"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_outlawed_dissent
-					}
-				}
-				value = 20
-			}
-		}
-		add = {
-			desc = "law_censorship"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_censorship
-					}
-				}
-				value = 10
-			}
-		}
-		add = {
-			desc = "law_state_religion"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_state_religion
-					}
-				}
-				value = 10
-			}
-		}
-		add = {
-			desc = "law_no_schools"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_no_schools
-					}
-				}
-				value = 10
-			}
-		}
-		add = {
-			desc = "law_debt_slavery"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_debt_slavery
-					}
-				}
-				value = 20
-			}
-		}
-		add = {
-			desc = "law_slave_trade"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_slave_trade
-					}
-				}
-				value = 20
-			}
-		}
-		add = {
-			desc = "law_legacy_slavery"
-			if = {
-				limit = {
-					owner = {
-						has_law = law_type:law_legacy_slavery
-					}
-				}
-				value = 10
-			}
-		}
-		multiply = {
-			desc = "concept_literacy"
-			value = 1.0
-			
-			if = {
-				limit = { 
-					literacy_rate < 0.5
-				}
-				value = literacy_rate
-				multiply = 2
-			}
-		}
-		
+
 		multiply = {
 			desc = "LEADER_POPULARITY"
 			scope:interest_group = {
-				leader = {
+				leader ?= {
 					value = popularity
-					multiply = 0.005
+					multiply = 0.0025
 					add = 1
+					max = 1.25
 					min = 0.75
 				}
 			}
-		}	
-		
+		}
+
 		multiply = {
-			desc = "decentralized_power"	
+			desc = "decentralized_power"
 			value = 1.0
-			
+
 			if = {
-				limit = { 
+				limit = {
 					owner = {
 						is_country_type = decentralized
 					}
