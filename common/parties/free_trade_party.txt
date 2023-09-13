@@ -13,13 +13,6 @@ free_trade_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_democratic_alliance
-				trigger = {
-					exists = c:DUA
-					THIS = c:DUA
-				}
-			}
-			triggered_desc = {
 				desc = party_peelites
 				trigger = {
 					exists = c:GBR
@@ -47,13 +40,13 @@ free_trade_party = {
 					THIS = c:CHI
 				}
 			}
-			# triggered_desc = {
-			# 	desc = party_national_party
-			# 	trigger = {
-			# 		exists = c:CHL
-			# 		THIS = c:CHL
-			# 	}
-			# }
+			triggered_desc = {
+				desc = party_national_party
+				trigger = {
+					exists = c:CHL
+					THIS = c:CHL
+				}
+			}
 			triggered_desc = {
 				desc = party_party_of_peaceful_renovation
 				trigger = {
@@ -65,7 +58,6 @@ free_trade_party = {
 			triggered_desc = {
 				desc = party_free_minded_venstre
 				trigger = {
-					country_has_primary_culture = cu:scandinavian
 					country_has_primary_culture = cu:norwegian
 				}
 			}
@@ -75,7 +67,6 @@ free_trade_party = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish #DVG
 					}
 				}
 			}
@@ -295,8 +286,7 @@ free_trade_party = {
 			limit = {
 				owner = {
 					has_technology_researched = currency_standards
-					NOT = { has_law = law_type:law_per_capita_based_taxation }
-					NOT = { has_law = law_type:law_consumption_based_taxation }
+					has_law = law_type:law_no_consumption_taxes
 				}
 				OR = {
 					has_ideology = ideology:ideology_plutocratic
@@ -311,7 +301,7 @@ free_trade_party = {
 		if = { # capitalist-conservative taxation alliance
 			limit = {
 				owner = {
-					has_law = law_type:law_graduated_taxation
+					has_law = law_type:law_high_corporation_tax
 				}
 				OR = {
 					has_ideology = ideology:ideology_plutocratic
@@ -327,8 +317,8 @@ free_trade_party = {
 		if = { # alliance for consumption taxes
 			limit = {
 				owner = {
-					NOT = { has_law = law_type:law_consumption_based_taxation }
-					NOT = { has_law = law_type:law_per_capita_based_taxation }
+					NOT = { has_law = law_type:law_high_consumption_tax }
+					NOT = { has_law = law_type:law_moderate_consumption_tax }
 				}
 				OR = {
 					has_ideology = ideology:ideology_agrarian

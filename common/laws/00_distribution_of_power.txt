@@ -46,43 +46,57 @@ law_vanguardism = {
 	}
 	
 	on_activate = {
-		activate_law = law_type:law_no_legislature
-		activate_law = law_type:law_no_voting
-		activate_law = law_type:law_single_party_state
-		ROOT = {
-			set_variable = { name = only_valid_party value = ruler.interest_group.party }
-		}
 		if = {
 			limit = {
-				NOT = {
-					any_active_party = {
-						exists = this
+				game_date > 1836.01.01
+			}
+			activate_law = law_type:law_no_legislature
+			activate_law = law_type:law_no_voting
+			activate_law = law_type:law_single_party_state
+			if = {
+				limit = {
+					ROOT = {
+						ruler.interest_group = {
+							has_party = yes
+						}
 					}
 				}
+				ROOT = {
+					set_variable = { name = only_valid_party value = ruler.interest_group.party }
+				}
 			}
-			root = { gen_ruler_party = yes }
-		}
-		hidden_effect = { #Clears all currently active parties
-			deactivate_parties = yes
-		}
-		update_party_support = yes #Reactivates precisely one legal party
-		custom_tooltip = {
-			text = sps_government_reshuffle_tt
-			every_interest_group = {
+			else_if = {
 				limit = {
-					is_in_government = yes
-					NOT = { #Removes all IGs from government that aren't in your party
+					NOT = {
+						any_active_party = {
+							exists = this
+						}
+					}
+				}
+				root = { gen_ruler_party = yes }
+			}
+			hidden_effect = { #Clears all currently active parties
+				deactivate_parties = yes
+			}
+			update_party_support = yes #Reactivates precisely one legal party
+			custom_tooltip = {
+				text = sps_government_reshuffle_tt
+				every_interest_group = {
+					limit = {
+						is_in_government = yes
+						NOT = { #Removes all IGs from government that aren't in your party
+							has_party = yes
+						}
+					}
+					remove_ruling_interest_group = yes
+				}
+				every_interest_group = {
+					limit = { #Adds all IGs that are in your party to the government
+						is_in_government = no
 						has_party = yes
 					}
+					add_ruling_interest_group = yes
 				}
-				remove_ruling_interest_group = yes
-			}
-			every_interest_group = {
-				limit = { #Adds all IGs that are in your party to the government
-					is_in_government = no
-					has_party = yes
-				}
-				add_ruling_interest_group = yes
 			}
 		}
 	}
@@ -233,9 +247,9 @@ law_technocracy = {
 
 	progressiveness = -50
 	
-	unlocking_laws = {
-		law_republic
-	}
+	#unlocking_laws = {
+	#	law_republic
+	#}
 
 	on_activate = {
 		activate_law = law_type:law_no_legislature
@@ -258,6 +272,7 @@ law_technocracy = {
 		country_legitimacy_govt_size_add = 2
 		country_legitimacy_ideological_incoherence_mult = -0.1
 		country_academics_pol_str_mult = 0.50
+		country_capitalists_pol_str_mult = 0.50
 		country_engineers_pol_str_mult = 0.33
 		country_officers_pol_str_mult = 0.33
 		country_authority_add = 100

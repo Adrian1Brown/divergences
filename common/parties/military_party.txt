@@ -76,7 +76,6 @@ military_party = {
 					OR = {
 						country_has_primary_culture = cu:north_german
 						country_has_primary_culture = cu:south_german
-						country_has_primary_culture = cu:rheinish #DVG
 					}
 				}
 			}
@@ -211,9 +210,8 @@ military_party = {
 				}
 				owner = {
 					NOR = {
-						has_law = law_type:law_proportional_taxation
-						has_law = law_type:law_per_capita_based_taxation
-						has_law = law_type:law_graduated_taxation
+						has_law = law_type:law_moderate_corporation_tax
+						has_law = law_type:law_high_corporation_tax
 					}
 				}
 			}
@@ -229,14 +227,14 @@ military_party = {
 					AND = {
 						has_ideology = ideology:ideology_loyalist
 						owner = {
-							NOT = { has_law = law_type:law_graduated_taxation }
+							NOT = { has_law = law_type:law_high_corporation_tax }
 						}
 					}
 				}
 				owner = {
 					NOR = {
-						has_law = law_type:law_proportional_taxation
-						has_law = law_type:law_per_capita_based_taxation
+						has_law = law_type:law_moderate_corporation_tax
+						has_law = law_type:law_low_corporation_tax
 					}
 				}
 			}
