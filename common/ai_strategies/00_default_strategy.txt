@@ -521,16 +521,8 @@ ai_strategy_default = {
 			add = 1
 		}		
 
-		# Ethiopian Thunderdome
-		if = {
-			limit = {
-				has_journal_entry = je_age_of_princes
-				scope:target_country = {
-					has_journal_entry = je_age_of_princes
-				}
-			}
-			add = 10
-		}
+		
+		
 		
 		#Spain wants an empire again africa
 		if = {
@@ -4713,20 +4705,7 @@ ai_strategy_default = {
 				add = 1000
 			}
 			
-			if = {
-				limit = {
-					has_journal_entry = je_tawantisuyu_reconquer_the_capital
-					scope:target_country = {
-						any_scope_state = {
-							OR = {
-								state_region = s:STATE_CUZCO
-								state_region = s:STATE_CUNTISUYU
-							}
-						}
-					}
-				}
-				add = 1000
-			}
+			
 
 			if = {
 				limit = {
