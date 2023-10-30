@@ -135,7 +135,8 @@ decree_emergency_relief = {
 	}
 	modifier = {
 		state_welfare_payments_add = 0.5
-		state_poor_standard_of_living_add = 1
+		state_poor_standard_of_living_add = 2
+		state_rich_standard_of_living_add = -20
 	}
 	cost = 100
 	
@@ -231,6 +232,7 @@ decree_promote_national_values = {
 	modifier = {
 		state_assimilation_mult = 1
 		state_conversion_mult = 1
+		state_loyalists_from_sol_change_mult = 0.33
 	}
 	cost = 100
 	
@@ -508,7 +510,7 @@ decree_greener_grass_campaign = {
 		is_isolated_from_market = no
 	}
 	modifier = {
-		state_migration_pull_mult = 0.1
+		state_migration_pull_mult = 0.5
 	}
 	unlocking_technologies = { 
 		romanticism

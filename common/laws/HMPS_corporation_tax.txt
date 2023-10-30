@@ -12,7 +12,6 @@ law_no_corporation_taxes = {
 	can_enact = {
 		always = yes
 	}
-
 	
 	pop_support = {
 		value = 0
@@ -47,33 +46,23 @@ law_low_corporation_tax = {
 
 	tax_modifier_very_low = {
 		tax_dividends_add = 0.02
-		#state_construction_mult = -0.05
-		#country_authority_add = -25
 	}	
 	
 	tax_modifier_low = {
 		tax_dividends_add = 0.04
-		#state_construction_mult = -0.075
-		#country_authority_add = 10
 	}
 	
 	tax_modifier_medium = {
 		tax_dividends_add = 0.06
-		#state_construction_mult = -0.1
-		#country_authority_add = -37.5
 		
 	}	
 	
 	tax_modifier_high = {
 		tax_dividends_add = 0.08
-		#state_construction_mult = -0.125
-		#country_authority_add = -50
 	}
 	
 	tax_modifier_very_high = {
 		tax_dividends_add = 0.1
-		#state_construction_mult = -0.15
-		#country_authority_add = -62.5
 	}	
 	
 	possible_political_movements = {
@@ -103,38 +92,28 @@ law_moderate_corporation_tax = {
 	
 	modifier = {
 		country_authority_mult = -0.1
-		state_construction_mult = -0.2
+		state_construction_mult = -0.3
 		state_tax_capacity_mult = -0.05
 	}
 
 	tax_modifier_very_low = {
 		tax_dividends_add = 0.1
-		#state_construction_mult = -0.15
-		#country_authority_add = -75
 	}	
 	
 	tax_modifier_low = {
-		tax_dividends_add = 0.12
-		#state_construction_mult = -0.175
-		#country_authority_add = -87.5
+		tax_dividends_add = 0.14
 	}
 	
 	tax_modifier_medium = {
-		tax_dividends_add = 0.14
-		#state_construction_mult = -0.2
-		#country_authority_add = -100
+		tax_dividends_add = 0.18
 	}	
 	
 	tax_modifier_high = {
-		tax_dividends_add = 0.16
-		#state_construction_mult = -0.225
-		#country_authority_add = -112.5
+		tax_dividends_add = 0.22
 	}
 	
 	tax_modifier_very_high = {
-		tax_dividends_add = 0.18
-		#state_construction_mult = -0.25
-		#country_authority_add = -125
+		tax_dividends_add = 0.26
 	}	
 	
 	possible_political_movements = {
@@ -160,38 +139,28 @@ law_high_corporation_tax = {
 	
 	modifier = {
 		country_authority_mult = -0.2
-		state_construction_mult = -0.3
+		state_construction_mult = -0.5
 		state_tax_capacity_mult = -0.1
 	}
 
 	tax_modifier_very_low = {
-		tax_dividends_add = 0.18
-		#state_construction_mult = -0.25
-		#country_authority_add = -125
+		tax_dividends_add = 0.30
 	}	
 	
 	tax_modifier_low = {
-		tax_dividends_add = 0.2
-		#state_construction_mult = -0.275
-		#country_authority_add = -137.5
+		tax_dividends_add = 0.325
 	}
 	
 	tax_modifier_medium = {
-		tax_dividends_add = 0.22
-		#state_construction_mult = -0.3
-		#country_authority_add = -150
+		tax_dividends_add = 0.35
 	}	
 	
 	tax_modifier_high = {
-		tax_dividends_add = 0.24
-		#state_construction_mult = -0.325
-		#country_authority_add = -162.5
+		tax_dividends_add = 0.375
 	}
 	
 	tax_modifier_very_high = {
-		tax_dividends_add = 0.26
-		#state_construction_mult = -0.35
-		#country_authority_add = -175
+		tax_dividends_add = 0.40
 	}	
 	
 	possible_political_movements = {

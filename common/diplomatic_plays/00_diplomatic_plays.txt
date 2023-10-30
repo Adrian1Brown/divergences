@@ -44,27 +44,27 @@ dp_regime_change = {
 	on_war_end = {}
 }
 
-dp_ban_slavery = {
-	war_goal = ban_slavery
-	
-	texture = "gfx/interface/icons/war_goals/ban_slavery.dds"
-
-	possible = {
-		NOT = { is_country_type = decentralized }
-		aggressive_diplomatic_plays_permitted = yes
-		NOT = { is_subject_of = scope:target_country }	
-		scope:target_country = {
-			NOT = { is_country_type = decentralized }
-		}
-		diplomatic_play_has_no_relations_blockers = yes		
-	}
-
-	on_weekly_pulse = {}
-
-	on_war_begins = {}
-
-	on_war_end = {}
-}
+#dp_ban_slavery = {
+#	war_goal = ban_slavery
+#	
+#	texture = "gfx/interface/icons/war_goals/ban_slavery.dds"
+#
+#	possible = {
+#		NOT = { is_country_type = decentralized }
+#		aggressive_diplomatic_plays_permitted = yes
+#		NOT = { is_subject_of = scope:target_country }	
+#		scope:target_country = {
+#			NOT = { is_country_type = decentralized }
+#		}
+#		diplomatic_play_has_no_relations_blockers = yes		
+#	}
+#
+#	on_weekly_pulse = {}
+#
+#	on_war_begins = {}
+#
+#	on_war_end = {}
+#}
 
 dp_conquer_state = {
 	war_goal = conquer_state
@@ -128,7 +128,7 @@ dp_liberate_subject = {
 			is_subject = yes
 			NOT = { is_subject_of = root }
 		}
-		diplomatic_play_has_no_relations_blocker_with_overlord = yes	
+		diplomatic_play_has_no_relations_blocker_with_overlord = yes
 	}
 
 	on_weekly_pulse = {}
@@ -170,7 +170,7 @@ dp_take_treaty_port = {
 			NOT = { is_country_type = decentralized }
 			NOT = { is_subject_of = root }
 		}
-		diplomatic_play_has_no_relations_blocker_with_overlord = yes	
+		diplomatic_play_has_no_relations_blocker_with_overlord = yes		
 	}
 	
 	on_weekly_pulse = {}
@@ -187,13 +187,8 @@ dp_make_dominion = {
 	texture = "gfx/interface/icons/war_goals/make_dominion.dds"
 	
 	possible = {
-		NOT = { has_modifier = diplomatic_plays_blocked }
-		NOT = { has_modifier = neutrality }
-		aggressive_diplomatic_plays_permitted = yes
-		scope:target_country = {
-			NOT = { has_modifier = neutrality }
-		}
-		diplomatic_play_has_no_relations_blocker_with_target = yes
+		aggressive_diplomatic_plays_permitted = yes	
+		diplomatic_play_has_no_relations_blocker_with_target = yes	
 	}
 	
 	on_weekly_pulse = {}
@@ -209,13 +204,8 @@ dp_make_vassal = {
 	texture = "gfx/interface/icons/war_goals/make_vassal.dds"
 	
 	possible = {
-		NOT = { has_modifier = diplomatic_plays_blocked }
-		NOT = { has_modifier = neutrality }
-		aggressive_diplomatic_plays_permitted = yes
-		scope:target_country = {
-			NOT = { has_modifier = neutrality }
-		}	
-		diplomatic_play_has_no_relations_blocker_with_target = yes
+		aggressive_diplomatic_plays_permitted = yes	
+		diplomatic_play_has_no_relations_blocker_with_target = yes	
 	}
 	
 	on_weekly_pulse = {}
@@ -231,13 +221,8 @@ dp_make_puppet = {
 	texture = "gfx/interface/icons/war_goals/make_puppet.dds"
 	
 	possible = {	
-		NOT = { has_modifier = diplomatic_plays_blocked }
-		NOT = { has_modifier = neutrality }
-		aggressive_diplomatic_plays_permitted = yes
-		scope:target_country = {
-			NOT = { has_modifier = neutrality }
-		}
-		diplomatic_play_has_no_relations_blocker_with_target = yes
+		aggressive_diplomatic_plays_permitted = yes		
+		diplomatic_play_has_no_relations_blocker_with_target = yes		
 	}
 	
 	on_weekly_pulse = {}
@@ -260,9 +245,8 @@ dp_transfer_subject = {
 			NOT = { is_country_type = decentralized }
 			is_subject = yes
 			NOT = { is_subject_of = root }
-			NOT = { is_subject_type = subject_type_personal_union }
-		}	
-		diplomatic_play_has_no_relations_blocker_with_overlord = yes				
+		}
+		diplomatic_play_has_no_relations_blocker_with_overlord = yes			
 	}
 	
 	on_weekly_pulse = {}
@@ -314,7 +298,6 @@ dp_force_recognition = {
 		aggressive_diplomatic_plays_permitted = yes
 		scope:target_country = {
 			is_subject = no
-			NOT = { has_modifier = neutrality }
 			OR = {
 				is_country_type = recognized
 				is_country_type = colonial
@@ -327,7 +310,28 @@ dp_force_recognition = {
 	
 	on_war_begins = {}
 
-	on_war_end = {}
+	on_war_end = {
+		scope:initiator = {
+			remove_variable = recognition_initiator
+		}
+		scope:target_country = {
+			remove_variable = recognition_target
+		}
+		if = {
+			limit = {
+				scope:initiator = {
+					is_country_type = recognized
+				}
+			}
+			scope:target_country = {
+				add_modifier = {
+					name = forced_recognisation_modifier
+					months = long_modifier_time
+					is_decaying = yes
+				}
+			}
+		}
+	}
 }
 
 dp_revolution = {
@@ -335,8 +339,8 @@ dp_revolution = {
 	enable_switch_sides = yes
 	allow_negotiated_peace = no
 	mirror_war_goal = yes
-	initiator_can_add_war_goals = no
-	target_can_add_war_goals = no
+	initiator_can_add_war_goals = yes
+	target_can_add_war_goals = yes
 	add_infamy_for_starting_initiator_wargoals = no
 	
 	war_goal = annex_country
@@ -389,7 +393,7 @@ dp_revolution = {
 
 dp_secession = {
 	requires_interest_marker = no
-	initiator_can_add_war_goals = no
+	initiator_can_add_war_goals = yes
 	target_can_add_war_goals = no
 	backing_down_always_ends_play = no
 	add_infamy_for_starting_initiator_wargoals = no
@@ -672,91 +676,45 @@ dp_unify_ethiopia = {
 	on_war_end = {}
 }
 
-dp_unify_china_state = {
-	war_goal = conquer_state
+dp_unify_china = {
+	war_goal = annex_country
+	mirror_war_goal = yes
 	add_infamy_for_starting_initiator_wargoals = no
-
 	
 	texture = "gfx/interface/icons/war_goals/annex_country.dds"
 	
 	selectable_in_lens = {
-		
 		OR = {
-			country_has_primary_culture = cu:yue
-			country_has_primary_culture = cu:hakka
-			country_has_primary_culture = cu:han
-			country_has_primary_culture = cu:min
+			any_primary_culture = {
+				OR = {
+					has_discrimination_trait = han_chinese
+					has_discrimination_trait = sinosphere
+				}
+			}
+			country_has_primary_culture = cu:zhuang
+			country_has_primary_culture = cu:yi
 		}
 		NOT = { country_has_primary_culture = cu:vietnamese }
 		NOT = { this = c:LAN }
 	}
 	
 	possible = {
-		NOT = { exists = c:CHI }
 		NOT = { is_country_type = decentralized }
-		is_subject = no
-		OR = {
-			country_has_primary_culture = cu:yue
-			country_has_primary_culture = cu:hakka
-			country_has_primary_culture = cu:han
-			country_has_primary_culture = cu:min
-		}
 		
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
 			aggressive_diplomatic_plays_permitted = yes
 			OR = {
-			country_has_primary_culture = cu:yue
-			country_has_primary_culture = cu:hakka
-			country_has_primary_culture = cu:han
-			country_has_primary_culture = cu:min
-			}
-		}
-	}
-	
-	on_weekly_pulse = {}
-	
-	on_war_begins = {}
-
-	on_war_end = {}
-}
-
-dp_unify_china = {
-	war_goal = annex_country
-	add_infamy_for_starting_initiator_wargoals = no
-
-	
-	texture = "gfx/interface/icons/war_goals/annex_country.dds"
-	
-	selectable_in_lens = {
-		
-		OR = {
-			country_has_primary_culture = cu:yue
-			country_has_primary_culture = cu:hakka
-			country_has_primary_culture = cu:han
-			country_has_primary_culture = cu:min
-		}
-	}
-	
-	possible = {
-		NOT = { exists = c:CHI }
-		NOT = { is_country_type = decentralized }
-		is_subject = no
-		OR = {
-			country_has_primary_culture = cu:yue
-			country_has_primary_culture = cu:hakka
-			country_has_primary_culture = cu:han
-			country_has_primary_culture = cu:min
-		}
-		
-		scope:target_country = {
-			NOT = { is_country_type = decentralized }
-			aggressive_diplomatic_plays_permitted = yes
-			OR = {
-			country_has_primary_culture = cu:yue
-			country_has_primary_culture = cu:hakka
-			country_has_primary_culture = cu:han
-			country_has_primary_culture = cu:min
+				any_primary_culture = {
+					OR = {
+						has_discrimination_trait = han_chinese
+						has_discrimination_trait = sinosphere
+						culture = cu:zhuang
+						culture = cu:yi
+					}
+				}
+				country_has_primary_culture = cu:zhuang
+				country_has_primary_culture = cu:yi
 			}
 			NOT = { country_has_primary_culture = cu:vietnamese }
 			NOT = { this = c:LAN }

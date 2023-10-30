@@ -121,7 +121,7 @@
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_limited_conscription
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_colonial_exploitation
@@ -164,7 +164,7 @@
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_limited_conscription
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_colonial_exploitation
@@ -208,7 +208,7 @@
 		effect_starting_technology_tier_1_tech = yes
 		
 		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_limited_conscription
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
@@ -352,7 +352,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_limited_conscription
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
@@ -387,7 +387,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_appointed_bureaucrats
-		activate_law = law_type:law_limited_conscription
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
@@ -1438,7 +1438,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_limited_conscription
+		activate_law = law_type:law_mass_conscription
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_religious_schools

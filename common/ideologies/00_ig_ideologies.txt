@@ -9,8 +9,8 @@
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = neutral
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_dual_executive = disapprove
+		law_parliamentary_system = disapprove
 		law_council_republic = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
@@ -25,7 +25,7 @@
 		law_universal_suffrage = strongly_disapprove
 		law_anarchy = strongly_disapprove
 		law_vanguardism = strongly_disapprove
-		law_technocracy = strongly_disapprove
+		law_technocracy = neutral
 	}
 	
 	lawgroup_voting_system = {
@@ -61,7 +61,7 @@
 		law_agrarianism = approve
 		law_interventionism = neutral
 		law_laissez_faire = disapprove
-		law_industry_banned = disapprove
+		#law_industry_banned = disapprove
 		law_command_economy = strongly_disapprove
 		law_cooperative_ownership = strongly_disapprove
 	}
@@ -82,7 +82,7 @@ ideology_laissez_faire = {
 		law_interventionism = strongly_approve
 		law_agrarianism = neutral
 		law_traditionalism = disapprove
-		law_industry_banned = disapprove
+		#law_industry_banned = disapprove
 		law_command_economy = strongly_disapprove
 		law_cooperative_ownership = strongly_disapprove
 	}
@@ -159,17 +159,10 @@ ideology_individualist = {
 ideology_stratocratic = {
 	icon = "gfx/interface/icons/ideology_icons/stratocratic.dds"
 	
-	lawgroup_economic_system = {		
-		law_traditionalism = approve
-		law_command_economy = disapprove
-		law_cooperative_ownership = strongly_disapprove
-	}
-	
 	lawgroup_army_model = {
 		law_peasant_levies = strongly_approve
 		law_professional_army = neutral
 		law_national_militia = neutral
-		law_limited_conscription = approve
 		law_mass_conscription = approve
 	}
 	
@@ -200,7 +193,7 @@ ideology_stratocratic = {
 	}
 	
 	lawgroup_income_tax = {
-		law_no_income_taxes = approve
+		law_no_income_taxes = neutral
 		law_low_income_tax = neutral
 		law_moderate_income_tax = disapprove
 		law_high_income_tax = strongly_disapprove
@@ -263,7 +256,7 @@ ideology_agrarian = {
 	lawgroup_economic_system = {		
 		law_agrarianism = approve
 		law_traditionalism = neutral
-		law_industry_banned = neutral
+		#law_industry_banned = disapprove
 		law_interventionism = neutral
 		law_laissez_faire = disapprove
 		law_command_economy = strongly_disapprove
@@ -297,7 +290,6 @@ ideology_particularist = {
 	lawgroup_army_model = {
 		law_national_militia = strongly_approve
 		law_professional_army = neutral
-		law_limited_conscription = disapprove
 		law_mass_conscription = strongly_disapprove
 		law_peasant_levies = strongly_disapprove
 	}
@@ -363,7 +355,6 @@ ideology_moralist = {
 	
 	lawgroup_distribution_of_power = {
 		law_clerical_voting = approve
-		law_technocracy = disapprove
 	}
 
 	lawgroup_citizenship = {
@@ -387,7 +378,7 @@ ideology_meritocratic = {
 		law_technocracy = approve
 		law_clerical_voting = disapprove
 		law_oligarchy = neutral
-		law_autocracy = oppose
+		law_autocracy = disapprove
 		law_anarchy = strongly_disapprove
 		law_vanguardism = strongly_disapprove
 	}
@@ -480,7 +471,6 @@ ideology_jingoist = {
 	
 	lawgroup_army_model = {
 		law_professional_army = neutral
-		law_limited_conscription = approve
 		law_mass_conscription = strongly_approve
 		law_national_militia = disapprove
 		law_peasant_levies = disapprove
@@ -509,7 +499,6 @@ ideology_liberal = {
 		law_peasant_levies = disapprove
 		law_professional_army = approve
 		law_national_militia = neutral
-		law_limited_conscription = disapprove
 		law_mass_conscription = strongly_disapprove
 	}
 	
@@ -551,7 +540,7 @@ ideology_liberal = {
 		law_laissez_faire = strongly_approve
 		law_interventionism = neutral
 		law_agrarianism = disapprove
-		law_industry_banned = strongly_disapprove
+		#law_industry_banned = strongly_disapprove
 		law_traditionalism = strongly_disapprove		
 		law_command_economy = strongly_disapprove
 		law_cooperative_ownership = strongly_disapprove
@@ -585,12 +574,6 @@ ideology_anti_clerical = {
 		law_no_schools = disapprove
 		law_religious_schools = disapprove		
 	}
-
-	lawgroup_bureaucracy = {
-		law_appointed_bureaucrats = approve
-		law_elected_bureaucrats = neutral	
-		law_hereditary_bureaucrats = disapprove
-	}
 }
 
 ideology_republican = {
@@ -604,8 +587,8 @@ ideology_republican = {
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = neutral
-		law_presidential_republic = approve
-		law_parliamentary_republic = approve
+		law_dual_executive = approve
+		law_parliamentary_system = approve
 		law_council_republic = neutral
 		law_single_party_state = strongly_disapprove
 	}
@@ -621,6 +604,12 @@ ideology_republican = {
 		law_technocracy = disapprove
 		law_anarchy = strongly_disapprove
 		law_vanguardism = strongly_disapprove
+	}
+
+	lawgroup_bureaucracy = {
+		law_appointed_bureaucrats = neutral
+		law_elected_bureaucrats = approve	
+		law_hereditary_bureaucrats = disapprove
 	}
 	
 	lawgroup_voting_system = {
@@ -676,7 +665,7 @@ ideology_proletarian = {
 		law_agrarianism = neutral
 		law_traditionalism = disapprove		
 		law_laissez_faire = disapprove	
-		law_industry_banned = disapprove	
+		#law_industry_banned = disapprove	
 	}
 	
 	lawgroup_trade_policy = {		
@@ -684,7 +673,13 @@ ideology_proletarian = {
 		law_isolationism = neutral
 		law_mercantilism = neutral
 		law_free_trade = disapprove
-	}		
+	}
+	
+	lawgroup_labor_rights = {
+		law_no_workers_rights = disapprove
+		law_regulatory_bodies = approve
+		law_worker_protections = strongly_approve
+	}
 	
 	lawgroup_welfare = {
 		law_old_age_pension = strongly_approve
@@ -785,8 +780,8 @@ ideology_populist = {
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = neutral
-		law_presidential_republic = neutral
-		law_parliamentary_republic = approve
+		law_dual_executive = neutral
+		law_parliamentary_system = approve
 		law_council_republic = strongly_approve
 		law_single_party_state = strongly_disapprove
 	}
@@ -795,7 +790,6 @@ ideology_populist = {
 		law_national_militia = strongly_approve
 		law_mass_conscription = strongly_disapprove
 		law_peasant_levies = strongly_disapprove
-		law_limited_conscription = disapprove
 		law_professional_army = neutral
 	}
 }
@@ -820,8 +814,8 @@ ideology_reactionary = {
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = approve
-		law_presidential_republic = neutral
-		law_parliamentary_republic = disapprove
+		law_dual_executive = neutral
+		law_parliamentary_system = disapprove
 		law_council_republic = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
@@ -855,7 +849,7 @@ ideology_plutocratic = {
 		law_wealth_voting = approve
 		law_landed_voting = neutral
 		law_census_voting = neutral
-		law_technocracy = neutral
+		law_technocracy = strongly_approve
 		law_autocracy = disapprove
 		law_clerical_voting = disapprove
 		law_universal_suffrage = strongly_disapprove
@@ -884,8 +878,8 @@ ideology_plutocratic = {
 	}
 	
 	lawgroup_income_tax = {
-		law_no_income_taxes = approve
-		law_low_income_tax = neutral
+		law_no_income_taxes = neutral
+		law_low_income_tax = disapprove
 		law_moderate_income_tax = disapprove
 		law_high_income_tax = strongly_disapprove
 	}
