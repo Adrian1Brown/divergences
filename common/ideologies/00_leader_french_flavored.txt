@@ -11,8 +11,8 @@
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = strongly_approve
-		law_presidential_republic = neutral
-		law_parliamentary_republic = disapprove
+		law_dual_executive = neutral
+		law_parliamentary_system = disapprove
 		law_council_republic = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
@@ -27,7 +27,7 @@
 		law_universal_suffrage = disapprove
 		law_anarchy = strongly_disapprove
 		law_vanguardism = strongly_disapprove
-		law_technocracy = strongly_disapprove
+		law_technocracy = approve
 	}
 
 	lawgroup_economic_system = {	
@@ -75,7 +75,6 @@
 			OR = {
 				is_interest_group_type = ig_industrialists
 				is_interest_group_type = ig_petty_bourgeoisie
-				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_armed_forces
 			}
 		}
@@ -120,7 +119,6 @@
 				scope:interest_group = {
 					OR = {
 						is_interest_group_type = ig_petty_bourgeoisie
-						is_interest_group_type = ig_intelligentsia
 						is_interest_group_type = ig_industrialists
 					}
 				}
@@ -187,8 +185,8 @@ ideology_legitimist = {
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = strongly_approve
-		law_presidential_republic = neutral
-		law_parliamentary_republic = disapprove
+		law_dual_executive = neutral
+		law_parliamentary_system = disapprove
 		law_council_republic = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
@@ -197,7 +195,6 @@ ideology_legitimist = {
 		law_autocracy = strongly_approve
 		law_oligarchy = neutral
 		law_clerical_voting = strongly_disapprove
-		law_single_party_state = disapprove
 		law_landed_voting = strongly_disapprove	
 		law_wealth_voting = strongly_disapprove	
 		law_census_voting = strongly_disapprove		
@@ -329,8 +326,8 @@ ideology_bonapartist = {
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = strongly_approve
-		law_presidential_republic = neutral
-		law_parliamentary_republic = disapprove
+		law_dual_executive = neutral
+		law_parliamentary_system = disapprove
 		law_council_republic = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
@@ -341,12 +338,11 @@ ideology_bonapartist = {
 		law_landed_voting = neutral	
 		law_clerical_voting = strongly_disapprove
 		law_wealth_voting = neutral	
-		law_single_party_state = neutral
 		law_census_voting = disapprove		
 		law_universal_suffrage = disapprove
 		law_anarchy = strongly_disapprove
 		law_vanguardism = strongly_disapprove
-		law_technocracy = strongly_disapprove
+		law_technocracy = approve
 	}
 
 	lawgroup_army_model = {

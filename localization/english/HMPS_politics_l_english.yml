@@ -126,8 +126,8 @@
  law_single_party_state_desc:0 "The executive decisions are carried out by the foremost committee of the party."
  
  # Cameralism Laws
- lawgroup_cameralism:0 "Cameralism"
- lawgroup_cameralism_desc:0 "Historically in its most narrow definition concerned the management of the state's finances, camera being latin for chamber."
+ lawgroup_cameralism:0 "Legislative Subivision"
+ lawgroup_cameralism_desc:0 "The legislature may be divided into one or two houses, of equal or unequal power."
  
  law_no_legislature:0 "No Legislature"
  law_no_legislature_desc:0 "There is no meaningful legislative assembly."
@@ -177,7 +177,7 @@
  law_no_poll_taxes_desc:0 "No tax is applied on a pure per-head basis."
  
  # Income Tax
- lawgroup_income_tax:0 "Income Tax"
+ lawgroup_income_tax:0 "Flat Income Tax"
  lawgroup_income_tax_desc:0 "A tax levied on the profits on enterprise."
  
  law_no_income_taxes:0 "No Income Tax"
@@ -189,18 +189,18 @@
  law_high_income_tax:0 "High Income Tax"
  law_high_income_tax_desc:0 "A high tax is levied on personal income."
  
- # Corporation Tax
- lawgroup_corporation_tax:0 "Corporation Tax"
- lawgroup_corporation_tax_desc:0 "A tax levied on the profits on enterprise."
+ # Dividends Tax
+ lawgroup_corporation_tax:0 "Dividends Tax"
+ lawgroup_corporation_tax_desc:0 "A tax levied on the profits of enterprise."
  
- law_no_corporation_taxes:0 "No Corporation Tax"
- law_no_corporation_taxes_desc:0 "No tax on corporate profits."
- law_low_corporation_tax:0 "Low Corporation Tax"
- law_low_corporation_tax_desc:0 "Low tax on corporate profits."
- law_moderate_corporation_tax:0 "Moderate Corporation Tax"
- law_moderate_corporation_tax_desc:0 "Moderate tax on corporate profits."
- law_high_corporation_tax:0 "High Corporation Tax"
- law_high_corporation_tax_desc:0 "High tax on corporate profits."
+ law_no_corporation_taxes:0 "No Dividends Tax"
+ law_no_corporation_taxes_desc:0 "No tax on enterprise profits."
+ law_low_corporation_tax:0 "Low Dividends Tax"
+ law_low_corporation_tax_desc:0 "Low tax on enterprise profits."
+ law_moderate_corporation_tax:0 "Moderate Dividends Tax"
+ law_moderate_corporation_tax_desc:0 "Moderate tax on enterprise profits."
+ law_high_corporation_tax:0 "High Dividends Tax"
+ law_high_corporation_tax_desc:0 "High tax on enterprise profits."
  
  # Consumption Taxes
  lawgroup_consumption_tax:0 "Consumption Tax"
@@ -229,8 +229,6 @@
  law_high_minimum_wage_desc:0 "The mandatory minimum cost for human labour is set high."
  
  # Military Laws
- law_limited_conscription:0 "Limited Conscription"
- law_limited_conscription_desc:0 "Limited conscription can be enacted to bolster the infantry of the professional army."
  law_professional_army:0 "Volunteer Only"
  law_professional_army_desc:0 "The army consists only of well-trained, professional volunteers."
  hmps_professional_army_tt:2 "Command limits are #BOLD doubled#! for all generals."
@@ -345,6 +343,9 @@
  france_baby_bust:0 "19th Century French Demographic Slowdown"
  france_early_game_birth_fix:0 "Early Game French Birth Rate Fix"
  
+ #Egypt Nerf
+ egypt_prestige_fix:0 "Nominal Ottoman Subject"
+ 
  #parties
  from_graduated_taxation:0 "From taxes on corporations"
  from_no_graduated_taxation:0 "From low taxes on corporations"
@@ -361,7 +362,7 @@
  law_religious_schools:0 "Religious Schools"
  law_religious_schools_desc:0 "Letting the church take care of state education ensures a loyal and morally healthy population. "
  law_private_schools:0 "Private Schools"
- law_private_schools_desc:0 "Schooling is best left to private interests who can assure freedom of choice in one's education. Private Schools start to become better than Religious Schools after 10 Standard of Living."
+ law_private_schools_desc:0 "Schooling is best left to private interests who can assure freedom of choice in one's education. Private Schools become better than Religious Schools at 10 Standard of Living."
  law_public_schools:0 "Public Schools"
  law_public_schools_desc:0 "Schooling is the responsibility of the state, and should be standardized and equally accessible to all. Public schools are always better than religious or private schools."
  

@@ -71,6 +71,10 @@ ideology_traditionalist = {
 				has_law = law_type:law_state_religion
 			}
 		}
+		NOT = {
+			exists = c:FRA
+			c:FRA = this
+		}
 		scope:interest_group = {
 			OR = {
 				is_interest_group_type = ig_rural_folk
@@ -228,6 +232,15 @@ ideology_atheist = {
 			}
 			add = 150
 		}
+		# More likely in state athiest societies
+		if = {
+			limit = {
+				owner = { 
+					has_law = law_type:law_state_atheism
+				}
+			}
+			add = 150
+		}
 	}
 }
 
@@ -356,6 +369,22 @@ ideology_radical = {
 		law_autocracy = strongly_disapprove
 		law_vanguardism = strongly_disapprove
 		law_technocracy = disapprove
+	}
+	
+	lawgroup_slavery = {
+		law_slavery_banned = approve
+		law_legacy_slavery = disapprove
+		law_debt_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+	}	
+	
+	lawgroup_debt = {
+		law_peonage = strongly_disapprove
 	}
 	
 	lawgroup_voting_system = {
@@ -1014,7 +1043,6 @@ ideology_pacifist = {
 		law_national_militia = approve
 		law_professional_army = disapprove
 		law_peasant_levies = strongly_disapprove
-		law_limited_conscription = strongly_disapprove
 		law_mass_conscription = strongly_disapprove
 	}
 
@@ -1125,7 +1153,6 @@ ideology_jingoist_leader = {
 	
 	lawgroup_army_model = {
 		law_mass_conscription = strongly_approve
-		law_limited_conscription = approve
 		law_professional_army = neutral
 		law_national_militia = disapprove
 		law_peasant_levies = strongly_disapprove
@@ -1253,8 +1280,8 @@ ideology_royalist = {
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = strongly_approve
-		law_presidential_republic = neutral
-		law_parliamentary_republic = disapprove
+		law_dual_executive = neutral
+		law_parliamentary_system = disapprove
 		law_council_republic = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
@@ -1575,13 +1602,13 @@ ideology_communist = {
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove
 		law_clerical_voting = strongly_disapprove
-		law_technocracy = neutral
+		law_technocracy = disapprove
 	}
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = disapprove
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_dual_executive = disapprove
+		law_parliamentary_system = disapprove
 		law_council_republic = strongly_approve
 		law_single_party_state = approve
 	}
@@ -1600,7 +1627,7 @@ ideology_communist = {
 		law_agrarianism = disapprove
 		law_traditionalism = disapprove		
 		law_laissez_faire = strongly_disapprove
-		law_industry_banned = disapprove
+		#law_industry_banned = disapprove
 	}
 	
 	lawgroup_land_reform = {
@@ -1732,7 +1759,7 @@ ideology_vanguardist = {
 
 	lawgroup_distribution_of_power = {
 		law_vanguardism = strongly_approve
-		law_oligarchy = approve
+		law_oligarchy = disapprove
 		law_autocracy = approve		
 		law_anarchy = disapprove
 		law_universal_suffrage = disapprove
@@ -1740,7 +1767,7 @@ ideology_vanguardist = {
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove
 		law_clerical_voting = strongly_disapprove
-		law_technocracy = neutral
+		law_technocracy = disapprove
 	}
 	
 	lawgroup_voting_system = {
@@ -1772,7 +1799,7 @@ ideology_vanguardist = {
 		law_agrarianism = disapprove
 		law_traditionalism = disapprove		
 		law_laissez_faire = strongly_disapprove
-		law_industry_banned = disapprove
+		#law_industry_banned = strongly_disapprove
 	}
 	
 	lawgroup_trade_policy = {		
@@ -1944,7 +1971,7 @@ ideology_fascist = {
 
 	lawgroup_distribution_of_power = {
 		law_vanguardism = strongly_approve
-		law_autocracy = strongly_approve
+		law_autocracy = approve
 		law_oligarchy = neutral
 		law_anarchy = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
@@ -1952,7 +1979,7 @@ ideology_fascist = {
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove		
 		law_clerical_voting = strongly_disapprove
-		law_technocracy = disapprove		
+		law_technocracy = strongly_approve		
 	}
 	
 	lawgroup_voting_system = {
@@ -1981,7 +2008,6 @@ ideology_fascist = {
 
 	lawgroup_army_model = {
 		law_mass_conscription = strongly_approve
-		law_limited_conscription = approve
 		law_professional_army = neutral
 		law_national_militia = disapprove
 		law_peasant_levies = strongly_disapprove
@@ -1992,6 +2018,13 @@ ideology_fascist = {
 		law_right_of_assembly = disapprove
 		law_censorship = neutral
 		law_outlawed_dissent = strongly_approve
+	}
+	
+	lawgroup_internal_security = {
+		law_guaranteed_liberties = strongly_disapprove
+		law_no_home_affairs = neutral
+		law_national_guard = approve
+		law_secret_police = strongly_approve
 	}
 
 	lawgroup_policing = {
@@ -2154,7 +2187,7 @@ ideology_anarchist = {
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove	
 		law_vanguardism = strongly_disapprove		
-		law_technocracy = disapprove
+		law_technocracy = strongly_disapprove
 	}
 	
 	lawgroup_voting_system = {
@@ -2176,7 +2209,6 @@ ideology_anarchist = {
 		law_professional_army = strongly_approve
 		law_national_militia = approve
 		law_peasant_levies = disapprove
-		law_limited_conscription = strongly_disapprove
 		law_mass_conscription = strongly_disapprove
 	}
 
@@ -2207,13 +2239,13 @@ ideology_anarchist = {
 		law_traditionalism = disapprove		
 		law_laissez_faire = strongly_disapprove
 		law_command_economy = strongly_disapprove
-		law_industry_banned = disapprove
+		#law_industry_banned = disapprove
 	}
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = disapprove
-		law_presidential_republic = disapprove
-		law_parliamentary_republic = disapprove
+		law_dual_executive = disapprove
+		law_parliamentary_system = disapprove
 		law_council_republic = approve
 		law_single_party_state = strongly_disapprove
 	}
@@ -2564,7 +2596,7 @@ ideology_market_liberal = {
 		law_traditionalism = disapprove		
 		law_command_economy = strongly_disapprove
 		law_cooperative_ownership = disapprove
-		law_industry_banned = disapprove
+		#law_industry_banned = disapprove
 	}
 	
 	lawgroup_land_reform = {
@@ -2786,8 +2818,8 @@ ideology_luddite = {
 	character_ideology = yes
 
 	lawgroup_economic_system = {
-		law_industry_banned = strongly_approve
-		law_agrarianism = approve
+		#law_industry_banned = strongly_approve
+		law_agrarianism = strongly_approve
 		law_cooperative_ownership = neutral
 		law_traditionalism = neutral
 		law_laissez_faire = strongly_disapprove
@@ -2816,7 +2848,7 @@ ideology_luddite = {
 			has_role = agitator
 			owner = {
 				has_law = law_type:law_isolationism
-				has_law = law_type:law_industry_banned
+				has_law = law_type:law_agrarianism
 			}
 		}
 		scope:interest_group = {
@@ -2879,9 +2911,9 @@ ideology_authoritarian = {
 		law_wealth_voting = disapprove
 		law_landed_voting = disapprove
 		law_clerical_voting = disapprove
-		law_technocracy = neutral
+		law_technocracy = approve
 		law_oligarchy = approve
-		law_autocracy = approve
+		law_autocracy = strongly_approve
 		law_vanguardism = approve
 	}
 
@@ -3394,8 +3426,8 @@ ideology_jacksonian_democrat = {
 	
 	lawgroup_executive_structure = {
 		law_independent_executive = strongly_approve
-		law_presidential_republic = approve
-		law_parliamentary_republic = neutral
+		law_dual_executive = approve
+		law_parliamentary_system = neutral
 		law_council_republic = strongly_disapprove
 		law_single_party_state = strongly_disapprove
 	}
@@ -3409,9 +3441,16 @@ ideology_jacksonian_democrat = {
 		law_anarchy = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
-		law_single_party_state = disapprove
 		law_technocracy = strongly_disapprove
+		law_vanguardism = strongly_disapprove
 	}
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_disapprove
+		law_censorship = disapprove
+		law_right_of_assembly = strongly_approve
+		law_protected_speech = neutral
+	}	
 
 	lawgroup_bureaucracy = {
 		law_elected_bureaucrats = approve
@@ -3470,7 +3509,7 @@ ideology_positivist = {
 
 	lawgroup_governance_principles = {
 		law_theocracy = strongly_disapprove
-		law_monarchy = strongly_disapprove
+		law_monarchy = disapprove
 		law_republic = approve
 	}
 
@@ -3567,6 +3606,15 @@ ideology_positivist = {
 				}
 			}
 			add = 100
+		}
+		# More likely in corporatist societies
+		if = {
+			limit = {
+				owner = { 
+					has_law = law_type:law_technocracy
+				}
+			}
+			add = 150
 		}
 	}
 }
