@@ -179,6 +179,10 @@
 		
 		add_homeland = anglois
 		add_homeland = french
+		add_homeland = burgundian
+
+		add_claim = c:BRG
+
 	}
 	s:STATE_AUVERGNE = {
 		create_state = {
@@ -237,6 +241,11 @@
 		}
 		
 		add_homeland = burgundian
+		add_homeland = french
+		add_homeland = anglois
+		add_claim = c:BOH
+
+
 	}
 	s:STATE_ALSACE = {
 		create_state = {
@@ -265,6 +274,8 @@
 		}
 		
 		add_homeland = burgundian
+		add_homeland = rheinish
+
 	}
 	s:STATE_FRANCHE_COMTE = {
 		create_state = {
@@ -272,6 +283,8 @@
 			owned_provinces = { "x3080E0" "x3D8EF9" "x708060" "xA9D961" "xCF46D1" "xF00060" }
 		}
 		add_homeland = burgundian
+		add_homeland = romand
+
 	}
 	s:STATE_HOLLAND = {
 		create_state = {
@@ -304,6 +317,10 @@
 		}
 		
 		add_homeland = burgundian
+		add_homeland = french
+		add_homeland = dutch
+
+
 	}
 	s:STATE_NORTH_RHINE = {
 		create_state = {
@@ -1561,6 +1578,7 @@
 		
 		add_homeland = polish
 		add_homeland = ruthenian
+		add_homeland = ashkenazi
 	}
 	s:STATE_EAST_GALICIA = {
 		create_state = {
@@ -1570,6 +1588,8 @@
 		
 		add_homeland = polish
 		add_homeland = ruthenian
+		add_homeland = ashkenazi
+
 	}
 	s:STATE_LITHUANIA = {
 		create_state = {
@@ -1607,6 +1627,8 @@
 		}
 
 		add_homeland = byelorussian
+		add_homeland = ashkenazi
+
 	}
 	s:STATE_ORSHA = {
 		create_state = {
@@ -1616,6 +1638,8 @@
 		
 		add_homeland = byelorussian
 		add_homeland = russian
+		add_homeland = ashkenazi
+
 	}
 	s:STATE_VOLHYNIA = {
 		create_state = {
@@ -1625,6 +1649,8 @@
 
 		add_homeland = polish
 		add_homeland = ruthenian
+		add_homeland = ashkenazi
+
 	}
 	s:STATE_KIEV = {
 		create_state = {
@@ -1668,7 +1694,7 @@
 		}
 		
 		add_homeland = kirim
-		add_homeland = ashkenazi
+		add_homeland = krymchak
 	}
 	s:STATE_YEDISAN = {
 		create_state = {

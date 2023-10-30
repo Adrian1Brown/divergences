@@ -666,6 +666,8 @@ STATE_FORMOSA = {
     capped_resources = {
         bg_logging = 8
         bg_fishing = 13
+		bg_coal_mining = 15
+		bg_sulfur_mining = 10
     }
     naval_exit_id = 3056
 }

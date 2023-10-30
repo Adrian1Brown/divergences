@@ -481,6 +481,10 @@ on_monthly_pulse_country = {
 	random_events = {
 		11 = 0
 		1 = potato_blight.1
+	# Korea Conversion
+	random_events = {
+		5 = 0
+		1 = dvg_japan.2
 	}
 }
 

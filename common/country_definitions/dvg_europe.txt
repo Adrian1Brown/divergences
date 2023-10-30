@@ -29,10 +29,10 @@ BRG = { #Burgundy
 	
 	country_type = recognized
 
-	tier = empire
+	tier = kingdom
 	
-	cultures = { burgundian rheinish }
-	capital = STATE_FLANDERS
+	cultures = { burgundian }
+	capital = STATE_WALLONIA
 }
 
 SWI = { #Switzerland
@@ -240,7 +240,7 @@ ARN = { #Aragon
 
 	tier = kingdom
 	
-	cultures = { catalan south_italian}
+	cultures = { navarragon }
 	capital = STATE_CATALONIA
 }
 
@@ -1206,13 +1206,25 @@ ANL = { #Andalusia
 
 	tier = principality
 	
-	cultures = { spanish }
+	cultures = { portuguese }
 	capital = STATE_ANDALUSIA
 	is_named_from_capital = yes
 }
 
 CAS = { #Castile
 	color = hsv360{ 51  67  78 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { spanish }
+	capital = STATE_CASTILE
+	is_named_from_capital = yes
+}
+
+TOL = { #Toledo
+	color = { 215 255 145 }
 	
 	country_type = recognized
 
@@ -1230,7 +1242,7 @@ IBE = { #Iberia
 
 	tier = empire
 	
-	cultures = { spanish catalan portuguese galician basque }
+	cultures = { spanish catalan portuguese galician basque navarragon }
 	capital = STATE_TOLEDO
 }
 
@@ -1852,4 +1864,26 @@ TAP = {
 	cultures = { occitan north_italian french }
 	religion = catholic
 	capital = STATE_PROVENCE
+}
+
+AKZ = {
+	color = { 105 106 182 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { ashkenazi }
+	religion = jewish
+	capital = STATE_EAST_GALICIA
+}
+BGY = { #Burgundy County
+	color = { 128 0 39 }
+	
+	country_type = recognized
+
+	tier = principality
+	
+	cultures = { burgundian }
+	capital = STATE_BURGUNDY
 }
