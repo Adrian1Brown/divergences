@@ -1845,6 +1845,13 @@ LEW = { #Leeuwin
 	}
 }
 
+CAP = { #Cape Colony
+	flag_definition = {
+		coa = CAP
+		coa_with_overlord_canton = CAP
+	}
+}
+
 OPS = { #Opstalia
 	flag_definition = {
 		coa = OPS
@@ -3146,7 +3153,7 @@ NAN = { #Nanjing/Wu
 		coa = NAN
 		subject_canton = NAN
 		allow_overlord_canton = yes	
-		priority = 1
+		priority = 20
 	}
 	flag_definition = {	
 		coa = NAN_dictatorship
